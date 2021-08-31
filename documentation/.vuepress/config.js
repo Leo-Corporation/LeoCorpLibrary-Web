@@ -1,6 +1,7 @@
 module.exports = {
     title: "LeoCorpLibrary",
     description: "A C# library with useful features for .NET Applications.",
+    base: "/LeoCorpLibrary-Web/",
     themeConfig: {
         sidebar: 'auto',
         sidebarDepth: 3,
