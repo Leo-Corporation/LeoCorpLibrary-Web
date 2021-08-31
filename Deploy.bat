@@ -1,0 +1,1 @@
+vuepress build documentation -d docs
