@@ -14,7 +14,7 @@
   <p align="center">
     The official website and documention of LeoCorpLibrary.
     <br />
-    <a href="https://github.com/Leo-Corporation/LeoCorpLibrary/wiki"><strong>View documentation »</strong></a>
+    <a href="https://leocorplibrary.leocorporation.dev/"><strong>View documentation »</strong></a>
     <br />
     <a href="https://github.com/Leo-Corporation/LeoCorpLibrary/issues/new?assignees=&labels=bug&template=bug-report.yml&title=%5BBug%5D+">Report Bug</a>
     ·
