@@ -1,7 +1,7 @@
 module.exports = {
     title: "LeoCorpLibrary",
     description: "A C# library with useful features for .NET Applications.",
-    base: "/LeoCorpLibrary-Web/",
+    base: "/",
     head: [
         ['link', { rel: 'icon', href: 'favicon.ico' }]
     ],
