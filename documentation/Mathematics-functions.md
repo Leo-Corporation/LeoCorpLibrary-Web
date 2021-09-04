@@ -317,6 +317,47 @@ VB
 Dim diagonal As Double = Maths.Rectangle.GetDiagonal(4.12, 8.5) ' Get diagonal
 ~~~
 [Go to top](#maths)
+### b. GetArea
+**This function is available in version 3.10 and higher**
+
+<details>
+<summary>Compatibility</summary>
+
+| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-------: | :------------: | :-----------------: |
+| .NET 5 | ✔ | ✔ |
+| .NET Core 3.1 | ✔ | ✔ |
+| .NET Framework 4.7.2 | ✔ | ✔ |
+| .NET Framework 4.5 | ❌ | ✔ |
+
+</details>
+
+The `GetArea()` method allows you to get a rectangle's area. It returns a `double` value.
+
+It's in:
+~~~ cs
+LeoCorpLibrary.Maths.Rectangle.GetArea()
+~~~
+This method has two arguments:
+| Value | Argument | Description | Example |
+| :----: | :-------: | :---------: | :-----: |
+| double | width | Rectangle's width/base | 6 |
+| double | length | Rectangle's length | 12.2 |
+
+Here's an example of usage:
+
+C#
+~~~ cs
+double area = Maths.Rectangle.GetArea(5, 10);
+// area = 50
+~~~
+VB
+~~~ vb
+Dim area = Maths.Rectangle.GetArea(5, 10)
+' area = 50
+~~~
+[Go to top](#maths)
+
 ## Triangle
 ### a. GetArea
 **This function is available in version 1.3 and higher**
@@ -449,7 +490,7 @@ Dim isBuildable As Bool = Maths.Triangle.IsBuildable(4.5, 9.1, 12.45)
 
 </details>
 
-The `GetHypotenuse()` method allows you to get a triangle's hypotenuse from the two other sides. (Pythagore) It returns a `double` value.
+The `GetHypotenuse()` method allows you to get a triangle's hypotenuse from the two other sides. (Pythagorus) It returns a `double` value.
 
 It's in:
 ~~~ cs
@@ -472,6 +513,48 @@ VB
 Dim hypotenuse As Double = Maths.Triangle.GetHypotenuse(4.5, 6.1) ' Get the hypotenuse
 ~~~
 [Go to top](#maths)
+### e. IsRight
+**This function is available in version 3.10 and higher**
+
+<details>
+<summary>Compatibility</summary>
+
+| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-------: | :------------: | :-----------------: |
+| .NET 5 | ✔ | ✔ |
+| .NET Core 3.1 | ✔ | ✔ |
+| .NET Framework 4.7.2 | ✔ | ✔ |
+| .NET Framework 4.5 | ❌ | ✔ |
+
+</details>
+
+The `IsRight()` method allows you to get if a triangle is right or not. It returns a `bool` value.
+
+It's in:
+~~~ cs
+LeoCorpLibrary.Maths.Triangle.IsRight()
+~~~
+This method has two arguments:
+| Value | Argument | Description | Example |
+| :----: | :-------: | :---------: | :-----: |
+| double | side1 | Triangle's side | 4.5 |
+| double | side2 | Triangle's side | 6.1 |
+| double | side3 | Triangle's side | 8 |
+
+Here's an example of usage:
+
+C#
+~~~ cs
+bool isRight = Maths.Triangle.IsRight(3, 4, 5);
+// isRight = true
+~~~
+VB
+~~~ vb
+Dim isRight As Boolean = Maths.Triangle.IsRight(3, 4, 5)
+' isRight = true
+~~~
+[Go to top](#maths)
+
 ## Cube
 ### a. GetVolume
 **This function is available in version 1.8 and higher**
@@ -1080,6 +1163,49 @@ Dim volume As Double = Maths.Sphere.GetVolume(10)
 ' Expected output:
 ' 4188.790204786391
 ~~~
+[Go to top](#maths)
+
+## Cone
+### a. GetVolume
+**This function is available in version 3.10 and higher**
+
+<details>
+<summary>Compatibility</summary>
+
+| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-------: | :------------: | :-----------------: |
+| .NET 5 | ✔ | ✔ |
+| .NET Core 3.1 | ✔ | ✔ |
+| .NET Framework 4.7.2 | ✔ | ✔ |
+| .NET Framework 4.5 | ❌ | ✔ |
+
+</details>
+
+The `GetVolume()` method allows you to get the volume of a cone. It returns a `double` value.
+
+It's in:
+~~~ cs
+LeoCorpLibrary.Maths.Cone.GetVolume()
+~~~
+This method has two arguments:
+| Value | Argument | Description | Example |
+| :----: | :-------: | :---------: | :-----: |
+| double | radius | The radius of the cone | 10.4 |
+| double | height | The height of the cone | 9.5 |
+
+Here's an example of usage:
+
+C#
+~~~ cs
+double volume = Maths.Cone.GetVolume(5, 20);
+// volume = 523.5987755982989
+~~~
+VB
+~~~ vb
+Dim volume As Double = Maths.Cone.GetVolume(5, 20)
+' volume = 523.5987755982989
+~~~
+
 [Go to top](#maths)
 
 ## Trigonometry functions
