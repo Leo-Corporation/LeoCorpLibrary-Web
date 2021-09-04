@@ -11,7 +11,8 @@ module.exports = {
         searchPlaceholder: 'Search...',
         nav: [
             { text: 'Home', link: '/' },
-            { text: 'Installation', link: '/Install-LeoCorpLibrary' }
+            { text: 'Installation', link: '/Install-LeoCorpLibrary' },
+            { text: 'Reference', link: '/Reference' }
         ],
         smoothScroll: true,
         displayAllHeaders: true,
