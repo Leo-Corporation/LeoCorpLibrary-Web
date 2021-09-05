@@ -44,7 +44,7 @@ In this documentation, there is some symbols that migh be used to specify the co
 * [Extensions](Extensions)
 * [Generate a Guid](Generate-a-Guid)
 * [Generate a password](Generate-a-password)
-* [Load a file](load-a-file)
+* [Load a file](Load-a-file)
 * [Logger](Logger)
 * [Mathematics functions](Mathematics-functions)
 * [Save a file](Save-in-a-file)
