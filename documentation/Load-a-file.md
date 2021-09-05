@@ -85,7 +85,10 @@ LeoCorpLibrary.Load.ListViewContentCustom(ListView1, "C:/content.txt")
 ' Variation 2
 LeoCorpLibrary.Load.ListViewContentCustom(ListVew1, "C:/content.txt", "/*E*/", "/*C*/")
 ~~~
-> Note: in the examples, you might noticed that instead of simply writting `Load.ListViewContentCustom`, it is writtent `LeoCorpLibrary.Load.ListViewContentCustom`. This because of a conflict with `Load` which is an event in Windows Forms.
+
+::: tip Note
+In the examples, you might noticed that instead of simply writting `Load.ListViewContentCustom`, it is written `LeoCorpLibrary.Load.ListViewContentCustom`. This because of a conflict with `Load` which is an event in Windows Forms.
+:::
 
 [Go to top](#load)
 ### b. ListViewContentXML

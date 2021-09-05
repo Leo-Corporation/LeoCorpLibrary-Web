@@ -13,7 +13,10 @@ VB
 ~~~ vb
 Imports LeoCorpLibrary
 ~~~
-> Note: This class doesn't have any methods.
+
+::: tip Note
+This class doesn't have any methods.
+:::
 
 **This class is available in version 2.2 and higher.**
 

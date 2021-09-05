@@ -39,7 +39,9 @@ LeoCorpLibrary.Maths.Sum()
 ~~~
 You need to specify the numbers which you wanna get the sum of, in the argument section of the method.
 
-> Note: You can specify negative numbers.
+::: tip Note
+You can specify negative numbers.
+:::
 
 Here's an example of usage:
 
@@ -74,7 +76,9 @@ It's in:
 LeoCorpLibrary.Maths.GetBiggestNumber()
 ~~~
 
-> Note: You can use negative numbers
+::: tip Note
+You can use negative numbers
+:::
 
 Here's an example of usage:
 
@@ -108,7 +112,10 @@ It's in:
 ~~~ cs
 LeoCorpLibrary.Maths.GetLowestNumber()
 ~~~
-> Note: You can use negative numbers.
+
+::: tip Note
+You can use negative numbers.
+:::
 
 Here's an example of usage:
 

@@ -40,4 +40,7 @@ VB
 ~~~ vb
 Imports LeoCorpLibrary
 ~~~
-> Note: In the most recent versions of Visual Studio, IntelliSense automatically import the reference to your coded if you type the name of a class or of a namespace.
+
+::: tip Note
+In the most recent versions of Visual Studio, IntelliSense automatically import the reference to your code if you type the name of a class or of a namespace.
+:::

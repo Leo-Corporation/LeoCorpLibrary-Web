@@ -388,7 +388,10 @@ It's in:
 ~~~ cs
 LeoCorpLibrary.Env.GetWindowsVersion()
 ~~~
-**Warning: This method works only if you specify in the Application Manifest, in the compatibilty section, that Windows 8, 8.1 and 10 are compatible with the software. Else, it will return ``Windows8``.**
+::: danger Warning
+This method works only if you specify in the Application Manifest, in the compatibilty section, that Windows 8, 8.1 and 10 are compatible with the software. Else, it will return ``Windows8``.
+:::
+
 ~~~ xml
 <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
     <application>
@@ -410,7 +413,9 @@ LeoCorpLibrary.Env.GetWindowsVersion()
     </application>
   </compatibility>
 ~~~
-> This file is an example. You can create this file by right-clicking on the project, then "Add", "New element", then "Application manifest" and "Add".
+::: tip Note
+This file is an example. You can create this file by right-clicking on the project, then "Add", "New element", then "Application manifest" and "Add".
+:::
 
 Here's an example of usage:
 
@@ -614,7 +619,9 @@ LeoCorpLibrary.Env.GetMouseCursorPosition()
 
 It has no arguments.
 
-> Note: This method is using Windows Forms features, so use this method in Windows Forms projects only. If your project is using WPF, check [GetMouseCursorPositionWPF()](#f-getmousecursorpositionwpf).
+::: tip Note
+This method is using Windows Forms features, so use this method in Windows Forms projects only. If your project is using WPF, check [GetMouseCursorPositionWPF()](#f-getmousecursorpositionwpf).
+:::
 
 Here's an example of usage:
 

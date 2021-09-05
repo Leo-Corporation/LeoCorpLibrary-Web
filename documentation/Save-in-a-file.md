@@ -25,7 +25,10 @@ Here's an example of a file:
 ~~~
 Test1(*C*)Test2(*C*)Test3(*E*)Test4(*C*)Test5(*C*)Test6(*E*)Test7(*C*)Test7(*C*)Test8(*E*)
 ~~~
-> Note: You can save the file in any formats, even custom ones: The system desn't care.
+::: tip Note
+You can save the file in any formats, even custom ones: The system doesn't care.
+:::
+
 ## Functions
 ### a. ListViewContentCustom
 **This function is available in version 1.7 and higher.**

@@ -36,7 +36,9 @@ The `IsAvailable()` method allows you to check if a updates are avaialable for y
 ~~~ cs
 LeoCorpLibrary.Update.IsAvailable()
 ~~~
-> Note: You need to place the namespace `LeoCorpLibrary` before the `Update` class because of a conflict with `Control.Update`.
+::: tip Note
+You need to place the namespace `LeoCorpLibrary` before the `Update` class because of a conflict with `Control.Update`.
+:::
 
 Here's this method's arguments
 | Type | Argument | Description | Example |
@@ -88,7 +90,9 @@ The `Check()` method allows you to check updates for your software. If updates a
 ~~~ cs
 LeoCorpLibrary.Update.Check()
 ~~~
-> Note: You need to place the namespace `LeoCorpLibrary` before the `Update` class because of a conflict with `Control.Update`.
+::: tip Note
+You need to place the namespace `LeoCorpLibrary` before the `Update` class because of a conflict with `Control.Update`.
+:::
 
 Here's this method's arguments
 | Type | Argument | Description | Example |
@@ -134,7 +138,9 @@ The `CheckWPF()` method allows you to check updates for your software. If update
 ~~~ cs
 LeoCorpLibrary.Update.CheckWPF()
 ~~~
-> Note: You need to place the namespace `LeoCorpLibrary` before the `Update` class because of a conflict with `Control.Update`.
+::: tip Note
+You need to place the namespace `LeoCorpLibrary` before the `Update` class because of a conflict with `Control.Update`.
+:::
 
 Here's this method's arguments
 | Type | Argument | Description | Example |
@@ -182,8 +188,9 @@ This method has only one argument:
 | :--: | :-------: | :---------: | :-----: |
 | string | lastVersionFileLink | Link of the file that contains the last version | "[https://example.com/Version.txt](https://dl.dropboxusercontent.com/s/j3fn78x3lcmowpr/Version.txt)" |
 
-> Note: You need to place the namespace `LeoCorpLibrary` before the `Update` class because of a conflict with `Control.Update`.
-
+::: tip Note
+You need to place the namespace `LeoCorpLibrary` before the `Update` class because of a conflict with `Control.Update`.
+:::
 
 Here's an example of usage:
 
@@ -228,8 +235,9 @@ Here's this method's arguments:
 | string | lastVersionLink | Link of the new file  | "[https://example.com/Program.exe](https://dl.dropboxusercontent.com/s/tlekj6j834tgi3r/GestionPersoX.exe)" |
 | bool | fromAppStartupPath | (Optional) Open the file from Application.StartupPath | ``true`` |
 
-
-> Note: You need to place the namespace `LeoCorpLibrary` before the `Update` class because of a conflict with `Control.Update`.
+::: tip Note
+You need to place the namespace `LeoCorpLibrary` before the `Update` class because of a conflict with `Control.Update`.
+:::
 
 Example:
 
@@ -279,7 +287,9 @@ Here's this method's argument:
 | :--: | :-------: | :---------: | :-----: |
 | string | lastVersionFileLink | Link of the file where is stored the last version | "[https://example.com/Version.txt](https://dl.dropboxusercontent.com/s/j3fn78x3lcmowpr/Version.txt)" |
 
-> Note: You need to place the namespace `LeoCorpLibrary` before the `Update` class because of a conflict with `Control.Update`.
+::: tip Note
+You need to place the namespace `LeoCorpLibrary` before the `Update` class because of a conflict with `Control.Update`.
+:::
 
 Here's an example of usage:
 

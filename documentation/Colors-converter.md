@@ -58,7 +58,10 @@ ColorsConverter.RGBtoHEX(int red, int green, int blue) {...}
 | int | blue | Blue | 255 |
 
 You can either use the ``System.Drawing.Color`` structure or put eaach RGB values.
-> Note: If, in the second variation of the method, you put an invalid number, the [`RGBInvalidValueException`](/Exceptions.html#rgbinvalidvalueexception) will be thrown.
+
+::: tip Note
+If, in the second variation of the method, you put an invalid number, the [`RGBInvalidValueException`](/Exceptions.html#rgbinvalidvalueexception) will be thrown.
+:::
 
 Example of usage:
 
@@ -109,7 +112,10 @@ Here's this method's argument:
 | Valeur | Argument | Description |
 | :----: | :-------: | :---------: |
 | [HEXColor](#hexcolor) | hexColor | HEX Color |
-> Note: If you put an inccorect HEX value for `hexColor`, the [`HEXInvalidValueException`](/Exceptions.html#hexinvalidvalueexception) will be thrown.
+
+::: tip Note
+If you put an inccorect HEX value for `hexColor`, the [`HEXInvalidValueException`](/Exceptions.html#hexinvalidvalueexception) will be thrown.
+:::
 
 Example of usage:
 
@@ -168,7 +174,10 @@ ColorsConverter.RGBtoHSV(int red, int green, int blue) {...}
 | int | blue | Blue | 255 |
 
 You can either use the `System.Drawing.Color` structure or put each value individually.
-> Note: If in the second variation, you put an incorrect RGB color, the [`RGBInvalidValueException`](/Exceptions.html#rgbinvalidvalueexception) will be thrown.
+
+::: tip Note
+If in the second variation, you put an incorrect RGB color, the [`RGBInvalidValueException`](/Exceptions.html#rgbinvalidvalueexception) will be thrown.
+:::
 
 Example of usage:
 
@@ -216,7 +225,9 @@ It has only one argument:
 | :----: | :-------: | :---------: |
 | [HEXColor](#hexcolor) | hexColor | HEX Color |
 
-> Note: If you put an inccorect HEX value for `hexColor`, the [`HEXInvalidValueException`](/Exceptions.html#hexinvalidvalueexception) will be thrown.
+::: tip Note
+If you put an inccorect HEX value for `hexColor`, the [`HEXInvalidValueException`](/Exceptions.html#hexinvalidvalueexception) will be thrown.
+:::
 
 Example of usage:
 
@@ -281,7 +292,10 @@ HEXColor.FromRGB(Color color) {...}
 HEXColor.FromRGB(int red, int green, int blue) {...}
 ~~~
 You can either use the `System.Drawing.Color` structure or put each value individually.
-> Note: If in the second variation, you put an incorrect RGB color, the [`RGBInvalidValueException`](/Exceptions.html#rgbinvalidvalueexception) will be thrown.
+
+::: tip Note
+If in the second variation, you put an incorrect RGB color, the [`RGBInvalidValueException`](/Exceptions.html#rgbinvalidvalueexception) will be thrown.
+:::
 
 Example of usage:
 
@@ -369,7 +383,10 @@ HSVColor.FromRGB(Color color) {...}
 HSVColor.FromRGB(int red, int green, int blue) {...}
 ~~~
 You can either use the `System.Drawing.Color` structure or put each value individually.
-> Note: If in the second variation, you put an incorrect RGB color, the [`RGBInvalidValueException`](/Exceptions.html#rgbinvalidvalueexception) will be thrown.
+
+::: tip Note
+If in the second variation, you put an incorrect RGB color, the [`RGBInvalidValueException`](/Exceptions.html#rgbinvalidvalueexception) will be thrown.
+:::
 
 Example of usage:
 
