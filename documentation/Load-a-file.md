@@ -3,9 +3,12 @@ footer: MIT Licensed | Copyright © 2021 Léo Corporation and contributors
 ---
 # Load
 ## Introduction
+::: warning Warning
+We recommand that you use either [`ListViewContentXML`](#b-listviewcontentxml) or [`ListViewContentJson`](#c-listviewcontentjson) instead of our custom system which is old and outdated.
+:::
 ### a. Required configuration
 
-To use the following methods, you need to use the version 1.7 or higher of LeoCorpLibrary, and put this on top of your code file:
+To use the following methods, you need to use the version 1.7 or higher of LeoCorpLibrary, and put this at the top of your code file:
 
 C#
 ~~~ cs
