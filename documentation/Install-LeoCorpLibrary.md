@@ -2,8 +2,8 @@
 footer: MIT Licensed | Copyright © 2021 Léo Corporation and contributors
 ---
 # Install LeoCorpLibrary
-
-## 1. Add the library to a project
+## Using Visual Studio
+### 1. Add the library to a project
 [Click here](https://www.youtube.com/watch?v=Xdxqnl2g5qE) to see the suport video.
 
 If you wanna add LeoCorpLibrary, follow this steps:
@@ -29,7 +29,7 @@ If you wanna add LeoCorpLibrary, follow this steps:
 
 The reference ``LeoCorpLibrary`` has been aded to the project. You can verify this by opening the `Reference` or `Dependencies` item in Solution Explorer.
 
-## 2. Start Coding
+### 2. Start Coding
 To call methods and use other features of LeoCorpLibrary, please add the following code in your `using` region (on top of the file).
 
 C#
@@ -43,4 +43,46 @@ Imports LeoCorpLibrary
 
 ::: tip Note
 In the most recent versions of Visual Studio, IntelliSense automatically import the reference to your code if you type the name of a class or of a namespace.
+:::
+
+Check out the [reference](/reference) to get started.
+## Using .NET CLI
+You can also install LeoCorpLibrary using the [.NET CLI](https://docs.microsoft.com/en-us/dotnet/core/tools/).
+Type in a command line window (cmd, bash...) the following command:
+~~~ sh
+dotnet add package LeoCorpLibrary --version 3.10.0.2109
+~~~
+
+If you are working with a solution with multiple projects, you may wanna use the command below:
+~~~ sh
+dotnet add <PROJECT> package LeoCorpLibrary --version 3.10.0.2109
+~~~
+
+::: tip Note
+Replace `<PROJECT>` with the path to your project file.
+:::
+
+And that's it! You have sucessfully installed LeoCorpLibrary for your project!
+
+## Using PackageReference with .NET Core
+To add a NuGet package in your project, you can follow these steps:
+1. Locate the `.csproj` file of your project.
+2. Open it in a text editor.
+3. Add an `ItemGroup` in the file (after the `PropertyGroup`) with the following synthax:
+~~~ xml
+<ItemGroup>
+    <PackageReference Include="LeoCorpLibrary" Version="3.9.0.2108" />
+</ItemGroup>
+~~~
+4. You can restore the project/solution by running the following commands:
+~~~ sh
+dotnet restore <PROJECT>
+~~~
+Or
+~~~ sh
+nuget restore <PROJECT>
+~~~
+
+::: tip Note
+Replace `<PROJECT>` with the path to your project file.
 :::
