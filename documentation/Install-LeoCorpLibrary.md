@@ -10,16 +10,16 @@ If you wanna add LeoCorpLibrary, follow this steps:
 
 1. In Solution Explorer, right click to the project where you wanna add LeoCorpLibrary.
 
-2. Click on the menu "Manage NuGet Packages"
+2. Click on the "Manage NuGet Packages" menu.
 
 ![Package Nuget](https://raw.githubusercontent.com/Leo-Corporation/LeoCorp-Docs/master/Documentation/Images/LeoCorpLibrary/Annotation%202020-05-08%20135109.png)
 
 
-3. A new tab has opened: make sure that your are in the "Browse" tab, and search "LeoCorpLibrary", and click on the first result
+3. A new tab has opened: make sure that your are in the "Browse" tab, and search "LeoCorpLibrary", and then, click on the first result.
 
 ![Rechercher le package NuGet](https://raw.githubusercontent.com/Leo-Corporation/LeoCorp-Docs/master/Documentation/Images/LeoCorpLibrary/Annotation%202020-05-08%20135455.png)
 
-4. On the right, a panel opened: it shows all the informations of the package. Click on the "Install" button.
+4. On the right, a panel opened: it shows all the informations about the package. Click on the "Install" button.
 
 ![Installer](https://raw.githubusercontent.com/Leo-Corporation/LeoCorp-Docs/master/Documentation/Images/LeoCorpLibrary/Annotation%202020-05-08%20135606.png)
 
@@ -35,6 +35,17 @@ To call methods and use other features of LeoCorpLibrary, please add the followi
 C#
 ~~~ cs
 using LeoCorpLibrary;
+~~~
+VB
+~~~ vb
+Imports LeoCorpLibrary
+~~~
+
+If you are using LeoCorpLibrary.Core, you need to adapt the code:
+
+C#
+~~~ cs
+using LeoCorpLibrary.Core;
 ~~~
 VB
 ~~~ vb
