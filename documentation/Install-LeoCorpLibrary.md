@@ -45,7 +45,7 @@ Imports LeoCorpLibrary
 In the most recent versions of Visual Studio, IntelliSense automatically import the reference to your code if you type the name of a class or of a namespace.
 :::
 
-Check out the [reference](/reference) to get started.
+Check out the [reference](/Reference) to get started.
 ## Using .NET CLI
 You can also install LeoCorpLibrary using the [.NET CLI](https://docs.microsoft.com/en-us/dotnet/core/tools/).
 Type in a command line window (cmd, bash...) the following command:
