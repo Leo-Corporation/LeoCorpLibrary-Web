@@ -3,7 +3,7 @@ footer: MIT Licensed | Copyright © 2021 Léo Corporation and contributors
 ---
 # NetworkConnection
 ## Introduction
-Do not forget to add tis line of code on top of your code file:
+Do not forget to add this line of code in your "using" region:
 
 C#
 ~~~ cs

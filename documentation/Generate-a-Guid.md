@@ -3,7 +3,7 @@ footer: MIT Licensed | Copyright © 2021 Léo Corporation and contributors
 ---
 # GuidGenerator
 ## Introduction
-To generate a password using LeoCorpLibrary, you must include this line of code on top of your code file:
+To generate a password using LeoCorpLibrary, you must include this line of code in your "using" region:
 
 C#
 ~~~ cs

@@ -3,7 +3,7 @@ footer: MIT Licensed | Copyright © 2021 Léo Corporation and contributors
 ---
 # Maths
 ## Introduction
-To uses these functions and features, do not forget to put this line of code on top of your code file:
+To uses these functions and features, do not forget to put this line of code in your "using" region:
 
 C#
 ~~~ cs

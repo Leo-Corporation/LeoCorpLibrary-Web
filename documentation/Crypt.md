@@ -3,7 +3,7 @@ footer: MIT Licensed | Copyright © 2021 Léo Corporation and contributors
 ---
 # Crypt
 ## Introduction
-To use the following methods, you need to use the version 2.6 or higher of LeoCorpLibrary, and put this on top of your code file:
+To use the following methods, you need to use the version 2.6 or higher of LeoCorpLibrary, and put this in your "using" region:
 
 C#
 ~~~ cs

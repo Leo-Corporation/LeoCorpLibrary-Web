@@ -5,7 +5,7 @@ footer: MIT Licensed | Copyright © 2021 Léo Corporation and contributors
 ## Introduction
 When you create a software, you usually want to update it to add new features or correct bugs. Thanks to LeoCorpLibrary, it's very simple to implement an update system.
 
-To use the methods and other features of LeoCorpLibrary, dont forget to add this line of code on top of your code file.
+To use the methods and other features of LeoCorpLibrary, dont forget to add this line of code in your "using" region.
 
 C#
 ~~~ cs

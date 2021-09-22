@@ -5,7 +5,7 @@ footer: MIT Licensed | Copyright © 2021 Léo Corporation and contributors
 ## Introduction
 This page explain a bit more about LeoCorpLibrary's custom exceptions.
 
-Do not forget to put this line of code on top of your code file:
+Do not forget to put this line of code in your "using" region:
 
 C#
 ~~~ cs

@@ -3,7 +3,7 @@ footer: MIT Licensed | Copyright © 2021 Léo Corporation and contributors
 ---
 # UI
 ## Introduction
-To use these methods and features, do not forget to put this line of code on top of your code file:
+To use these methods and features, do not forget to put this line of code in your "using" region:
 
 C#
 ~~~ cs
