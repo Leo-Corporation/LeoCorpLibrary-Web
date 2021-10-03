@@ -209,6 +209,52 @@ Dim degrees As Double =  Maths.DegreesToRadians(90)
 ~~~
 [Go to top](#maths)
 
+### e. IsInteger
+**This function is available in version 3.11 and higher.**
+
+<details>
+<summary>Compatibility</summary>
+
+| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-------: | :------------: | :-----------------: |
+| .NET 5 | ✔ | ✔ |
+| .NET Core 3.1 | ✔ | ✔ |
+| .NET Framework 4.7.2 | ✔ | ✔ |
+| .NET Framework 4.5 | ❌ | ✔ |
+
+</details>
+
+The `IsInteger()` method allows you to check if a `double` number is an integer (`int`) or not.
+
+It's in:
+~~~ cs
+LeoCorpLibrary.Maths.IsInteger()
+~~~
+This method has one argument:
+| Type | Argument | Description | 
+| :--: | :-------: | :---------: |
+| double | number | The number to test |
+
+Here's an example of usage:
+
+C#
+~~~ cs
+bool isInt = Maths.IsInteger(10.5);
+// isInt = false
+
+bool isInt2 = Maths.IsInteger(4);
+// IsInt2 = true
+~~~
+VB
+~~~ vb
+Dim isInt As Boolean = Maths.IsInteger(10.5);
+' isInt = false
+
+Dim isInt2 As Boolean = Maths.IsInteger(4);
+' IsInt2 = true
+~~~
+[Go to top](#maths)
+
 ## Circle
 ### a. GetArea
 **This function is available in version 1.3 and higher**
