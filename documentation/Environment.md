@@ -22,12 +22,12 @@ Imports LeoCorpLibrary
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -75,12 +75,12 @@ Dim fileNumberWithSubDirectories As Integer = Env.GetFilesCount("C:/Users", True
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -128,12 +128,12 @@ Dim directoryNumberWithSubDirectories As Integer = Env.GetDirectoriesCount("C:/U
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -166,12 +166,12 @@ Dim totalSpace As Double = Env.GetTotalDriveSpace("C:/", UnitType.Gigabyte)
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -204,12 +204,12 @@ Dim freeSpace As Double = Env.GetDriveAvailableFreeSpace("C:/", UnitType.Gigabyt
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -242,12 +242,12 @@ Dim occupiedSpace As Double = GetOccupiedDriveSpace("C:/", UnitType.Gigabyte)
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -282,12 +282,12 @@ Dim characters As Integer = Env.CountFileCharacyers(filePath)
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -328,12 +328,12 @@ End Sub
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -373,12 +373,12 @@ End If
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -446,12 +446,12 @@ Dim winver As WindowsVersion = Env.GetWindowsVersion() ' Obtenir la version
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -509,12 +509,12 @@ Env.ExecuteAsAdmin("C:/Windows/System32/cmd.exe")
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -566,12 +566,12 @@ Dim unixTime As Integer = Env.GetUnixTime(dateTime)
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -601,12 +601,12 @@ dim appDataPath As String = Env.GetAppDataPath()
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ❌ |
 | .NET 5 | ✔ | ❌ |
 | .NET Core 3.1 | ✔ | ❌ |
-| .NET Framework 4.7.2 | ✔ | ❌ |
-| .NET Framework 4.5 | ❌ | ❌ |
+| .NET Framework 4.5 | ✔ | ❌ |
 
 </details>
 
@@ -642,12 +642,13 @@ MessageBox.Show("Mouse position: X = " + p.X.ToString() + "; Y = " + p.Y.ToStrin
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ❌ |
 | .NET 5 | ✔ | ❌ |
 | .NET Core 3.1 | ✔ | ❌ |
-| .NET Framework 4.7.2 | ✔ | ❌ |
-| .NET Framework 4.5 | ❌ | ❌ |
+| .NET Framework 4.5 | ✔ | ❌ |
+
 
 </details>
 
@@ -679,12 +680,12 @@ MessageBox.Show("Mouse position: X = " + p.X.ToString() + "; Y = " + p.Y.ToStrin
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -720,12 +721,12 @@ Dim date As DateTime = Env.UnixTimeToDateTime(unixTime) ' 12/03/2021 @ 09:40:07
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -765,12 +766,13 @@ End If
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ❌ |
 | .NET 5 | ✔ | ❌ |
 | .NET Core 3.1 | ✔ | ❌ |
-| .NET Framework 4.7.2 | ✔ | ❌ |
-| .NET Framework 4.5 | ❌ | ❌ |
+| .NET Framework 4.5 | ✔ | ❌ |
+
 
 </details>
 
@@ -819,12 +821,12 @@ Env.LaunchUWPApp("Microsoft.MinecraftUWP_8wekyb3d8bbwe", "App") ' Launch
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -853,12 +855,12 @@ Dim sysDrive As DriveInfo = Env.SystemDrive ' Get system drive
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -886,12 +888,13 @@ Dim appDataPath As String = Env.AppDataPath ' Get %APPDATA%
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ❌ |
 | .NET Framework 4.5 | ❌ | ❌ |
+
 
 </details>
 
@@ -923,12 +926,12 @@ Console.WriteLine("The current OS is" + Env.CurrentOperatingSystem.ToString())
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 

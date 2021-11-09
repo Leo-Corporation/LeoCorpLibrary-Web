@@ -21,12 +21,12 @@ Imports LeoCorpLibrary
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -66,12 +66,12 @@ Dim encrypted As String = LeoCorpLibrary.Crypt.Encrypt(s, "ABC123")
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -111,12 +111,12 @@ Dim decrypted As String = LeoCorpLibrary.Crypt.Decrypt(encrypted, "ABC123")
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -163,12 +163,12 @@ Console.WriteLine($"Raw: " + str + "\nEncrypted: " + Crypt.ConvertBytesToString(
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -217,12 +217,12 @@ Console.WriteLine($"Raw: " + str + "\nEncrypted: " + Crypt.ConvertBytesToString(
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -262,12 +262,12 @@ Console.WriteLine("Raw: " + str + "\nEncrypted: " + encrypt)
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 

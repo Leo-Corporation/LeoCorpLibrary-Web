@@ -20,12 +20,12 @@ Imports LeoCorpLibrary
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -61,12 +61,12 @@ Dim km As Double = UnitsConversions.MilesToKm(10)
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -102,12 +102,12 @@ Dim miles As Double = UnitsConversions.KmToMiles(10)
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -143,12 +143,12 @@ Dim f As Double = UnitsConversions.CelsiusToFahrenheit(25)
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -184,12 +184,12 @@ Dim c As Double = UnitsConversions.FahrenheitToCelsius(68)
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -225,12 +225,12 @@ Dim l As Double = UnitsConversions.M3ToLitre(10)
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -267,12 +267,12 @@ Dim m3 As Double = UnitsConversions.LitreToM3(2500)
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -307,12 +307,12 @@ Dim meters As Double = UnitsConversions.FeetToMeters(5)
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -347,12 +347,12 @@ Dim feet As Double = UnitsConversions.MetersToFeet(10)
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -387,12 +387,12 @@ Dim pounds As Double = UnitsConversions.PoundsToKilograms(20)
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 

@@ -23,12 +23,12 @@ In this section, you will find all exceptions thrown when a problem occurs
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -55,12 +55,12 @@ Throw New RGBInvalidValueException("Message here")
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -88,12 +88,12 @@ Throw New HEXInvalidValueException("Message here")
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 

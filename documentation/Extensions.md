@@ -23,12 +23,12 @@ Import LeoCorpLibrary.Extensions
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -79,12 +79,12 @@ Dim numberOfWords As Integer = "Hello, this is a test sentence!".CountWords(word
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -119,12 +119,12 @@ Dim encrypted As String = LeoCorpLibrary.Crypt.Encrypt(s, "ABC123")
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -159,12 +159,12 @@ Dim decrypted As String = LeoCorpLibrary.Crypt.Decrypt(encrypted, "ABC123")
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -195,12 +195,12 @@ Console.WriteLine(helloMsg.UpperFirstLetter())
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -233,12 +233,12 @@ Dim s As String = "I want leocorplibrary in upper case".UpperLettersAt(7, 20)
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -302,12 +302,12 @@ a.IsEndingWithSamePunctuation(b, ".") ' Returns true
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -341,12 +341,12 @@ Dim lines As String() = text.SplitLines()
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -380,12 +380,12 @@ Dim r As Boolean = "aabb".HasRepeatedCharacters()
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -417,12 +417,12 @@ Dim odd As Boolean = 11.IsEven() ' Returns false
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -457,12 +457,12 @@ Dim result As Double = a.ToDouble() / b.ToDouble()
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -502,12 +502,12 @@ Dim byteVar As Double = kiloByte.ConvertSizeUnitToByte(UnitType.Kilobyte)
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -547,12 +547,12 @@ Dim kiloByte As Double = megaByte.ConvertSizeUnitToKilobyte(UnitType.Megabyte)
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -592,12 +592,12 @@ Dim megaByte As Double = gigaByte.ConvertSizeUnitToMegabyte(UnitType.Gigabyte)
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -637,12 +637,12 @@ Dim gigaByte As Double = megaByte.ConvertSizeUnitToGigabyte(UnitType.Megabyte)
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -683,12 +683,12 @@ Dim teraByte As Double = gigaByte.ConvertSizeUnitToTerabyte(UnitType.Gigabyte)
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -730,12 +730,12 @@ Dim petaByte As Double = teraByte.ConvertSizeUnitToPetabyte(UnitType.Terabyte)
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -791,12 +791,12 @@ Dim appendNumbers As Integer() = numbers.Append(5, 6)
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -853,12 +853,12 @@ Dim remove As Integer() = numbers.RemoveItem(5, 3)
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 

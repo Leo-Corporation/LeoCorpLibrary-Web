@@ -39,12 +39,13 @@ You can save the file in any formats, even custom ones: The system doesn't care.
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ❌ |
 | .NET 5 | ✔ | ❌ |
 | .NET Core 3.1 | ✔ | ❌ |
-| .NET Framework 4.7.2 | ✔ | ❌ |
-| .NET Framework 4.5 | ❌ | ❌ |
+| .NET Framework 4.5 | ✔ | ❌ |
+
 
 </details>
 
@@ -101,12 +102,12 @@ Save.ListViewContentCustom(ListVew1, "C:/content.txt", "/*E*/", "/*C*/")
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ❌ |
 | .NET 5 | ✔ | ❌ |
 | .NET Core 3.1 | ✔ | ❌ |
-| .NET Framework 4.7.2 | ✔ | ❌ |
-| .NET Framework 4.5 | ❌ | ❌ |
+| .NET Framework 4.5 | ✔ | ❌ |
 
 </details>
 
@@ -168,12 +169,13 @@ Expected Output:
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ❌ |
 | .NET 5 | ✔ | ❌ |
 | .NET Core 3.1 | ✔ | ❌ |
-| .NET Framework 4.7.2 | ❌ | ❌ |
 | .NET Framework 4.5 | ❌ | ❌ |
+
 
 </details>
 

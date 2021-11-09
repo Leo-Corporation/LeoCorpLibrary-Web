@@ -20,12 +20,12 @@ Imports LeoCorpLibrary.UI
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -89,12 +89,12 @@ WinFormsHelpers.CenterControlOnForm(label, this, VerticalAlignement.Vertical) ' 
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -130,12 +130,12 @@ WinFormsHelpers.CenterFormOnScreen(Me) ' Center the form
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ❌ |
 | .NET 5 | ✔ | ❌ |
 | .NET Core 3.1 | ✔ | ❌ |
-| .NET Framework 4.7.2 | ✔ | ❌ |
-| .NET Framework 4.5 | ❌ | ❌ |
+| .NET Framework 4.5 | ✔ | ❌ |
 
 </details>
 
@@ -170,12 +170,12 @@ ScreenHelpers.GetScreenDPIFromWinForm(Me) ' Get the screen DPI
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ❌ |
 | .NET 5 | ✔ | ❌ |
 | .NET Core 3.1 | ✔ | ❌ |
-| .NET Framework 4.7.2 | ✔ | ❌ |
-| .NET Framework 4.5 | ❌ | ❌ |
+| .NET Framework 4.5 | ✔ | ❌ |
 
 </details>
 
@@ -210,12 +210,13 @@ ScreenHelpers.GetScreenDPIFromWPFWindow(Me) ' Get the screen DPI
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ❌ |
 | .NET 5 | ✔ | ❌ |
 | .NET Core 3.1 | ✔ | ❌ |
-| .NET Framework 4.7.2 | ✔ | ❌ |
-| .NET Framework 4.5 | ❌ | ❌ |
+| .NET Framework 4.5 | ✔ | ❌ |
+
 
 </details>
 
@@ -250,12 +251,13 @@ ScreenHelpers.GetScreenScalingFromWinForm(Me) ' Get the screen scale
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ❌ |
 | .NET 5 | ✔ | ❌ |
 | .NET Core 3.1 | ✔ | ❌ |
-| .NET Framework 4.7.2 | ✔ | ❌ |
-| .NET Framework 4.5 | ❌ | ❌ |
+| .NET Framework 4.5 | ✔ | ❌ |
+
 
 </details>
 

@@ -23,12 +23,12 @@ Imports LeoCorpLibrary
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
 | .NET 5 | ✔ | ✔ |
 | .NET Core 3.1 | ✔ | ✔ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
@@ -79,10 +79,10 @@ End If
 
 | Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
 | :-------: | :------------: | :-----------------: |
+| .NET 6 | ✔ | ❌ |
 | .NET 5 | ✔ | ❌ |
 | .NET Core 3.1 | ✔ | ❌ |
-| .NET Framework 4.7.2 | ❌ | ❌ |
-| .NET Framework 4.5 | ❌ | ❌ |
+| .NET Framework 4.5 | ✔ | ❌ |
 
 </details>
 
@@ -127,10 +127,10 @@ LeoCorpLibrary.Update.Check("1.0.0.0", LastVersion, new MAJ_AV, new MAJ_UN)
 
 | Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
 | :-------: | :------------: | :-----------------: |
+| .NET 6 | ✔ | ❌ |
 | .NET 5 | ✔ | ❌ |
 | .NET Core 3.1 | ✔ | ❌ |
-| .NET Framework 4.7.2 | ❌ | ❌ |
-| .NET Framework 4.5 | ❌ | ❌ |
+| .NET Framework 4.5 | ✔ | ❌ |
 
 </details>
 
@@ -172,14 +172,18 @@ LeoCorpLibrary.Update.Check("1.0.0.0", LastVersion, new MAJ_AV, new MAJ_UN)
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
-| .NET 5 | ✔ | ⚠ |
-| .NET Core 3.1 | ✔ | ⚠ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
+| .NET 5 | ✔ | ✔ |
+| .NET Core 3.1 | ✔ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
+
+::: danger Obsolete
+This method is obsolete, please use [GetLastVersionAsync](#e-getlastversionasync)
+:::
 
 The ``GetLastVersion()`` method download a ``string`` from a specfic webpage where a ``.txt`` file that contains the last version. Returns a ``string``.
 
@@ -215,10 +219,10 @@ Dim LastVersion = LeoCorpLibrary.Update.GetLastVersion("https://dl.dropboxuserco
 
 | Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
 | :-------: | :------------: | :-----------------: |
+| .NET 6 | ✔ | ❌ |
 | .NET 5 | ✔ | ❌ |
 | .NET Core 3.1 | ✔ | ❌ |
-| .NET Framework 4.7.2 | ❌ | ❌ |
-| .NET Framework 4.5 | ❌ | ❌ |
+| .NET Framework 4.5 | ✔ | ❌ |
 
 </details>
 
@@ -266,12 +270,12 @@ LeoCorpLibrary.Update.Install("/Programme.exe", link, True)
 <details>
 <summary>Compatibility</summary>
 
-| Framework | LeoCorpLibrary | LeoCorpLibrary.Core |
-| :-------: | :------------: | :-----------------: |
-| .NET 5 | ✔ | ⚠ |
-| .NET Core 3.1 | ✔ | ⚠ |
-| .NET Framework 4.7.2 | ✔ | ✔ |
-| .NET Framework 4.5 | ❌ | ✔ |
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
+| .NET 5 | ✔ | ✔ |
+| .NET Core 3.1 | ✔ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
 
