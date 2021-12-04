@@ -8,7 +8,6 @@ LeoCorpLibrary's reference.
 ### Functions
 * [ColorsConverter](/Colors-converter)
 * [Check updates](/Check-for-updates)
-* [Check an internet connection](/Verify-an-internet-connection)
 * [Crypt](/Crypt)
 * [Environment](/Environment)
 * [Extensions](/Extensions)
@@ -18,6 +17,7 @@ LeoCorpLibrary's reference.
 * [Load a file](/Load-a-file)
 * [Logger](/Logger)
 * [Mathematics functions](/Mathematics-functions)
+* [NetworkConnection](/Verify-an-internet-connection)
 * [Save a file](/Save-in-a-file)
 * [Units Conversions](/Units-conversions)
 * [User Interface](/User-Interface)

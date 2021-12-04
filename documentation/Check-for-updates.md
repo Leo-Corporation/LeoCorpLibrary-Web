@@ -32,7 +32,7 @@ Imports LeoCorpLibrary
 
 </details>
 
-The `IsAvailable()` method allows you to check if a updates are avaialable for your software. Returns a ``bool`` value.
+The `IsAvailable()` method allows you to check if a updates are available for your software. Returns a ``bool`` value.
 ~~~ cs
 LeoCorpLibrary.Update.IsAvailable()
 ~~~

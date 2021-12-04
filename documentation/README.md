@@ -11,7 +11,7 @@ features:
 - title: Cross-Platforms
   details: LeoCorpLibrary.Core can be used on any operating system supported by .NET. This means you can run the same code on Windows, Linux, and macOS.
 - title: .NET Powered
-  details: LeoCorpLibrary is available for .NET Framework 4.5+, .NET Core 3.1, and .NET 5.
+  details: LeoCorpLibrary is available for .NET Framework 4.5+, .NET Core 3.1, .NET 5 and .NET 6.
 footer: MIT Licensed | Copyright © 2021 Léo Corporation and contributors
 sidebar: auto
 ---
@@ -32,29 +32,28 @@ In this documentation, there is some symbols that migh be used to specify the co
 
 ## Documentation
 ### Get Started
-- [1. Add the library to a project](install-LeoCorpLibrary.html#_1-add-the-library-to-a-project)
-- [2. Start coding](install-LeoCorpLibrary.html#_2-start-coding)
+- [1. Add the library to a project](/install-LeoCorpLibrary#1-add-the-library-to-a-project)
+- [2. Start coding](/install-LeoCorpLibrary#2-start-coding)
 
 ### Functions
-* [ColorsConverter](Colors-converter)
-* [Check updates](Check-for-updates)
-* [Check an internet connection](Verify-an-internet-connection)
-* [Crypt](Crypt)
-* [Environment](Environment)
-* [Extensions](Extensions)
-* [Generate a Guid](Generate-a-Guid)
-* [Generate a password](Generate-a-password)
-* [Helpers](Helpers)
-* [Load a file](Load-a-file)
-* [Logger](Logger)
-* [Mathematics functions](Mathematics-functions)
-* [Save a file](Save-in-a-file)
-* [Units Conversions](Units-conversions)
-* [User Interface](User-Interface)
+* [ColorsConverter](/Colors-converter)
+* [Check updates](/Check-for-updates)
+* [Crypt](/Crypt)
+* [Environment](/Environment)
+* [Extensions](/Extensions)
+* [Generate a Guid](/Generate-a-Guid)
+* [Generate a password](/Generate-a-password)
+* [Helpers](/Helpers)
+* [Load a file](/Load-a-file)
+* [Logger](/Logger)
+* [Mathematics functions](/Mathematics-functions)
+* [NetworkConnection](/Verify-an-internet-connection)
+* [Save a file](/Save-in-a-file)
+* [Units Conversions](/Units-conversions)
+* [User Interface](/User-Interface)
 
 
-### Miscellaneous
-* [Home]()
-* [Changes releated to version 1.4](Changes-related-to-version-1.4)
-* [Compatibility](Compatibility)
-* [Exceptions](Exceptions)
+## Miscellaneous
+* [Changes releated to version 1.4](/Changes-related-to-version-1.4)
+* [Compatibility](/Compatibility)
+* [Exceptions](/Exceptions)

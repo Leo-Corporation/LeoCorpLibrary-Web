@@ -389,7 +389,7 @@ It's in:
 LeoCorpLibrary.Env.GetWindowsVersion()
 ~~~
 ::: danger Warning
-This method works only if you specify in the Application Manifest, in the compatibilty section, that Windows 8, 8.1 and 10 are compatible with the software. Else, it will return ``Windows8``.
+This method works only if you specify in the Application Manifest, in the compatibilty section, that Windows 8, 8.1 and 10/11 are compatible with the software. Else, it will return ``Windows8``.
 :::
 
 ~~~ xml
@@ -428,6 +428,7 @@ WindowsVersion.Windows7
 WindowsVersion.Windows8
 WindowsVersion.Windows81
 WindowsVersion.Windows10
+WindowsVersion.Windows11 (available in version 4.1+)
 /*
 ~~~
 VB
@@ -438,6 +439,7 @@ Dim winver As WindowsVersion = Env.GetWindowsVersion() ' Obtenir la version
 ' WindowsVersion.Windows8
 ' WindowsVersion.Windows81
 ' WindowsVersion.Windows10
+' WindowsVersion.Windows11 (available in version 4.1+)
 ~~~
 [Go to top](#env)
 ### b. ExecuteAsAdmin
@@ -832,7 +834,10 @@ Env.LaunchUWPApp("Microsoft.MinecraftUWP_8wekyb3d8bbwe", "App") ' Launch
 
 The `SystemDrive` property allows you to get the `DriveInfo` of the system drive. 
 
-**Warning: This property only works on Windows!**
+::: warning
+This property only works on Windows!
+:::
+
 
 It's in:
 ~~~ cs
