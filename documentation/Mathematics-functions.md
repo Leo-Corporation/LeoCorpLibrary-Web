@@ -255,6 +255,104 @@ Dim isInt2 As Boolean = Maths.IsInteger(4);
 ~~~
 [Go to top](#maths)
 
+### f. GetOpposite
+**This function is available in version 4.2 and higher.**
+
+<details>
+<summary>Compatibility</summary>
+
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
+| .NET 5 | ✔ | ✔ |
+| .NET Core 3.1 | ✔ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
+
+</details>
+
+The `GetOpposite()` method allows you to get the opposite of a specified number. It returns a `double` value.
+
+It's in:
+~~~ cs
+LeoCorpLibrary.Maths.GetOpposite()
+~~~
+
+::: tip Note
+You can use negative numbers.
+:::
+
+This method has one argument:
+| Type | Argument | Description | 
+| :--: | :-------: | :---------: |
+| double | n | The number to get the opposite |
+
+Here's an example of usage:
+
+C#
+~~~ cs
+double x = 54;
+double oppositeOfX = Maths.GetOpposite(x);
+
+// oppositeOfX = -54
+~~~
+VB
+~~~ VB
+Dim x As Double = 54
+Dim oppositeOfX As Double = Maths.GetOpposite(x)
+
+' oppositeOfX = -54
+~~~
+[Go to top](#maths)
+
+### g. Factorial
+**This function is available in version 4.2 and higher.**
+
+<details>
+<summary>Compatibility</summary>
+
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
+| .NET 5 | ✔ | ✔ |
+| .NET Core 3.1 | ✔ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
+
+</details>
+
+The `Factorial()` method allows you to get the factorial of a specified number. It returns an `int` value.
+
+It's in:
+~~~ cs
+LeoCorpLibrary.Maths.Factorial()
+~~~
+
+::: warning Remark
+If the factorial of the specified number is greater than `int.MaxValue`, the method will either return 0, or a wrong result.
+:::
+
+This method has one argument:
+| Type | Argument | Description | 
+| :--: | :-------: | :---------: |
+| double | n | The number to get the factorial |
+
+Here's an example of usage:
+
+C#
+~~~ cs
+int x = 5;
+int f = Maths.Factorial(x);
+
+// f = 520
+~~~
+VB
+~~~ vb
+Dim x As Integer = 5
+Dim f As Integer = Maths.Factorial(x)
+
+' f = 520
+~~~
+[Go to top](#maths)
+
 ## Circle
 ### a. GetArea
 **This function is available in version 1.3 and higher**

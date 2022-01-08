@@ -964,3 +964,89 @@ While True
 End While
 ~~~
 [Go to top](#env)
+
+### c. SystemTheme
+**This property is available in version 4.2 and higher.**
+
+<details>
+<summary>Compatibility</summary>
+
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ❌ |
+| .NET 5 | ✔ | ❌ |
+| .NET Core 3.1 | ✔ | ❌ |
+| .NET Framework 4.5 | ✔ | ❌ |
+
+
+</details>
+
+The `SystemTheme` property allows you to get the current `SystemThemes` of the operating system. Works only on Windows. It returns a `SystemThemes` enum.
+
+It's in:
+~~~ cs
+LeoCorpLibrary.Env.SystemTheme
+~~~
+
+Here's an example of usage:
+
+C#
+~~~ cs
+// Running on Windows 11, with dark theme enabled.
+
+Console.WriteLine(Env.SystemTheme.ToString());
+// Output:
+// Dark
+~~~
+VB
+~~~ vb
+' Running on Windows 11, with dark theme enabled.
+
+Console.WriteLine(Env.SystemTheme.ToString())
+' Output:
+' Dark
+~~~
+[Go to top](#env)
+
+### d. IsDarkThemeAvailable
+**This property is available in version 4.2 and higher.**
+
+<details>
+<summary>Compatibility</summary>
+
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
+| .NET 5 | ✔ | ✔ |
+| .NET Core 3.1 | ✔ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
+
+
+</details>
+
+The `IsDarkThemeAvailable` property allows you to get if dark theme is supported on the current operating system. It returns a `bool` value.
+
+It's in:
+~~~ cs
+LeoCorpLibrary.Env.IsDarkThemeAvailable
+~~~
+
+Here's an example of usage:
+
+C#
+~~~ cs
+// Running on Windows 7
+Console.WriteLine(Env.IsDarkThemeAvailable.ToString());
+
+// Output:
+// False
+~~~
+VB
+~~~ vb
+' Running on Windows 7
+Console.WriteLine(Env.IsDarkThemeAvailable.ToString())
+
+' Output:
+' False
+~~~
+[Go to top](#env)
