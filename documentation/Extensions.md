@@ -1,5 +1,5 @@
 ---
-footer: MIT Licensed | Copyright © 2021 Léo Corporation and contributors
+footer: MIT Licensed | Copyright © 2022 Léo Corporation and contributors
 ---
 # Extensions
 ## Introduction
@@ -723,6 +723,49 @@ Dim petaByte As Double = teraByte.ConvertSizeUnitToPetabyte(UnitType.Terabyte)
 
 [Go to top](#extensions)
 
+### i. GetDivisors
+**This function is available in version 4.3 and higher.**
+
+<details>
+<summary>Compatibility</summary>
+
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
+| .NET 5 | ✔ | ✔ |
+| .NET Core 3.1 | ✔ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
+
+</details>
+
+The `GetDivisors()` method allows you to get all the divisors of a specific `int` number. It returns a `int[]` array.
+
+It's in:
+~~~ cs
+LeoCorpLibrary.Extensions.IntExtensions.GetDivisors()
+~~~
+
+It has no arguments.
+
+Here's an example of usage:
+
+C#
+~~~ cs
+int n = 10;
+int[] ds = n.GetDivisors();
+
+// ds = [1, 2, 5, 10]
+~~~
+VB
+~~~ vb
+Dim n As Integer = 10;
+Dim ds As Integer() = n.GetDivisors()
+
+' ds = [1, 2, 5, 10]
+~~~
+
+[Go to top](#extensions)
+
 ## Arrays Extensions
 ### a. Append
 **This function is available in version 2.5 and higher.**
@@ -891,5 +934,185 @@ Dim unSplit As String = array.UnSplit(";")
 
 ' Output:
 ' a;b;c;d
+~~~
+[Go to top](#extensions)
+## Double Extensions
+### a. ToSeconds
+**This function is available in version 4.3 and higher.**
+
+<details>
+<summary>Compatibility</summary>
+
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
+| .NET 5 | ✔ | ✔ |
+| .NET Core 3.1 | ✔ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
+
+</details>
+
+The `ToSeconds` methods allows you to convert any `double` number that represent a [time unit](/Enums.html#b-timeunits) (hours, days...) to seconds.
+
+It's in:
+~~~ cs
+LeoCorpLibrary.Extensions.DoubleExtensions.ToSeconds()
+~~~
+
+It has one argument:
+| Value | Argument | Description |
+| :----: | :-------: | :---------: |
+| [``TimeUnits``](/Enums.html#b-timeunits) | timeUnits | The time unit (seconds, hours...) of the number to convert. |
+
+Here's an example of usage:
+
+C#
+~~~ cs
+double t = 10; // Minutes
+double tSeconds = t.ToSeconds(TimeUnits.Minutes);
+
+// tSeconds = 600
+~~~
+VB
+~~~ vb
+Dim t As Double = 10 ' Minutes
+Dim tSeconds As Double = t.ToSeconds(TimeUnits.Minutes)
+
+' tSeconds = 600
+~~~
+[Go to top](#extensions)
+
+### b. ToMinutes
+**This function is available in version 4.3 and higher.**
+
+<details>
+<summary>Compatibility</summary>
+
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
+| .NET 5 | ✔ | ✔ |
+| .NET Core 3.1 | ✔ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
+
+</details>
+
+The `ToMinutes` methods allows you to convert any `double` number that represent a [time unit](/Enums.html#b-timeunits) (hours, days...) to minutes.
+
+It's in:
+~~~ cs
+LeoCorpLibrary.Extensions.DoubleExtensions.ToMinutes()
+~~~
+
+It has one argument:
+| Value | Argument | Description |
+| :----: | :-------: | :---------: |
+| [``TimeUnits``](/Enums.html#b-timeunits) | timeUnits | The time unit (seconds, hours...) of the number to convert. |
+
+Here's an example of usage:
+
+C#
+~~~ cs
+double t = 1; // Hours
+double tMinutes = t.ToMinutes(TimeUnits.Minutes);
+
+// tMinutes = 60
+~~~
+VB
+~~~ vb
+Dim t As Double = 1 ' Hours
+Dim tMinutes As Double = t.ToMinutes(TimeUnits.Minutes)
+
+' tMinutes = 60
+~~~
+[Go to top](#extensions)
+
+### c. ToHours
+**This function is available in version 4.3 and higher.**
+
+<details>
+<summary>Compatibility</summary>
+
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
+| .NET 5 | ✔ | ✔ |
+| .NET Core 3.1 | ✔ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
+
+</details>
+
+The `ToHours` methods allows you to convert any `double` number that represent a [time unit](/Enums.html#b-timeunits) (hours, days...) to hours.
+
+It's in:
+~~~ cs
+LeoCorpLibrary.Extensions.DoubleExtensions.ToHours()
+~~~
+
+It has one argument:
+| Value | Argument | Description |
+| :----: | :-------: | :---------: |
+| [``TimeUnits``](/Enums.html#b-timeunits) | timeUnits | The time unit (seconds, hours...) of the number to convert. |
+
+Here's an example of usage:
+
+C#
+~~~ cs
+double t = 120; // Minutes
+double tHours = t.ToHours(TimeUnits.Minutes);
+
+// tHours = 2
+~~~
+VB
+~~~ vb
+Dim t As Double = 120 ' Minutes
+Dim tHours As Double = t.ToHours(TimeUnits.Minutes)
+
+' tHours = 2
+~~~
+[Go to top](#extensions)
+
+### d. ToDays
+**This function is available in version 4.3 and higher.**
+
+<details>
+<summary>Compatibility</summary>
+
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
+| .NET 5 | ✔ | ✔ |
+| .NET Core 3.1 | ✔ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
+
+</details>
+
+The `ToDays` methods allows you to convert any `double` number that represent a [time unit](/Enums.html#b-timeunits) (hours, days...) to days.
+
+It's in:
+~~~ cs
+LeoCorpLibrary.Extensions.DoubleExtensions.ToDays()
+~~~
+
+It has one argument:
+| Value | Argument | Description |
+| :----: | :-------: | :---------: |
+| [``TimeUnits``](/Enums.html#b-timeunits) | timeUnits | The time unit (seconds, hours...) of the number to convert. |
+
+Here's an example of usage:
+
+C#
+~~~ cs
+double t = 72; // Hours
+double tDays = t.ToDays(TimeUnits.Hours);
+
+// tDays = 3
+~~~
+VB
+~~~ vb
+Dim t As Double = 72 ' Hours
+Dim tDays As Double = t.ToDays(TimeUnits.Hours)
+
+' tDays = 3
 ~~~
 [Go to top](#extensions)
