@@ -12,7 +12,7 @@ features:
   details: LeoCorpLibrary.Core can be used on any operating system supported by .NET. This means you can run the same code on Windows, Linux, and macOS.
 - title: .NET Powered
   details: LeoCorpLibrary is available for .NET Framework 4.5+, .NET Core 3.1, .NET 5 and .NET 6.
-footer: MIT Licensed | Copyright © 2021 Léo Corporation and contributors
+footer: MIT Licensed | Copyright © 2022 Léo Corporation and contributors
 sidebar: auto
 ---
 # Welcome to LeoCorpLibrary

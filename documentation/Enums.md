@@ -1,5 +1,5 @@
 ---
-footer: MIT Licensed | Copyright © 2021 Léo Corporation and contributors
+footer: MIT Licensed | Copyright © 2022 Léo Corporation and contributors
 ---
 # Enums
 ## Introduction
