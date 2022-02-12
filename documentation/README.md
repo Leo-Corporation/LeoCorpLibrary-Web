@@ -56,4 +56,5 @@ In this documentation, there is some symbols that migh be used to specify the co
 ## Miscellaneous
 * [Changes releated to version 1.4](/Changes-related-to-version-1.4)
 * [Compatibility](/Compatibility)
+* [Enums](/Enums)
 * [Exceptions](/Exceptions)

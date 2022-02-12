@@ -26,4 +26,5 @@ LeoCorpLibrary's reference.
 ## Miscellaneous
 * [Changes releated to version 1.4](/Changes-related-to-version-1.4)
 * [Compatibility](/Compatibility)
+* [Enums](/Enums)
 * [Exceptions](/Exceptions)
