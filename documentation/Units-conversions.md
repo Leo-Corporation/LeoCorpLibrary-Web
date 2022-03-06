@@ -14,6 +14,7 @@ VB
 Imports LeoCorpLibrary
 ~~~
 ## Methods
+## Distances
 ### a. MilesToKm
 **This function is available in version 3.9 and higher.**
 
@@ -96,7 +97,8 @@ Dim miles As Double = UnitsConversions.KmToMiles(10)
 ' 6.2137119223733395 miles
 ~~~
 [Go to top](#unitsconversions)
-### c. CelsiusToFahrenheit
+## Temperatures
+### a. CelsiusToFahrenheit
 **This function is available in version 3.9 and higher.**
 
 <details>
@@ -137,7 +139,7 @@ Dim f As Double = UnitsConversions.CelsiusToFahrenheit(25)
 ' 77°F
 ~~~
 [Go to top](#unitsconversions)
-### d. FahrenheitToCelsius
+### b. FahrenheitToCelsius
 **This function is available in version 3.9 and higher.**
 
 <details>
@@ -178,7 +180,8 @@ Dim c As Double = UnitsConversions.FahrenheitToCelsius(68)
 ' 20°C
 ~~~
 [Go to top](#unitsconversions)
-### e. M3ToLitre
+## Volumes
+### a. M3ToLitre
 **This function is available in version 3.9 and higher.**
 
 <details>
@@ -219,7 +222,7 @@ Dim l As Double = UnitsConversions.M3ToLitre(10)
 ' 10000L
 ~~~
 [Go to top](#unitsconversions)
-### f. LitreToM3
+### b. LitreToM3
 **This function is available in version 3.9 and higher.**
 
 <details>
@@ -261,7 +264,8 @@ Dim m3 As Double = UnitsConversions.LitreToM3(2500)
 ~~~
 [Go to top](#unitsconversions)
 
-### g. FeetToMeters
+## Distance
+### a. FeetToMeters
 **This function is available in version 3.10 and higher**
 
 <details>
@@ -301,7 +305,7 @@ Dim meters As Double = UnitsConversions.FeetToMeters(5)
 ~~~
 [Go to top](#unitsconversions)
 
-### h. MetersToFeet
+### b. MetersToFeet
 **This function is available in version 3.10 and higher**
 
 <details>
@@ -341,7 +345,8 @@ Dim feet As Double = UnitsConversions.MetersToFeet(10)
 ~~~
 [Go to top](#unitsconversions)
 
-### i. PoundsToKilograms
+## Masses
+### a. PoundsToKilograms
 **This function is available in version 3.10 and higher**
 
 <details>
@@ -381,7 +386,7 @@ Dim pounds As Double = UnitsConversions.PoundsToKilograms(20)
 ~~~
 [Go to top](#unitsconversions)
 
-### j. KilogramsToPounds
+### b. KilogramsToPounds
 **This function is available in version 3.10 and higher**
 
 <details>
@@ -419,4 +424,468 @@ VB
 Dim kg As Double = UnitsConversions.KilogramsToPounds(14.5)
 ' Expected result: 31.96702799
 ~~~
+[Go to top](#unitsconversions)
+
+## Time
+### a. TimeUnitToSeconds
+**This function is available in version 4.3 and higher.**
+
+<details>
+<summary>Compatibility</summary>
+
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
+| .NET 5 | ✔ | ✔ |
+| .NET Core 3.1 | ✔ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
+
+</details>
+
+The `TimeUnitToSeconds` methods allows you to convert any `double` number that represent a [time unit](/Enums.html#b-timeunits) (hours, days...) to seconds.
+
+It's in:
+~~~ cs
+LeoCorpLibrary.UnitsConversionsTimeUnitToSeconds()
+~~~
+
+It has one argument:
+| Value | Argument | Description |
+| :----: | :-------: | :---------: |
+| double | d | The time to convert |
+| [``TimeUnits``](/Enums.html#b-timeunits) | timeUnits | The time unit (seconds, hours...) of the number to convert. |
+
+Here's an example of usage:
+
+C#
+~~~ cs
+double t = 10; // Minutes
+double tSeconds = UnitsConversions.TimeUnitToSeconds(t, TimeUnits.Minutes);
+
+// tSeconds = 600
+~~~
+VB
+~~~ vb
+Dim t As Double = 10 ' Minutes
+Dim tSeconds As Double = UnitsConversions.TimeUnitToSeconds(t, TimeUnits.Minutes)
+
+' tSeconds = 600
+~~~
+[Go to top](#unitsconversions)
+
+### b. TimeUnitToMinutes
+**This function is available in version 4.3 and higher.**
+
+<details>
+<summary>Compatibility</summary>
+
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
+| .NET 5 | ✔ | ✔ |
+| .NET Core 3.1 | ✔ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
+
+</details>
+
+The `TimeUnitToMinutes` methods allows you to convert any `double` number that represent a [time unit](/Enums.html#b-timeunits) (hours, days...) to minutes.
+
+It's in:
+~~~ cs
+LeoCorpLibrary.UnitsConversionsTimeUnitToMinutes()
+~~~
+
+It has one argument:
+| Value | Argument | Description |
+| :----: | :-------: | :---------: |
+| double | d | The time to convert |
+| [``TimeUnits``](/Enums.html#b-timeunits) | timeUnits | The time unit (seconds, hours...) of the number to convert. |
+
+Here's an example of usage:
+
+C#
+~~~ cs
+double t = 1; // Hours
+double tMinutes = UnitsConversions.TimeUnitToMinutes(t, TimeUnits.Minutes);
+
+// tMinutes = 60
+~~~
+VB
+~~~ vb
+Dim t As Double = 1 ' Hours
+Dim tMinutes As Double = UnitsConversions.TimeUnitToMinutes(t, TimeUnits.Minutes)
+
+' tMinutes = 60
+~~~
+[Go to top](#unitsconversions)
+
+### c. TimeUnitToHours
+**This function is available in version 4.3 and higher.**
+
+<details>
+<summary>Compatibility</summary>
+
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
+| .NET 5 | ✔ | ✔ |
+| .NET Core 3.1 | ✔ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
+
+</details>
+
+The `TimeUnitToHours` methods allows you to convert any `double` number that represent a [time unit](/Enums.html#b-timeunits) (hours, days...) to hours.
+
+It's in:
+~~~ cs
+LeoCorpLibrary.UnitsConversionsTimeUnitToHours()
+~~~
+
+It has one argument:
+| Value | Argument | Description |
+| :----: | :-------: | :---------: |
+| double | d | The time to convert |
+| [``TimeUnits``](/Enums.html#b-timeunits) | timeUnits | The time unit (seconds, hours...) of the number to convert. |
+
+Here's an example of usage:
+
+C#
+~~~ cs
+double t = 120; // Minutes
+double tHours = UnitsConversions.TimeUnitToHours(t, TimeUnits.Minutes);
+
+// tHours = 2
+~~~
+VB
+~~~ vb
+Dim t As Double = 120 ' Minutes
+Dim tHours As Double = UnitsConversions.TimeUnitToHours(t, TimeUnits.Minutes)
+
+' tHours = 2
+~~~
+[Go to top](#unitsconversions)
+
+### d. TimeUnitToDays
+**This function is available in version 4.3 and higher.**
+
+<details>
+<summary>Compatibility</summary>
+
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
+| .NET 5 | ✔ | ✔ |
+| .NET Core 3.1 | ✔ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
+
+</details>
+
+The `TimeUnitToDays` methods allows you to convert any `double` number that represent a [time unit](/Enums.html#b-timeunits) (hours, days...) to days.
+
+It's in:
+~~~ cs
+LeoCorpLibrary.UnitsConversionsTimeUnitToDays()
+~~~
+
+It has one argument:
+| Value | Argument | Description |
+| :----: | :-------: | :---------: |
+| double | d | The time to convert |
+| [``TimeUnits``](/Enums.html#b-timeunits) | timeUnits | The time unit (seconds, hours...) of the number to convert. |
+
+Here's an example of usage:
+
+C#
+~~~ cs
+double t = 72; // Hours
+double tDays = UnitsConversions.TimeUnitToDays(t, TimeUnits.Hours);
+
+// tDays = 3
+~~~
+VB
+~~~ vb
+Dim t As Double = 72 ' Hours
+Dim tDays As Double = UnitsConversions.TimeUnitToDays(t, TimeUnits.Hours)
+
+' tDays = 3
+~~~
+[Go to top](#unitsconversions)
+
+## Data and Storage
+### a. SizeUnitToByte
+**This function is available in version 3.6 and higher.**
+
+<details>
+<summary>Compatibility</summary>
+
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
+| .NET 5 | ✔ | ✔ |
+| .NET Core 3.1 | ✔ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
+
+</details>
+
+The `SizeUnitToByte()` method allows you to convert a size unit such as kilobyte, gigabyte to byte. It returns a `double` value.
+
+It's in:
+~~~ cs
+LeoCorpLibrary.Extensions.IntExtensions.SizeUnitToByte()
+~~~
+
+It has one argument:
+| Value | Argument | Description |
+| :----: | :-------: | :---------: |
+| int | i | The amount of storage to convert
+| UnitType | unitType | The source unit (kb, mb...) |
+
+Here's an example of usage:
+
+C#
+~~~ cs
+int kiloByte = 5000;
+double byteVar = kiloByte.SizeUnitToByte(kiloByte, UnitType.Kilobyte);
+
+// Expected value for byteVar: 5000000
+~~~
+VB
+~~~ vb
+Dim kiloByte As Integer = 5000
+Dim byteVar As Double = kiloByte.SizeUnitToByte(kiloByte, UnitType.Kilobyte)
+
+' Expected value for byteVar: 5000000
+~~~
+[Go to top](#unitsconversions)
+
+### b. SizeUnitToKilobyte
+**This function is available in version 3.6 and higher.**
+
+<details>
+<summary>Compatibility</summary>
+
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
+| .NET 5 | ✔ | ✔ |
+| .NET Core 3.1 | ✔ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
+
+</details>
+
+The `SizeUnitToKilobyte()` method allows you to convert a size unit such as kilobyte, gigabyte to kilobyte. It returns a `double` value.
+
+It's in:
+~~~ cs
+LeoCorpLibrary.Extensions.IntExtensions.SizeUnitToKilobyte()
+~~~
+
+It has one argument:
+| Value | Argument | Description |
+| :----: | :-------: | :---------: |
+| int | i | The amount of storage to convert
+| UnitType | unitType | The source unit (kb, mb...) |
+
+Here's an example of usage:
+
+C#
+~~~ cs
+int megaByte = 50;
+double kiloByte = megaByte.SizeUnitToKilobyte(megaByte, UnitType.Megabyte);
+
+// Expected value for kiloByte: 50000
+~~~
+VB
+~~~ vb
+Dim megaByte As Integer = 50
+Dim kiloByte As Double = megaByte.SizeUnitToKilobyte(megaByte, UnitType.Megabyte)
+
+' Expected value for kiloByte: 50000
+~~~
+[Go to top](#unitsconversions)
+
+### c. SizeUnitToMegabyte
+**This function is available in version 3.6 and higher.**
+
+<details>
+<summary>Compatibility</summary>
+
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
+| .NET 5 | ✔ | ✔ |
+| .NET Core 3.1 | ✔ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
+
+</details>
+
+The `SizeUnitToMegabyte()` method allows you to convert a size unit such as megabyte, gigabyte to megabyte. It returns a `double` value.
+
+It's in:
+~~~ cs
+LeoCorpLibrary.Extensions.IntExtensions.SizeUnitToMegabyte()
+~~~
+
+It has one argument:
+| Value | Argument | Description |
+| :----: | :-------: | :---------: |
+| int | i | The amount of storage to convert
+| UnitType | unitType | The source unit (kb, mb...) |
+
+Here's an example of usage:
+
+C#
+~~~ cs
+int gigaByte = 50;
+double megaByte = gigaByte.SizeUnitToMegabyte(gigaByte, UnitType.Gigabyte);
+
+// Expected value for megaByte: 50000
+~~~
+VB
+~~~ vb
+Dim gigaByte As Integer = 50
+Dim megaByte As Double = gigaByte.SizeUnitToMegabyte(gigaByte, UnitType.Gigabyte)
+
+' Expected value for megaByte: 50000
+~~~
+[Go to top](#unitsconversions)
+
+### d. SizeUnitToGigabyte
+**This function is available in version 3.6 and higher.**
+
+<details>
+<summary>Compatibility</summary>
+
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
+| .NET 5 | ✔ | ✔ |
+| .NET Core 3.1 | ✔ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
+
+</details>
+
+The `SizeUnitToGigabyte()` method allows you to convert a size unit such as megabyte, petabyte to gigabyte. It returns a `double` value.
+
+It's in:
+~~~ cs
+LeoCorpLibrary.Extensions.IntExtensions.SizeUnitToGigabyte()
+~~~
+
+It has one argument:
+| Value | Argument | Description |
+| :----: | :-------: | :---------: |
+| int | i | The amount of storage to convert
+| UnitType | unitType | The source unit (kb, mb...) |
+
+Here's an example of usage:
+
+C#
+~~~ cs
+int megaByte = 4400;
+double gigaByte = megaByte.SizeUnitToGigabyte(megaByte, UnitType.Megabyte);
+
+// Expected value for gigaByte: 4
+~~~
+VB
+~~~ vb
+Dim megaByte As Integer = 4400
+Dim gigaByte As Double = megaByte.SizeUnitToGigabyte(megaByte, UnitType.Megabyte)
+
+' Expected value for gigaByte: 4
+~~~
+[Go to top](#unitsconversions)
+
+### e. SizeUnitToTerabyte
+**This function is available in version 3.6 and higher.**
+
+<details>
+<summary>Compatibility</summary>
+
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
+| .NET 5 | ✔ | ✔ |
+| .NET Core 3.1 | ✔ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
+
+</details>
+
+The `SizeUnitToTerabyte()` method allows you to convert a size unit such as megabyte, petabyte to terabyte. It returns a `double` value.
+
+It's in:
+~~~ cs
+LeoCorpLibrary.Extensions.IntExtensions.SizeUnitToTerabyte()
+~~~
+
+It has one argument:
+| Value | Argument | Description |
+| :----: | :-------: | :---------: |
+| int | i | The amount of storage to convert
+| UnitType | unitType | The source unit (kb, mb...) |
+
+Here's an example of usage:
+
+C#
+~~~ cs
+int gigaByte = 2000;
+double teraByte = gigaByte.SizeUnitToTerabyte(gigaByte, UnitType.Gigabyte);
+
+// Expected value for teraByte: 2
+~~~
+VB
+~~~ vb
+Dim gigaByte As Integer = 2000
+Dim teraByte As Double = gigaByte.SizeUnitToTerabyte(gigaByte, UnitType.Gigabyte)
+
+' Expected value for teraByte: 2
+~~~
+
+[Go to top](#unitsconversions)
+
+### f. SizeUnitToPetabyte
+**This function is available in version 3.6 and higher.**
+
+<details>
+<summary>Compatibility</summary>
+
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
+| .NET 5 | ✔ | ✔ |
+| .NET Core 3.1 | ✔ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
+
+</details>
+
+The `SizeUnitToPetabyte()` method allows you to convert a size unit such as megabyte, terabyte to petabyte. It returns a `double` value.
+
+It's in:
+~~~ cs
+LeoCorpLibrary.Extensions.IntExtensions.SizeUnitToPetabyte()
+~~~
+
+It has one argument:
+| Value | Argument | Description |
+| :----: | :-------: | :---------: |
+| int | i | The amount of storage to convert
+| UnitType | unitType | The source unit (kb, mb...) |
+
+Here's an example of usage:
+
+C#
+~~~ cs
+int teraByte = 6000;
+double petaByte = teraByte.SizeUnitToPetabyte(teraByte, UnitType.Terabyte);
+
+// Expected value for petaByte: 6
+~~~
+VB
+~~~ vb
+Dim teraByte As Integer = 6000
+Dim petaByte As Double = teraByte.SizeUnitToPetabyte(teraByte, UnitType.Terabyte)
+
+' Expected value for petaByte: 6
+~~~
+
 [Go to top](#unitsconversions)
