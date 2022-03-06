@@ -382,7 +382,11 @@ End If
 
 </details>
 
-The `GetWindowsVersion()` enables you to get the Windows version that the user is running. Returns a `WindowsVersion` value.
+The `GetWindowsVersion()` enables you to get the Windows version that the user is running. Returns a `WindowsVersion` [enumeration](/enums#a-windowsversion).
+
+::: warning Warning
+Don't forget to import the `LeoCorpLibrary.Enums`or `LeoCorpLibrary.Core.Enums` namespace.
+:::
 
 It's in:
 ~~~ cs
@@ -421,7 +425,7 @@ Here's an example of usage:
 
 C#
 ~~~ cs
-WindowsVersion winver = Env.GetWindowsVersion(); // Obtenir la version
+WindowsVersion winver = Env.GetWindowsVersion(); // Get Windows version
 /*
 Can return:
 WindowsVersion.Windows7
@@ -433,7 +437,7 @@ WindowsVersion.Windows11 (available in version 4.1+)
 ~~~
 VB
 ~~~ vb
-Dim winver As WindowsVersion = Env.GetWindowsVersion() ' Obtenir la version
+Dim winver As WindowsVersion = Env.GetWindowsVersion() ' Get Windows version
 ' Can return:
 ' WindowsVersion.Windows7
 ' WindowsVersion.Windows8

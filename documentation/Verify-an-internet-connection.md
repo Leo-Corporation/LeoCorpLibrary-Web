@@ -371,10 +371,8 @@ End If
 ~~~
 [Go to top](#networkconnection)
 
-## Enumerations
-Here are all `NetworkConnection` related enumerations.
-### a. StatusCodeType
-**This enumeration is available in version 4.1 and higher.**
+### h. DownloadFileAsync
+**This method is available in version 4.4 and higher.**
 
 <details>
 <summary>Compatibility</summary>
@@ -388,57 +386,36 @@ Here are all `NetworkConnection` related enumerations.
 
 </details>
 
-Here are all the possible values for this enumeration:
-- Informational
-- Succes
-- Redirection
-- ClientError
-- ServerError
+The `DownloadFileAsync()` method allows you to download any files from the Internet using the `HttpClient` class instead of the `WebClient` class. It doesn't return any value (`Task`).
 
-[Learn more about status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status).
+::: tip See also
+[WebRequest, WebClient, and ServicePoint are obsolete](https://docs.microsoft.com/en-us/dotnet/core/compatibility/networking/6.0/webrequest-deprecated)
+:::
+
+It's in:
+~~~ cs
+LeoCorpLibrary.NetworkConnection.DownloadFileAsync()
+~~~
+
+It has one argument:
+| Value | Argument | Description |
+| :----: | :-------: | :---------: |
+| Uri | uri | The URI of the file to download |
+| string | filePath | The path where to store the file once downloaded |
 
 Here's an example of usage:
 
 C#
 ~~~ cs
-StatusCodeType statusType = NetworkConnection.GetStatusCodeType("https://leocorporation.dev");
-
-switch (statusType)
+async void Main()
 {
-    case StatusCodeType.Informational:
-        Console.WriteLine("Information message.");
-        break;
-    case StatusCodeType.Success:
-        Console.WriteLine("Success message.");
-        break;
-    case StatusCodeType.Redirection:
-        Console.WriteLine("Redirection message.");
-        break;
-    case StatusCodeType.ClientError:
-        Console.WriteLine("Client error message.");
-        break;
-    case StatusCodeType.ServerError:
-        Console.WriteLine("Server error message.");
-        break;
+    await NetworkConnection.DownloadFileAsync(new Uri("https://example.com/file.pdf"), @"C:\myFile.pdf");
 }
 ~~~
-
 VB
 ~~~ vb
-Dim statusType As StatusCodeType = NetworkConnection.GetStatusCodeType("https://leocorporation.dev")
-
-Select Case statusType
-    Case StatusCodeType.Informational
-        Console.WriteLine("Information message.")
-    Case StatusCodeType.Success
-        Console.WriteLine("Success message.")
-    Case StatusCodeType.Redirection
-        Console.WriteLine("Redirection message.")
-    Case StatusCodeType.ClientError
-        Console.WriteLine("Client error message.")
-    Case StatusCodeType.ServerError
-        Console.WriteLine("Server error message.")
-End Select
+Private Async Sub Main()
+    Await NetworkConnection.DownloadFileAsync(New Uri("https://example.com/file.pdf"), "C:\myFile.pdf")
+End Sub
 ~~~
-
 [Go to top](#networkconnection)
