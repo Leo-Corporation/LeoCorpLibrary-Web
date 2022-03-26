@@ -59,6 +59,7 @@ There is two variations of the method:
 ~~~ cs
 LeoCorpLibrary.Load.ListViewContentCustom(ListView listView1, string filePath) {...}
 ~~~
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | ListView | listView | The ListView to load the content to |
@@ -69,6 +70,7 @@ LeoCorpLibrary.Load.ListViewContentCustom(ListView listView1, string filePath) {
 ~~~ cs
 LeoCorpLibrary.Load.ListViewContentCustom(ListView listView1, string filePath, string itemSplit, string columnSplit) {...}
 ~~~
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | ListView | listView | ListView to load the content to |
@@ -125,6 +127,7 @@ We recommend that you use these following parameters for your ListView:
 - ``FullRowSelect`` = true
 
 It has two arguments:
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | ListView | listView | ListView where it's content needs to be saved |
@@ -195,6 +198,7 @@ We recommend that you use these following parameters for your ListView:
 - ``FullRowSelect`` = true
 
 It has two arguments:
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | ListView | listView | ListView where it's content needs to be saved |

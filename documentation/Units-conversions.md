@@ -41,6 +41,7 @@ It's in:
 LeoCorpLibrary.UnitsConversions.MilesToKm()
 ~~~
 This method has one argument:
+
 | Type | Argument | Description | 
 | :--: | :-------: | :---------: |
 | double | miles | Number of mile(s) to convert |
@@ -86,6 +87,7 @@ It's in:
 LeoCorpLibrary.UnitsConversions.KmToMiles()
 ~~~
 This method has one argument:
+
 | Type | Argument | Description | 
 | :--: | :-------: | :---------: |
 | double | kilometers | Number of kilometers(s) to convert |
@@ -132,6 +134,7 @@ It's in:
 LeoCorpLibrary.UnitsConversions.CelsiusToFahrenheit()
 ~~~
 This method has one argument:
+
 | Type | Argument | Description | 
 | :--: | :-------: | :---------: |
 | double | celsius | Number of celsius to convert |
@@ -177,6 +180,7 @@ It's in:
 LeoCorpLibrary.UnitsConversions.FahrenheitToCelsius()
 ~~~
 This method has one argument:
+
 | Type | Argument | Description | 
 | :--: | :-------: | :---------: |
 | double | fahrenheit | Number of fahrenheit to convert |
@@ -223,6 +227,7 @@ It's in:
 LeoCorpLibrary.UnitsConversions.M3ToLitre()
 ~~~
 This method has one argument:
+
 | Type | Argument | Description | 
 | :--: | :-------: | :---------: |
 | double | m3 | Number of cubic meter(s) to convert |
@@ -268,6 +273,7 @@ It's in:
 LeoCorpLibrary.UnitsConversions.LitreToM3()
 ~~~
 This method has one argument:
+
 | Type | Argument | Description | 
 | :--: | :-------: | :---------: |
 | double |  | Number of mile(s) to convert |
@@ -315,6 +321,7 @@ It's in:
 LeoCorpLibrary.UnitsConversions.FeetToMeters()
 ~~~
 This method has two arguments:
+
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
 | double | feet | Number of feet to convert | 4 |
@@ -359,6 +366,7 @@ It's in:
 LeoCorpLibrary.UnitsConversions.MetersToFeet()
 ~~~
 This method has two arguments:
+
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
 | double | meters | Number of meters to convert | 8.5 |
@@ -404,6 +412,7 @@ It's in:
 LeoCorpLibrary.UnitsConversions.PoundsToKilograms()
 ~~~
 This method has two arguments:
+
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
 | double | pounds | Number of pounds to convert | 12.4 |
@@ -448,6 +457,7 @@ It's in:
 LeoCorpLibrary.UnitsConversions.KilogramsToPounds()
 ~~~
 This method has two arguments:
+
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
 | double | kg | Number of kilograms to convert | 12.4 |
@@ -494,6 +504,7 @@ LeoCorpLibrary.UnitsConversionsTimeUnitToSeconds()
 ~~~
 
 It has one argument:
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | double | d | The time to convert |
@@ -544,6 +555,7 @@ LeoCorpLibrary.UnitsConversionsTimeUnitToMinutes()
 ~~~
 
 It has one argument:
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | double | d | The time to convert |
@@ -594,6 +606,7 @@ LeoCorpLibrary.UnitsConversionsTimeUnitToHours()
 ~~~
 
 It has one argument:
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | double | d | The time to convert |
@@ -644,6 +657,7 @@ LeoCorpLibrary.UnitsConversionsTimeUnitToDays()
 ~~~
 
 It has one argument:
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | double | d | The time to convert |
@@ -695,6 +709,7 @@ LeoCorpLibrary.Extensions.IntExtensions.SizeUnitToByte()
 ~~~
 
 It has one argument:
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | int | i | The amount of storage to convert
@@ -745,6 +760,7 @@ LeoCorpLibrary.Extensions.IntExtensions.SizeUnitToKilobyte()
 ~~~
 
 It has one argument:
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | int | i | The amount of storage to convert
@@ -795,6 +811,7 @@ LeoCorpLibrary.Extensions.IntExtensions.SizeUnitToMegabyte()
 ~~~
 
 It has one argument:
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | int | i | The amount of storage to convert
@@ -845,6 +862,7 @@ LeoCorpLibrary.Extensions.IntExtensions.SizeUnitToGigabyte()
 ~~~
 
 It has one argument:
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | int | i | The amount of storage to convert
@@ -895,6 +913,7 @@ LeoCorpLibrary.Extensions.IntExtensions.SizeUnitToTerabyte()
 ~~~
 
 It has one argument:
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | int | i | The amount of storage to convert
@@ -946,6 +965,7 @@ LeoCorpLibrary.Extensions.IntExtensions.SizeUnitToPetabyte()
 ~~~
 
 It has one argument:
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | int | i | The amount of storage to convert

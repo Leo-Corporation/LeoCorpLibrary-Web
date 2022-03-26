@@ -65,6 +65,7 @@ There is two variations of the method:
 ~~~ cs
 Save.ListViewContentCustom(ListView listview, string filePath) {...}
 ~~~
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | ListView | listView | ListView where it's content needs to be saved |
@@ -75,6 +76,7 @@ Save.ListViewContentCustom(ListView listview, string filePath) {...}
 ~~~ cs
 Save.ListViewContentCustom(ListView listView, string filePath, string itemSplit, string columnSplit) {...}
 ~~~
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | ListView | listView | ListView where it's content needs to be saved |
@@ -126,6 +128,7 @@ We recommend that you use these following parameters for your ListView:
 - ``FullRowSelect`` = true
 
 It has two arguments:
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | ListView | listView | ListView where it's content needs to be saved |
@@ -197,6 +200,7 @@ We recommend that you use these following parameters for your ListView:
 - ``FullRowSelect`` = true
 
 It has two arguments:
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | ListView | listView | ListView where it's content needs to be saved |

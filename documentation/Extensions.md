@@ -50,7 +50,8 @@ This method has two variation:
 This first variation doesn't take any argument.
 
 **Variation 2**
-This method has one argument: 
+This method has one argument:
+ 
 
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
@@ -98,6 +99,7 @@ Dim numberOfWords As Integer = "Hello, this is a test sentence!".CountWords(word
 The `Encrypt()` method allows you to encrypt a `string`. It returns a `string` value.
 
 This method has a few arguments:
+
 | Type | Argument | Description | 
 | :--: | :-------: | :---------: |
 | string | source | The string to encrypt |
@@ -141,6 +143,7 @@ Dim encrypted As String = LeoCorpLibrary.Crypt.Encrypt(s, "ABC123")
 The `Decrypt()` method allows you to decrypt an encrypted string. It returns a `string` value.
 
 This method has a few arguments:
+
 | Type | Argument | Description | 
 | :--: | :-------: | :---------: |
 | string | encrypt | The encrypted string |
@@ -223,6 +226,7 @@ Console.WriteLine(helloMsg.UpperFirstLetter())
 This method allows you to upper letters from a starting index, and an end index. It returns a `string` value.
 
 This method has a few arguments:
+
 | Type | Argument | Description | 
 | :--: | :-------: | :---------: |
 | int | startIndex | The position where letters should start be in upper case |
@@ -271,6 +275,7 @@ IsEndingWithSamePunctuation(string stringToCheck) {...}
 ~~~
 
 This first variation has one argument:
+
 | Type | Argument | Description | 
 | :--: | :-------: | :---------: |
 | string | stringToCheck | The string to compare |
@@ -283,6 +288,7 @@ IsEndingWithSamePunctuation(string stringToCheck, string punctuationToCheck) {..
 ~~~
 
 This second variation has two arguments:
+
 | Type | Argument | Description | 
 | :--: | :-------: | :---------: |
 | string | stringToCheck | The string to compare |
@@ -514,6 +520,7 @@ LeoCorpLibrary.Extensions.IntExtensions.ConvertSizeUnitToByte()
 ~~~
 
 It has one argument:
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | UnitType | unitType | The source unit (kb, mb...) |
@@ -563,6 +570,7 @@ LeoCorpLibrary.Extensions.IntExtensions.ConvertSizeUnitToKilobyte()
 ~~~
 
 It has one argument:
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | UnitType | unitType | The source unit (kb, mb...) |
@@ -612,6 +620,7 @@ LeoCorpLibrary.Extensions.IntExtensions.ConvertSizeUnitToMegabyte()
 ~~~
 
 It has one argument:
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | UnitType | unitType | The source unit (kb, mb...) |
@@ -661,6 +670,7 @@ LeoCorpLibrary.Extensions.IntExtensions.ConvertSizeUnitToGigabyte()
 ~~~
 
 It has one argument:
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | UnitType | unitType | The source unit (kb, mb...) |
@@ -710,6 +720,7 @@ LeoCorpLibrary.Extensions.IntExtensions.ConvertSizeUnitToTerabyte()
 ~~~
 
 It has one argument:
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | UnitType | unitType | The source unit (kb, mb...) |
@@ -760,6 +771,7 @@ LeoCorpLibrary.Extensions.IntExtensions.ConvertSizeUnitToPetabyte()
 ~~~
 
 It has one argument:
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | UnitType | unitType | The source unit (kb, mb...) |
@@ -989,6 +1001,7 @@ LeoCorpLibrary.Extensions.ArrayExtensions.UnSplit()
 ~~~
 
 It has one argument:
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | string | separator | The separator to insert between items. |
@@ -1040,6 +1053,7 @@ LeoCorpLibrary.Extensions.DoubleExtensions.ToSeconds()
 ~~~
 
 It has one argument:
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | [``TimeUnits``](/Enums.html#b-timeunits) | timeUnits | The time unit (seconds, hours...) of the number to convert. |
@@ -1089,6 +1103,7 @@ LeoCorpLibrary.Extensions.DoubleExtensions.ToMinutes()
 ~~~
 
 It has one argument:
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | [``TimeUnits``](/Enums.html#b-timeunits) | timeUnits | The time unit (seconds, hours...) of the number to convert. |
@@ -1138,6 +1153,7 @@ LeoCorpLibrary.Extensions.DoubleExtensions.ToHours()
 ~~~
 
 It has one argument:
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | [``TimeUnits``](/Enums.html#b-timeunits) | timeUnits | The time unit (seconds, hours...) of the number to convert. |
@@ -1187,6 +1203,7 @@ LeoCorpLibrary.Extensions.DoubleExtensions.ToDays()
 ~~~
 
 It has one argument:
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | [``TimeUnits``](/Enums.html#b-timeunits) | timeUnits | The time unit (seconds, hours...) of the number to convert. |

@@ -167,6 +167,7 @@ LeoCorpLibrary.Maths.RadiansToDegrees()
 ~~~
 
 It has one argument:
+
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
 | double | radians | Radians to convert | 1.5 |
@@ -211,6 +212,7 @@ LeoCorpLibrary.Maths.DegreesToRadians()
 ~~~
 
 It has one argument:
+
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
 | double | degrees | Degrees to convert | 60 |
@@ -255,6 +257,7 @@ It's in:
 LeoCorpLibrary.Maths.IsInteger()
 ~~~
 This method has one argument:
+
 | Type | Argument | Description | 
 | :--: | :-------: | :---------: |
 | double | number | The number to test |
@@ -310,6 +313,7 @@ You can use negative numbers.
 :::
 
 This method has one argument:
+
 | Type | Argument | Description | 
 | :--: | :-------: | :---------: |
 | double | n | The number to get the opposite |
@@ -363,6 +367,7 @@ If the factorial of the specified number is greater than `int.MaxValue`, the met
 :::
 
 This method has one argument:
+
 | Type | Argument | Description | 
 | :--: | :-------: | :---------: |
 | double | n | The number to get the factorial |
@@ -412,6 +417,7 @@ It's in:
 LeoCorpLibrary.Maths.Circle.GetArea()
 ~~~
 This method has one argument:
+
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
 | double | radius | Circle's radius | 15.12 |
@@ -453,6 +459,7 @@ It's in:
 LeoCorpLibrary.Maths.Circle.GetPerimeter()
 ~~~
 This method has one argument:
+
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
 | double | radius | Circle's radius | 14.1 |
@@ -496,6 +503,7 @@ It's in:
 LeoCorpLibrary.Maths.Rectangle.GetDiagonal()
 ~~~
 This method has two arguments:
+
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
 | double | width | Rectangle's width/base | 4.12 |
@@ -538,6 +546,7 @@ It's in:
 LeoCorpLibrary.Maths.Rectangle.GetArea()
 ~~~
 This method has two arguments:
+
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
 | double | width | Rectangle's width/base | 6 |
@@ -584,6 +593,7 @@ It's in:
 LeoCorpLibrary.Maths.Triangle.GetArea()
 ~~~
 This method has two arguments:
+
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
 | double | height | Triangle's height | 5.48 |
@@ -626,6 +636,7 @@ It's in:
 LeoCorpLibrary.Maths.Triangle.GetPerimeter()
 ~~~
 This method has three arguments:
+
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
 | double | side1 | Triangle's side | 5.48 |
@@ -669,6 +680,7 @@ It's in:
 LeoCorpLibrary.Maths.Triangle.IsBuildable()
 ~~~
 This method has three arguments:
+
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
 | double | side1 | Triangle's side | 4.5 |
@@ -712,6 +724,7 @@ It's in:
 LeoCorpLibrary.Maths.Triangle.GetHypotenuse()
 ~~~
 This method has two arguments:
+
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
 | double | side1 | Triangle's side | 4.5 |
@@ -754,6 +767,7 @@ It's in:
 LeoCorpLibrary.Maths.Triangle.IsRight()
 ~~~
 This method has two arguments:
+
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
 | double | side1 | Triangle's side | 4.5 |
@@ -809,6 +823,7 @@ This method has two variation:
 GetVolume(double side, double height) {...}
 ~~~
 Here's the arguments:
+
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
 | double | side | Cube's side | 7.1 |
@@ -820,6 +835,7 @@ Here's the arguments:
 GetVolume(double side) {...}
 ~~~
 Here's the arguments:
+
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
 | double | side | Cube's side | 8 |
@@ -869,6 +885,7 @@ It's in:
 LeoCorpLibrary.Maths.Cube.GetEdge()
 ~~~
 It has one argument:
+
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
 | double | area | Area of the cube | 41.5 |
@@ -911,6 +928,7 @@ It's in:
 LeoCorpLibrary.Maths.Cylinder.GetVolume()
 ~~~
 It has two arguments:
+
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
 | double | radius | Cylinder's radius | 4.5 |
@@ -955,6 +973,7 @@ It's in:
 LeoCorpLibrary.Maths.Cylinder.GetHeight()
 ~~~
 It has two arguments:
+
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
 | double | radius | Cylinder's radius | 4.5 |
@@ -997,6 +1016,7 @@ It's in:
 LeoCorpLibrary.Maths.Cylinder.GetBaseArea()
 ~~~
 It has two arguments:
+
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
 | double | radius | Cylinder's radius | 12 |
@@ -1039,6 +1059,7 @@ It's in:
 LeoCorpLibrary.Maths.Pyramid.GetVolume()
 ~~~
 It has three arguments:
+
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
 | double | length | Length of the pyramid | 4.5 |
@@ -1084,6 +1105,7 @@ It's in:
 LeoCorpLibrary.Maths.Pyramid.GetHeight()
 ~~~
 It has three arguments:
+
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
 | double | length | Length of the pyramid | 4.5 |
@@ -1127,6 +1149,7 @@ It's in:
 LeoCorpLibrary.Maths.Pyramid.GetLengthBase()
 ~~~
 It has two arguments:
+
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
 | double | areaBase | Base's area | 9.9 |
@@ -1169,6 +1192,7 @@ It's in:
 LeoCorpLibrary.Maths.Pyramid.GetWidthBase()
 ~~~
 It has two arguments:
+
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
 | double | areaBase | Base's area | 6.1 |
@@ -1212,6 +1236,7 @@ It's in:
 LeoCorpLibrary.Maths.Hexagon.GetArea()
 ~~~
 It has one argument:
+
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
 | double | side | Length of the hexagon's side | 8 |
@@ -1254,6 +1279,7 @@ It's in:
 LeoCorpLibrary.Maths.Hexagon.GetPerimeter()
 ~~~
 It has one argument:
+
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
 | double | side | Length of the hexagon's side | 7.2 |
@@ -1296,6 +1322,7 @@ It's in:
 LeoCorpLibrary.Maths.Diamond.GetArea()
 ~~~
 It has one argument:
+
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
 | double | diag1 | Length of the diamond's diagonal | 4.5 |
@@ -1338,6 +1365,7 @@ It's in:
 LeoCorpLibrary.Maths.Diamond.GetPerimeter()
 ~~~
 It has one argument:
+
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
 | double | side | Length of the diamond's side | 8 |
@@ -1380,6 +1408,7 @@ It's in:
 LeoCorpLibrary.Maths.Sphere.GetArea()
 ~~~
 It has one argument:
+
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
 | double | radius | Radius of the sphere | 10 |
@@ -1426,6 +1455,7 @@ It's in:
 LeoCorpLibrary.Maths.Sphere.GetVolume()
 ~~~
 It has one argument:
+
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
 | double | radius | Radius of the sphere | 10 |
@@ -1473,6 +1503,7 @@ It's in:
 LeoCorpLibrary.Maths.Cone.GetVolume()
 ~~~
 This method has two arguments:
+
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
 | double | radius | The radius of the cone | 10.4 |
@@ -1522,6 +1553,7 @@ It's in:
 LeoCorpLibrary.Maths.Trigonometry.GetTriangleOpposedSideFromHypotenuse()
 ~~~
 It has one argument:
+
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
 | double | angle | The angle value (in radians) | 1.2 |
@@ -1572,6 +1604,7 @@ It's in:
 LeoCorpLibrary.Maths.Trigonometry.GetTriangleOpposedSideFromAdjacent()
 ~~~
 It has one argument:
+
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
 | double | angle | The angle value (in radians) | 1.02 |
@@ -1622,6 +1655,7 @@ It's in:
 LeoCorpLibrary.Maths.Trigonometry.GetTriangleAdjacentSideFromHypotenuse()
 ~~~
 It has one argument:
+
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
 | double | angle | The angle value (in radians) | 1.02 |
@@ -1672,6 +1706,7 @@ It's in:
 LeoCorpLibrary.Maths.Trigonometry.GetTriangleAdjacentSideFromOpposedSide()
 ~~~
 It has one argument:
+
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
 | double | angle | The angle value (in radians) | 1.2 |
@@ -1722,6 +1757,7 @@ It's in:
 LeoCorpLibrary.Maths.Trigonometry.GetTriangleHypotenuseFromOpposedSide()
 ~~~
 It has one argument:
+
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
 | double | angle | The angle value (in radians) | 1.2 |
@@ -1772,6 +1808,7 @@ It's in:
 LeoCorpLibrary.Maths.Trigonometry.GetTriangleHypotenuseFromAdjacentSide()
 ~~~
 It has one argument:
+
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
 | double | angle | The angle value (in radians) | 1.2 |

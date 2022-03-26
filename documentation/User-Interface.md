@@ -117,6 +117,7 @@ LeoCorpLibrary.UI.WinFormsHelpers.CenterFormOnScreen()
 
 It has one argument:
 
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | Form | form | The Form to center inside a Screen |
@@ -162,6 +163,7 @@ LeoCorpLibrary.UI.ScreenHelpers.GetScreenDPIFromWinForm()
 
 It has one argument:
 
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | Form | form | The Form to get the DPI of |
@@ -205,6 +207,7 @@ LeoCorpLibrary.UI.ScreenHelpers.GetScreenDPIFromWPFWindow()
 ~~~
 
 It has one argument:
+
 
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
@@ -251,6 +254,7 @@ LeoCorpLibrary.UI.ScreenHelpers.GetScreenScalingFromWinForm()
 
 It has one argument:
 
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | Form | form | The form to get the scale of |
@@ -296,6 +300,7 @@ LeoCorpLibrary.UI.ScreenHelpers.GetScreenScalingFromWPFWindow()
 
 It has one argument:
 
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | Window | window | The window to get the scale of |
@@ -317,6 +322,7 @@ ScreenHelpers.GetScreenScalingFromWPFWindow(Me) ' Get the screen scale
 
 ## ControlAlignment
 ``ControlAlignment`` is an enumeration which has three elements:
+
 - Horizontal
 - Vertical
 - Both

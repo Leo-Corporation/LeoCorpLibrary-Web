@@ -40,6 +40,7 @@ It's in:
 LeoCorpLibrary.Helpers.IsUrlValid()
 ~~~
 This method has one argument:
+
 | Type | Argument | Description | 
 | :--: | :-------: | :---------: |
 | string | url | The URL to check |
@@ -84,6 +85,7 @@ It's in:
 LeoCorpLibrary.Helpers.GetUrlProtocol()
 ~~~
 This method has one argument:
+
 | Type | Argument | Description | 
 | :--: | :-------: | :---------: |
 | string | url | The URL to parse |
@@ -128,6 +130,7 @@ It's in:
 LeoCorpLibrary.Helpers.IsUrlHttps()
 ~~~
 This method has one argument:
+
 | Type | Argument | Description | 
 | :--: | :-------: | :---------: |
 | string | url | The URL to check |

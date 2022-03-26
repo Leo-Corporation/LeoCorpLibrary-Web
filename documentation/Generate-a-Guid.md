@@ -94,6 +94,7 @@ Generates a Guid of a specific length. Returns a `string` value.
 ~~~ cs
 GuidGenerator(int length) {...}
 ~~~
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | int | length | Length of the Guid to generate |
@@ -136,6 +137,7 @@ Generate a Guid from a string. Returns a `string` value.
 ~~~ cs
 GuidGenerator(string fromString) {...}
 ~~~
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | string | fromString | String that will generate the Guid from |
@@ -178,6 +180,7 @@ Generates a Guid from specified [``GuidGeneratorParameters``](/GuidGeneratorPara
 ~~~ cs
 GuidGenerator(GuidGeneratorParameters guidGeneratorParameters) {...}
 ~~~
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | GuidGeneratorParameters | guidGeneratorParameters | Parameters that will impact the generated Guid |
@@ -229,6 +232,7 @@ Generates a Guid from specified [``GuidGeneratorParameters``](/GuidGeneratorPara
 ~~~ cs
 GuidGenerator(string fromString, GuidGeneratorParameters guidGeneratorParameters) {...}
 ~~~
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | string | fromString | String that will generate the Guid from |

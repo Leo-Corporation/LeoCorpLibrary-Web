@@ -14,11 +14,13 @@ Here's an example:
 ~~~ cs
 new Maths().Sum(1, 2, 2.2);
 ~~~
+
 **After (C#)**
 
 ~~~ cs
 Maths.Sum(1, 2, 2.2);
 ~~~
+
 The same thing applies to Visual Basic:
 
 **Before (Visual Basic)**
@@ -26,11 +28,13 @@ The same thing applies to Visual Basic:
 ~~~ vb
 New Maths().Sum(1, 2, 2.2)
 ~~~
+
 **After (Visual Basic)**
 
 ~~~ vb
 Maths.Sum(1, 2, 2.2)
 ~~~
+
 We have also added XML documentation, which means that you can access parts of the documentation directly from your IDE.
 
 If you upgrade from older version of LeoCorpLibrary, your IDE will show you errors tha you'll need to correct. If your code is already adapted to version 1.4, no changes will be needed.

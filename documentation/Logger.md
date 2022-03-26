@@ -42,12 +42,14 @@ LeoCorpLibrary.Logger.Log()
 This method has two variations.
 
 **Variation 1**
+
 | Type | Argument | Description | 
 | :--: | :-------: | :---------: |
 | string | message | The log message to be written |
 | string | filePath | The path to the log file, must contain an extension |
 
 **Variation 2**
+
 | Type | Argument | Description | 
 | :--: | :-------: | :---------: |
 | string | message | The log message to be written |

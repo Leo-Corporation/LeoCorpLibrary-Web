@@ -203,6 +203,7 @@ This method is obsolete, please use [GetLastVersionAsync](#e-getlastversionasync
 The ``GetLastVersion()`` method download a ``string`` from a specific webpage where a ``.txt`` file that contains the last version. Returns a ``string``.
 
 This method has only one argument:
+
 | Type | Argument | Description | Example |
 | :--: | :-------: | :---------: | :-----: |
 | string | lastVersionFileLink | Link of the file that contains the last version | "[https://example.com/Version.txt](https://dl.dropboxusercontent.com/s/j3fn78x3lcmowpr/Version.txt)" |
@@ -251,6 +252,7 @@ The `Install()` method allow to install an update for your software. if you want
 ~~~
 
 Here's this method's arguments:
+
 | Type | Argument | Description | Example |
 | :--: | :-------: | :---------: | :-----: |
 | string | filePath| Location of the file | "C:/Programme/Program.exe" |
@@ -309,6 +311,7 @@ LeoCorpLibrary.Update.GetLastVersionAsync()
 ~~~
 
 Here's this method's argument:
+
 | Type | Argument | Description | Example |
 | :--: | :-------: | :---------: | :-----: |
 | string | lastVersionFileLink | Link of the file where is stored the last version | "[https://example.com/Version.txt](https://dl.dropboxusercontent.com/s/j3fn78x3lcmowpr/Version.txt)" |

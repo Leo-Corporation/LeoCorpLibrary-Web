@@ -41,6 +41,7 @@ The ``GetFilesCount()`` method allows you to get the number of files in a specif
 ~~~ cs
 Env.GetFilesCount(string directory) {...}
 ~~~
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | string | directory | Directory where you want to get the number of files |
@@ -50,6 +51,7 @@ Env.GetFilesCount(string directory) {...}
 ~~~ cs
 Env.GetFilesCount(string directory, bool includeSubDirectories) {...}
 ~~~
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | string | directory | Directory where you want to get the number of files |
@@ -99,6 +101,7 @@ The ``GetDirectoryCount`` method allow you to get the number of directories in a
 ~~~ cs
 Env.GetDirectoriesCount(string directory) {...}
 ~~~
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | string | directory | Directory where you want to get the number of directories |
@@ -108,6 +111,7 @@ Env.GetDirectoriesCount(string directory) {...}
 ~~~ cs
 Env.GetDirectoriesCount(string directory, bool includeSubDirectories) {...}
 ~~~
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | string | directory | Directory where you want to get the number of directories |
@@ -158,6 +162,7 @@ It's in:
 LeoCorpLibrary.Env.GetTotalDriveSpace()
 ~~~
 It has two arguments:
+
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
 | string | drive | Directory of the volume | C:\ |
@@ -200,6 +205,7 @@ It's in:
 LeoCorpLibrary.Env.GetDriveAvailableFreeSpace()
 ~~~
 It has two arguments:
+
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
 | string | drive | Directory of the volume | C:\ |
@@ -242,6 +248,7 @@ It's in:
 LeoCorpLibrary.Env.GetOccupiedDriveSpace()
 ~~~
 It has two arguments:
+
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
 | string | drive | Directory of the volume | C:\ |
@@ -285,6 +292,7 @@ LeoCorpLibrary.Env.CountFileCharacters()
 ~~~
 
 It has two arguments:
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | string | fileName | The file's location where you wanna count characters |
@@ -329,6 +337,7 @@ LeoCorpLibrary.Env.CountFileCharactersAsync()
 ~~~
 
 It has one argument:
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | string | fileName | The file's location where you wanna count characters |
@@ -379,6 +388,7 @@ LeoCorpLibrary.Env.IsDirectoryHasPermission()
 ~~~
 
 It has one argument:
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | string | filePath | The path to the directory |
@@ -516,6 +526,7 @@ This method has two variation:
 ~~~ cs
 Env.ExecuteAsAdmin(Process process) {...}
 ~~~
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | Process | process | Process with `StartInfo.FileName` indicated |
@@ -525,6 +536,7 @@ Env.ExecuteAsAdmin(Process process) {...}
 ~~~ cs
 Env.ExecuteAsAdmin(string filename) {...}
 ~~~
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | string | filename | The location of the software to launch in admin mode |
@@ -588,6 +600,7 @@ The variation does not accept any arguments.
 **Variation 2**
 
 This variation has an argument:
+
 
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
@@ -768,6 +781,7 @@ LeoCorpLibrary.Env.UnixTimeToDateTime()
 
 It has one argument:
 
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | int | unixTime | The UnixTime to convert |
@@ -812,6 +826,7 @@ LeoCorpLibrary.Env.IsProcessRunning()
 ~~~
 
 It has one argument:
+
 
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
@@ -871,6 +886,7 @@ LeoCorpLibrary.Env.LaunchUWPApp()
 ~~~
 
 It has two arguments:
+
 
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |

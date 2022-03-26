@@ -41,6 +41,7 @@ It's in:
 LeoCorpLibrary.Crypt.Encrypt()
 ~~~
 This method has a few arguments:
+
 | Type | Argument | Description | 
 | :--: | :-------: | :---------: |
 | string | source | The string to encrypt |
@@ -90,6 +91,7 @@ It's in:
 LeoCorpLibrary.Crypt.Decrypt()
 ~~~
 This method has a few arguments:
+
 | Type | Argument | Description | 
 | :--: | :-------: | :---------: |
 | string | encrypt | The encrypted string |
@@ -139,6 +141,7 @@ It's in:
 LeoCorpLibrary.Crypt.EncryptRSA()
 ~~~
 This method has a few arguments:
+
 | Type | Argument | Description | 
 | :--: | :-------: | :---------: |
 | string | str | The  string to encrypt |
@@ -195,6 +198,7 @@ It's in:
 LeoCorpLibrary.Crypt.DecryptRSA()
 ~~~
 This method has a few arguments:
+
 | Type | Argument | Description | 
 | :--: | :-------: | :---------: |
 | byte[] | encrypt | The encrypted string |
@@ -253,6 +257,7 @@ It's in:
 LeoCorpLibrary.Crypt.EncryptAES()
 ~~~
 This method has a few arguments:
+
 | Type | Argument | Description | 
 | :--: | :-------: | :---------: |
 | string | str | The string to encrypt |
@@ -302,6 +307,7 @@ It's in:
 LeoCorpLibrary.Crypt.Decrypt()
 ~~~
 This method has a few arguments:
+
 | Type | Argument | Description | 
 | :--: | :-------: | :---------: |
 | string | encrypted | The encrypted string |

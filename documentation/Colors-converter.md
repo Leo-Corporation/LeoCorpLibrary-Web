@@ -48,6 +48,7 @@ There is two variations of this method:
 ~~~ cs
 ColorsConverter.RGBtoHEX(Color color) {...}
 ~~~
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | Color | color | Color |
@@ -57,6 +58,7 @@ ColorsConverter.RGBtoHEX(Color color) {...}
 ~~~ cs
 ColorsConverter.RGBtoHEX(int red, int green, int blue) {...}
 ~~~
+
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
 | int | red | Red | 125 |
@@ -119,6 +121,7 @@ LeoCorpLibrary.ColorsConverter.RGBtoHEX()
 ~~~
 Here's this method's argument:
 
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | [HEXColor](#hexcolor) | hexColor | HEX Color |
@@ -174,6 +177,7 @@ There is two variations of this method:
 ~~~ cs
 ColorsConverter.RGBtoHSV(Color color) {...}
 ~~~
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | Color | color | Color |
@@ -183,6 +187,7 @@ ColorsConverter.RGBtoHSV(Color color) {...}
 ~~~ cs
 ColorsConverter.RGBtoHSV(int red, int green, int blue) {...}
 ~~~
+
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
 | int | red | Red | 125 |
@@ -240,6 +245,7 @@ It's in:
 LeoCorpLibrary.ColorsConverter.HEXtoHSV()
 ~~~
 It has only one argument:
+
 
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |

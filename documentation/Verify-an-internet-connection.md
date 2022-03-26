@@ -216,6 +216,7 @@ It's in:
 LeoCorpLibrary.NetworkConnection.IsAvailableTestSiteAsync()
 ~~~
 It has one argument:
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | string | site | URL of the website where the connection is tested |
@@ -266,6 +267,7 @@ LeoCorpLibrary.NetworkConnection.GetWebPageStatusCode()
 ~~~
 
 It has one argument:
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | string | url | The URL of the website |
@@ -316,6 +318,7 @@ LeoCorpLibrary.NetworkConnection.GetWebPageStatusDescription()
 ~~~
 
 It has one argument:
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | string | url | The URL of the website |
@@ -371,6 +374,7 @@ LeoCorpLibrary.NetworkConnection.GetStatusCodeType()
 ~~~
 
 It has one argument:
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | string | url | The URL of the website |
@@ -429,6 +433,7 @@ LeoCorpLibrary.NetworkConnection.DownloadFileAsync()
 ~~~
 
 It has one argument:
+
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | Uri | uri | The URI of the file to download |
