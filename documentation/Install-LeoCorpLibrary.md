@@ -67,13 +67,13 @@ Check out the [reference](/Reference) to get started.
 You can also install LeoCorpLibrary using the [.NET CLI](https://docs.microsoft.com/en-us/dotnet/core/tools/).
 Type in a command line window (cmd, bash...) the following command:
 
-~~~ csh
+~~~ cs
 dotnet add package LeoCorpLibrary --version 3.10.0.2109
 ~~~
 
 If you are working with a solution with multiple projects, you may wanna use the command below:
 
-~~~ csh
+~~~ cs
 dotnet add <PROJECT> package LeoCorpLibrary --version 3.10.0.2109
 ~~~
 
@@ -95,12 +95,12 @@ To add a NuGet package in your project, you can follow these steps:
 ~~~
 4. You can restore the project/solution by running the following commands:
 
-~~~ csh
+~~~ cs
 dotnet restore <PROJECT>
 ~~~
 Or
 
-~~~ csh
+~~~ cs
 nuget restore <PROJECT>
 ~~~
 
