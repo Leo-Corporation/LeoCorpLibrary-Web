@@ -6,10 +6,13 @@ footer: MIT Licensed | Copyright © 2022 Léo Corporation and contributors
 To generate a password using LeoCorpLibrary, you must include this line of code in your "using" region:
 
 C#
+
 ~~~ cs
 using LeoCorpLibrary;
 ~~~
+
 VB
+
 ~~~ vb
 Imports LeoCorpLibrary
 ~~~
@@ -46,10 +49,13 @@ This method has a few parameters:
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 Console.WriteLine(Password.Generate(10, "a,b,c,d", ","));
 ~~~
+
 VB
+
 ~~~ vb
 Console.WriteLine(Password.Generate(10, "a,b,c,d", ","))
 ~~~
@@ -78,10 +84,13 @@ This method has a few parameters:
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 Console.WriteLine(Password.Generate(10, PasswordPresets.Simple));
 ~~~
+
 VB
+
 ~~~ vb
 Console.WriteLine(Password.Generate(10, PasswordPresets.Simple))
 ~~~
@@ -118,10 +127,13 @@ This method has a few parameters:
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 Console.WriteLine(await Password.GenerateAsync(10, "a,b,c,d", ","));
 ~~~
+
 VB
+
 ~~~ vb
 Console.WriteLine(Await Password.GenerateAsync(10, "a,b,c,d", ","))
 ~~~
@@ -150,10 +162,13 @@ This method has a few parameters:
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 Console.WriteLine(await Password.GenerateAsync(10, PasswordPresets.Simple));
 ~~~
+
 VB
+
 ~~~ vb
 Console.WriteLine(Await Password.GenerateAsync(10, PasswordPresets.Simple))
 ~~~
@@ -192,6 +207,7 @@ This method has a few parameters:
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 List<string> passwords = Password.GenerateAmount(20, 10, "a,b,c,d", ",");
 
@@ -200,7 +216,9 @@ for (int i = 0; i < passwords.Count; i++) // For each password
     Console.WriteLine(passwords[i]); // Print password in console
 }
 ~~~
+
 VB
+
 ~~~ vb
 Dim passwords As List(Of String) = Password.GenerateAmount(20, 10, "a,b,c,d", ",")
 
@@ -234,6 +252,7 @@ This method has a few parameters:
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 List<string> passwords = Password.GenerateAmount(20, 10, PasswordPresets.Complex);
 
@@ -242,7 +261,9 @@ for (int i = 0; i < passwords.Count; i++) // For each password
     Console.WriteLine(passwords[i]); // Print password in console
 }
 ~~~
+
 VB
+
 ~~~ vb
 Dim passwords As List(Of String) = Password.GenerateAmount(20, 10, PasswordPresets.Complex)
 
@@ -285,6 +306,7 @@ This method has a few parameters:
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 List<string> passwords = await Password.GenerateAmountAsync(20, 10, "a,b,c,d", ",");
 
@@ -293,7 +315,9 @@ for (int i = 0; i < passwords.Count; i++) // For each password
     Console.WriteLine(passwords[i]); // Print password in console
 }
 ~~~
+
 VB
+
 ~~~ vb
 Dim passwords As List(Of String) = Await Password.GenerateAmountAsync(20, 10, "a,b,c,d", ",")
 
@@ -327,6 +351,7 @@ This method has a few parameters:
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 List<string> passwords = await Password.GenerateAmountAsync(20, 10, PasswordPresets.Complex);
 
@@ -335,7 +360,9 @@ for (int i = 0; i < passwords.Count; i++) // For each password
     Console.WriteLine(passwords[i]); // Print password in console
 }
 ~~~
+
 VB
+
 ~~~ vb
 Dim passwords As List(Of String) = Await Password.GenerateAmountAsync(20, 10, PasswordPresets.Complex)
 
@@ -363,6 +390,7 @@ Next
 The `GetPasswordStrength()` method allows you to evaluate a password's strength using [Passliss](https://github.com/Leo-Corporation/Passliss)' standards. It returns a [`PasswordStrength`](#a-passwordstrength) enum.
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.Password.GetPasswordStrength() {...}
 ~~~
@@ -375,6 +403,7 @@ It has one argument:
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 string[] passwords =
 {
@@ -401,7 +430,9 @@ VeryGood
 Medium
 */
 ~~~
+
 VB
+
 ~~~ vb
 Dim passwords As String() = {"Ifhi2ztbg1", "pars132", "Lo8_n0D", "uifVyuiVVH_çVIvc", "gygYUI4"}
 

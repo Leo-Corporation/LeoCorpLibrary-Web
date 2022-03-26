@@ -6,10 +6,13 @@ footer: MIT Licensed | Copyright © 2022 Léo Corporation and contributors
 Do not forget to add this line of code in your "using" region:
 
 C#
+
 ~~~ cs
 using LeoCorpLibrary;
 ~~~
+
 VB
+
 ~~~ vb
 Imports LeoCorpLibrary
 ~~~
@@ -17,6 +20,7 @@ Imports LeoCorpLibrary
 There are various methods available in `NetworkConnection` to help achieve what you wanna do.
 
 They are in:
+
 ~~~ cs
 LeoCorpLibrary.NetworkConnection.IsAvailable()
 ~~~
@@ -50,6 +54,7 @@ Specifying a custom website is available starting with version 4.1+.
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 if (NetworkConnection.IsAvailable()) 
 {
@@ -63,7 +68,9 @@ else
 // Or
 bool isAvailable = NetworkConnection.IsAvailable("https://leocorporation.dev");
 ~~~
+
 VB
+
 ~~~ vb
 If (NetworkConnection.IsAvailable()) Then
     Console.WriteLine("Connected")
@@ -106,6 +113,7 @@ Example:
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 if (NetworkConnection.IsAvailableTestSite("https://example.com")) { // If true
     Console.WriteLine("Connected");
@@ -113,7 +121,9 @@ if (NetworkConnection.IsAvailableTestSite("https://example.com")) { // If true
     Console.WriteLine("Not connected");
 }
 ~~~
+
 VB
+
 ~~~ vb
 If (NetworkConnection.IsAvailableTestSite("https://example.com")) Then ' If true
     Console.WriteLine("Connected")
@@ -150,12 +160,14 @@ Specifying a custom website is available starting with version 4.1+.
 :::
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.NetworkConnection.IsAvailableAsync()
 ~~~
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 async void TestConnection()
 {
@@ -165,7 +177,9 @@ async void TestConnection()
     bool connectionAvailable2 = await NetworkConnection.IsAvailableAsync("https://leocorporation.dev");
 }
 ~~~
+
 VB
+
 ~~~ vb
 Private Async Sub TestConnection()
     Dim connectionAvailable As Boolean = Await NetworkConnection.IsAvailableAsync()
@@ -197,6 +211,7 @@ This method is obsolete, please use [``IsAvailableAsync()``](#c-isavailableasync
 This method verifies if an Internet connection is available by sending a request on a specified website. Returns a `bool` value.
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.NetworkConnection.IsAvailableTestSiteAsync()
 ~~~
@@ -208,13 +223,16 @@ It has one argument:
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 async void TestConnection()
 {
     bool connectionAvailable = await NetworkConnection.IsAvailableTestSiteAsync("https://leocorporation.dev");
 }
 ~~~
+
 VB
+
 ~~~ vb
 Private Async Sub TestConnection()
     Dim connectionAvailable As Boolean = Await NetworkConnection.IsAvailableTestSiteAsync("https://leocorporation.dev")
@@ -242,6 +260,7 @@ The `GetWebPageStatusCode()` method allows you to get the status code of a speci
 [Learn more about status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status).
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.NetworkConnection.GetWebPageStatusCode()
 ~~~
@@ -254,13 +273,16 @@ It has one argument:
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 if (NetworkConnection.GetWebPageStatusCode("https://leocorporation.dev") == 200) 
 {
     Console.WriteLine("The website responded: OK");
 }
 ~~~
+
 VB
+
 ~~~ vb
 If NetworkConnection.GetWebPageStatusCode("https://leocorporation.dev") = 200 Then
     Console.WriteLine("The website responded: OK")
@@ -288,6 +310,7 @@ The `GetWebPageStatusDescription()` method allows you to get the status descript
 [Learn more about status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status).
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.NetworkConnection.GetWebPageStatusDescription()
 ~~~
@@ -300,6 +323,7 @@ It has one argument:
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 int status = NetworkConnection.GetWebPageStatusCode("https://leocorporation.dev");
 string description = NetworkConnection.GetWebPageStatusDescription("https://leocorporation.dev");
@@ -308,7 +332,9 @@ Console.WriteLine(status.ToString() + " - " + description);
 // Expected output:
 // 200 - OK
 ~~~
+
 VB
+
 ~~~ vb
 Dim status As Integer = NetworkConnection.GetWebPageStatusCode("https://leocorporation.dev")
 Dim description As String = NetworkConnection.GetWebPageStatusDescription("https://leocorporation.dev")
@@ -339,6 +365,7 @@ The `GetStatusCodeType()` method allows you to get the "type" of a status code. 
 [Learn more about status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status).
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.NetworkConnection.GetStatusCodeType()
 ~~~
@@ -351,6 +378,7 @@ It has one argument:
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 if (NetworkConnection.GetStatusCodeType("https://leocorporation.dev") == StatusCodeType.Success)
 {
@@ -361,7 +389,9 @@ else if (NetworkConnection.GetStatusCodeType("https://leocorporation.dev" == Sta
     Console.WriteLine("The request was not successful!")
 }
 ~~~
+
 VB
+
 ~~~ vb
 If NetworkConnection.GetStatusCodeType("https://leocorporation.dev") = StatusCodeType.Success Then
     Console.WriteLine("The request was successful!")
@@ -393,6 +423,7 @@ The `DownloadFileAsync()` method allows you to download any files from the Inter
 :::
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.NetworkConnection.DownloadFileAsync()
 ~~~
@@ -406,13 +437,16 @@ It has one argument:
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 async void Main()
 {
     await NetworkConnection.DownloadFileAsync(new Uri("https://example.com/file.pdf"), @"C:\myFile.pdf");
 }
 ~~~
+
 VB
+
 ~~~ vb
 Private Async Sub Main()
     Await NetworkConnection.DownloadFileAsync(New Uri("https://example.com/file.pdf"), "C:\myFile.pdf")

@@ -6,10 +6,13 @@ footer: MIT Licensed | Copyright © 2022 Léo Corporation and contributors
 To use all the methods and other features of LeoCorpLibrary, don't forget to add this line on top of your file of code:
 
 C#
+
 ~~~ cs
 using LeoCorpLibrary;
 ~~~
+
 VB
+
 ~~~ vb
 Imports LeoCorpLibrary
 ~~~
@@ -34,12 +37,14 @@ To convert colors, LeoCorpLibrary uses custom classes and structures.
 
 This method allows you to convert a RGB color to a [`HEXColor`](#hexcolor). 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.ColorsConverter.RGBtoHEX()
 ~~~
 There is two variations of this method:
 
 **Variation 1 :**
+
 ~~~ cs
 ColorsConverter.RGBtoHEX(Color color) {...}
 ~~~
@@ -48,6 +53,7 @@ ColorsConverter.RGBtoHEX(Color color) {...}
 | Color | color | Color |
 
 **Variation 2 :**
+
 ~~~ cs
 ColorsConverter.RGBtoHEX(int red, int green, int blue) {...}
 ~~~
@@ -66,6 +72,7 @@ If, in the second variation of the method, you put an invalid number, the [`RGBI
 Example of usage:
 
 C#
+
 ~~~ cs
 // Example 1 :
 HEXColor hexColor = ColorsConverter.RGBtoHEX(125, 45, 255);
@@ -75,7 +82,9 @@ Color color = Color.FromArgb(125, 45, 255)
 HEXColor hexColor = ColorsConverter.RGBtoHEX(color);
 Console.WriteLine(hexColor.Value); // Write value
 ~~~
+
 VB
+
 ~~~ vb
 ' Example 1 :
 Dim hexColor As HEXColor = ColorsConverter.RGBtoHEX(125, 45, 255)
@@ -104,6 +113,7 @@ Console.WriteLine(hexColor.Value) ' Write value
 This method allows you to convert a HEX color to a RGB color. Returns a ``Color``.
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.ColorsConverter.RGBtoHEX()
 ~~~
@@ -120,12 +130,15 @@ If you put an incorrect HEX value for `hexColor`, the [`HEXInvalidValueException
 Example of usage:
 
 C#
+
 ~~~ cs
 HEXColor hexColor = new HEXColor();
 hexColor.Value = "ffffff";
 Color color = ColorsConverter.HEXtoRGB(hexColor);
 ~~~
+
 VB
+
 ~~~ vb
 Dim hexColor As HEXColor = New HEXColor()
 hexColor.Value = "ffffff"
@@ -150,12 +163,14 @@ Dim color As Color = ColorsConverter.HEXtoRGB(hexColor)
 This method allows you to convert a RGB color to a [`HSVColor`](#hsvcolor).
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.ColorsConverter.RGBtoHSV()
 ~~~
 There is two variations of this method:
 
 **Variation 1 :**
+
 ~~~ cs
 ColorsConverter.RGBtoHSV(Color color) {...}
 ~~~
@@ -164,6 +179,7 @@ ColorsConverter.RGBtoHSV(Color color) {...}
 | Color | color | Color |
 
 **Variation 2 :**
+
 ~~~ cs
 ColorsConverter.RGBtoHSV(int red, int green, int blue) {...}
 ~~~
@@ -182,6 +198,7 @@ If in the second variation, you put an incorrect RGB color, the [`RGBInvalidValu
 Example of usage:
 
 C#
+
 ~~~ cs
 // Example 1 :
 HSVColor hsvColor = ColorsConverter.RGBtoHSV(125, 45, 255);
@@ -189,7 +206,9 @@ HSVColor hsvColor = ColorsConverter.RGBtoHSV(125, 45, 255);
 Color color = Color.FromArgb(125, 45, 255)
 HSVColor hsvColor = ColorsConverter.RGBtoHSV(color);
 ~~~
+
 VB
+
 ~~~ vb
 ' Example 1 :
 Dim hsvColor As HSVColor = ColorsConverter.RGBtoHSV(125, 45, 255)
@@ -216,6 +235,7 @@ HSVColor hsvColor As HSVColor = ColorsConverter.RGBtoHSV(color)
 This method enables you to convert a HEX color to a [`HSVColor`](#hsvcolor)
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.ColorsConverter.HEXtoHSV()
 ~~~
@@ -232,12 +252,15 @@ If you put an incorrect HEX value for `hexColor`, the [`HEXInvalidValueException
 Example of usage:
 
 C#
+
 ~~~ cs
 HEXColor hexColor = new HEXColor();
 hexColor.Value = "ffffff";
 HSVColor hsvColor = ColorsConverter.HEXtoHSV(hexColor);
 ~~~
+
 VB
+
 ~~~ vb
 Dim hexColor As HEXColor = New HEXColor()
 hexColor.Value = "ffffff"
@@ -250,11 +273,14 @@ The ``HEXColor`` structure allows to some methods to work correctly. It stocks t
 To access the HEX value, you can use this example:
 
 C#
+
 ~~~ cs
 HEXColor hexColor = ColorsConverter.RGBtoHEX(125, 12, 255);
 Console.WriteLine(hexColor.Value);
 ~~~
+
 VB
+
 ~~~ vb
 Dim hexColor As HEXColor = ColorsConverter.RGBtoHEX(125, 12, 255)
 Console.WriteLine(hexColor.Value)
@@ -278,16 +304,19 @@ This method allows you to create a ``HEXColor`` form a RGB `Color`.
 
 It's in:
 
+
 ~~~ cs
 LeoCorpLibrary.HEXColor.FromRGB()
 ~~~
 There is two variation of this method:
 
 **Variation 1**
+
 ~~~ cs
 HEXColor.FromRGB(Color color) {...}
 ~~~
 **Variation 2**
+
 ~~~ cs
 HEXColor.FromRGB(int red, int green, int blue) {...}
 ~~~
@@ -300,6 +329,7 @@ If in the second variation, you put an incorrect RGB color, the [`RGBInvalidValu
 Example of usage:
 
 C#
+
 ~~~ cs
 // Example 1 :
 Color color = Color.FromRGB(125, 12, 255);
@@ -307,7 +337,9 @@ HEXColor hexColor = HEXColor.FromRGB(color);
 // Example 2 :
 HEXColor hexColor = HEXColor.FromRGB(125, 12, 255);
 ~~~
+
 VB
+
 ~~~ vb
 ' Example 1 :
 Dim color As Color = Color.FromRGB(125, 12, 255)
@@ -339,11 +371,14 @@ The ``HSVColor`` structure allows other methods to work properly. It stocks the 
 Here's an example of code that you can use to get the different values:
 
 C#
+
 ~~~ cs
 HSVColor hsvColor = ColorsConverter.RGBtoHSV(125, 12, 255);
 Console.WriteLine(hsvColor.Hue.ToString() + "\n" + hsvColor.Saturation.ToString() + "\n" + hsvColor.Value.ToString());
 ~~~
+
 VB
+
 ~~~ vb
 Dim hsvColor As HSVColor = ColorsConverter.RGBtoHSV(125, 12, 255)
 Console.WriteLine(hsvColor.Hue.ToString() + vbNewLine + hsvColor.Saturation.ToString() + vbNewLine + hsvColor.Value.ToString())
@@ -369,16 +404,19 @@ Returns a `HSVColor`.
 
 It's in:
 
+
 ~~~ cs
 LeoCorpLibrary.HSVColor.FromRGB()
 ~~~
 There is two variation of this method:
 
 **Variation 1**
+
 ~~~ cs
 HSVColor.FromRGB(Color color) {...}
 ~~~
 **Variation 2**
+
 ~~~ cs
 HSVColor.FromRGB(int red, int green, int blue) {...}
 ~~~
@@ -391,6 +429,7 @@ If in the second variation, you put an incorrect RGB color, the [`RGBInvalidValu
 Example of usage:
 
 C#
+
 ~~~ cs
 // Example 1 :
 Color color = Color.FromRGB(125, 12, 255);
@@ -398,7 +437,9 @@ HSVColor hsvColor = HSVColor.FromRGB(color);
 // Example 2 :
 HSVColor hsvColor = HSVColor.FromRGB(125, 12, 255);
 ~~~
+
 VB
+
 ~~~ vb
 ' Example 1 :
 Dim color As Color = Color.FromRGB(125, 12, 255)

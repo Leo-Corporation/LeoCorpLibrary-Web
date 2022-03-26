@@ -6,10 +6,13 @@ footer: MIT Licensed | Copyright © 2022 Léo Corporation and contributors
 To use this class in your project you must include this line of code in your "using" region:
 
 C#
+
 ~~~ cs
 using LeoCorpLibrary;
 ~~~
+
 VB
+
 ~~~ vb
 Imports LeoCorpLibrary
 ~~~

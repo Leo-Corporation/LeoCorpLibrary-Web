@@ -6,10 +6,13 @@ footer: MIT Licensed | Copyright © 2022 Léo Corporation and contributors
 To use these methods and features, do not forget to put this line of code in your "using" region:
 
 C#
+
 ~~~ cs
 using LeoCorpLibrary;
 ~~~
+
 VB
+
 ~~~ vb
 Imports LeoCorpLibrary
 ~~~
@@ -34,6 +37,7 @@ Imports LeoCorpLibrary
 The ``GetFilesCount()`` method allows you to get the number of files in a specified directory. Returns a ``int`` value.
 
 **Variation 1**
+
 ~~~ cs
 Env.GetFilesCount(string directory) {...}
 ~~~
@@ -42,6 +46,7 @@ Env.GetFilesCount(string directory) {...}
 | string | directory | Directory where you want to get the number of files |
 
 **Variation 2**
+
 ~~~ cs
 Env.GetFilesCount(string directory, bool includeSubDirectories) {...}
 ~~~
@@ -53,6 +58,7 @@ Env.GetFilesCount(string directory, bool includeSubDirectories) {...}
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 // Without subdirectories
 int fileNumber = Env.GetFilesCount(@"C:\Users");
@@ -60,7 +66,9 @@ int fileNumber = Env.GetFilesCount(@"C:\Users");
 // With subdirectories
 int fileNumberWithSubDirectories = Env.GetFilesCount(@"C:\Users", true);
 ~~~
+
 VB
+
 ~~~ vb
 ' Without subdirectories
 Dim fileNumber As Integer = Env.GetFilesCount("C:/Users")
@@ -87,6 +95,7 @@ Dim fileNumberWithSubDirectories As Integer = Env.GetFilesCount("C:/Users", True
 The ``GetDirectoryCount`` method allow you to get the number of directories in a specified directory. Returns a ``int`` value. It has two variation
 
 **Variation 1**
+
 ~~~ cs
 Env.GetDirectoriesCount(string directory) {...}
 ~~~
@@ -95,6 +104,7 @@ Env.GetDirectoriesCount(string directory) {...}
 | string | directory | Directory where you want to get the number of directories |
 
 **Variation 2**
+
 ~~~ cs
 Env.GetDirectoriesCount(string directory, bool includeSubDirectories) {...}
 ~~~
@@ -106,6 +116,7 @@ Env.GetDirectoriesCount(string directory, bool includeSubDirectories) {...}
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 // Without subdirectories
 int directoryNumber = Env.GetDirectoriesCount(@"C:\Users");
@@ -113,7 +124,9 @@ int directoryNumber = Env.GetDirectoriesCount(@"C:\Users");
 // With subdirectories
 int directoryNumberWithSubDirectories = Env.GetDirectoriesCount(@"C:\Users", true);
 ~~~
+
 VB
+
 ~~~ vb
 ' Without subdirectories
 Dim directoryNumber As Integer = Env.GetDirectoriesCount("C:/Users")
@@ -140,6 +153,7 @@ Dim directoryNumberWithSubDirectories As Integer = Env.GetDirectoriesCount("C:/U
 The ``GetTotalDriveSpace`` method allow you to get the total space of a specified volume. Returns a ``double`` value.
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.Env.GetTotalDriveSpace()
 ~~~
@@ -152,10 +166,13 @@ It has two arguments:
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 double totalSpace = Env.GetTotalDriveSpace(@"C:\", UnitType.Gigabyte);
 ~~~
+
 VB
+
 ~~~ vb
 Dim totalSpace As Double = Env.GetTotalDriveSpace("C:/", UnitType.Gigabyte)
 ~~~
@@ -178,6 +195,7 @@ Dim totalSpace As Double = Env.GetTotalDriveSpace("C:/", UnitType.Gigabyte)
 The `GetDriveAvailableFreeSpace()` method allows you to get the available space of specified volume. Returns a `double` value.
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.Env.GetDriveAvailableFreeSpace()
 ~~~
@@ -190,10 +208,13 @@ It has two arguments:
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 double freeSpace = Env.GetDriveAvailableFreeSpace(@"C:\", UnitType.Gigabyte);
 ~~~
+
 VB
+
 ~~~ vb
 Dim freeSpace As Double = Env.GetDriveAvailableFreeSpace("C:/", UnitType.Gigabyte)
 ~~~
@@ -216,6 +237,7 @@ Dim freeSpace As Double = Env.GetDriveAvailableFreeSpace("C:/", UnitType.Gigabyt
 The `GetOccupiedDriveSpace()` allows you to get the occupied drive space of specified volume. Returns a `double` value.
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.Env.GetOccupiedDriveSpace()
 ~~~
@@ -228,10 +250,13 @@ It has two arguments:
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 double occupiedSpace = GetOccupiedDriveSpace(@"C:\", UnitType.Gigabyte);
 ~~~
+
 VB
+
 ~~~ vb
 Dim occupiedSpace As Double = GetOccupiedDriveSpace("C:/", UnitType.Gigabyte)
 ~~~
@@ -254,6 +279,7 @@ Dim occupiedSpace As Double = GetOccupiedDriveSpace("C:/", UnitType.Gigabyte)
 The `CountFileCharacters()` method enables you to get the number of characters in a specified file. It returns a `int` value.
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.Env.CountFileCharacters()
 ~~~
@@ -266,11 +292,14 @@ It has two arguments:
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 string filePath = @"C:\File.txt";
 int characters = Env.CountFileCharacters(filePath);
 ~~~
+
 VB
+
 ~~~ vb
 Dim filePath As String = "C:\\File.txt"
 Dim characters As Integer = Env.CountFileCharacters(filePath)
@@ -294,6 +323,7 @@ Dim characters As Integer = Env.CountFileCharacters(filePath)
 The `CountFileCharactersAsync()` method enables you to count the number of characters in a file, asynchronously. It returns a `Task<int>` value.
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.Env.CountFileCharactersAsync()
 ~~~
@@ -306,6 +336,7 @@ It has one argument:
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 async void CountCharacters()
 {
@@ -313,7 +344,9 @@ async void CountCharacters()
   int count = await Env.CountFileCharactersAsync(filePath);
 }
 ~~~
+
 VB
+
 ~~~ vb
 Private Async Sub CountCharacters()
     Dim filePath As String = "C:\\File.txt"
@@ -340,6 +373,7 @@ End Sub
 The `IsDirectoryHasPermission()` method allows you to see if your program has permissions to write files/directories to a specified directory. It returns a `bool` value.
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.Env.IsDirectoryHasPermission()
 ~~~
@@ -352,13 +386,16 @@ It has one argument:
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 if (Env.IsDirectoryHasPermission("C:/Windows"))
 {
     File.Create("C:/Windows/file.txt");
 }
 ~~~
+
 VB
+
 ~~~ vb
 If Env.IsDirectoryHasPermission("C:/Windows") Then
     File.Create("C:/Windows/file.txt")
@@ -389,6 +426,7 @@ Don't forget to import the `LeoCorpLibrary.Enums`or `LeoCorpLibrary.Core.Enums` 
 :::
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.Env.GetWindowsVersion()
 ~~~
@@ -424,6 +462,7 @@ This file is an example. You can create this file by right-clicking on the proje
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 WindowsVersion winver = Env.GetWindowsVersion(); // Get Windows version
 /*
@@ -435,7 +474,9 @@ WindowsVersion.Windows10
 WindowsVersion.Windows11 (available in version 4.1+)
 /*
 ~~~
+
 VB
+
 ~~~ vb
 Dim winver As WindowsVersion = Env.GetWindowsVersion() ' Get Windows version
 ' Can return:
@@ -464,12 +505,14 @@ Dim winver As WindowsVersion = Env.GetWindowsVersion() ' Get Windows version
 The `ExecuteAsAdmin()` allows you to execute a program in admin mode on Windows.
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.Env.ExecuteAsAdmin()
 ~~~
 This method has two variation:
 
 **Variation 1**
+
 ~~~ cs
 Env.ExecuteAsAdmin(Process process) {...}
 ~~~
@@ -478,6 +521,7 @@ Env.ExecuteAsAdmin(Process process) {...}
 | Process | process | Process with `StartInfo.FileName` indicated |
 
 **Variation 2**
+
 ~~~ cs
 Env.ExecuteAsAdmin(string filename) {...}
 ~~~
@@ -488,6 +532,7 @@ Env.ExecuteAsAdmin(string filename) {...}
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 // Variation 1
 Process process = new Process();
@@ -497,7 +542,9 @@ Env.ExecuteAsAdmin(process);
 // Variation 2
 Env.ExecuteAsAdmin(@"C:\Windows\System32\cmd.exe");
 ~~~
+
 VB
+
 ~~~ vb
 ' Variation 1
 Dim process As Process = New Process()
@@ -527,6 +574,7 @@ Env.ExecuteAsAdmin("C:/Windows/System32/cmd.exe")
 This method allows you to get the current UnixTime or the UnixTime of a specific date/time. Returns a `int` value.
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.Env.GetUnixTime()
 ~~~
@@ -548,6 +596,7 @@ This variation has an argument:
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 // Variation 1
 int currentUnixTime = Env.GetUnixTime();
@@ -556,7 +605,9 @@ int currentUnixTime = Env.GetUnixTime();
 DateTime dateTime = new DateTime(1970, 1, 1);
 int unixTime = Env.GetUnixTime(dateTime);
 ~~~
+
 VB
+
 ~~~ vb
 ' Variation 1
 Dim currentUnixTime As Integer = Env.GetUnixTime()
@@ -584,6 +635,7 @@ Dim unixTime As Integer = Env.GetUnixTime(dateTime)
 This method allows you to get the user's `%APPDATA%` path. Returns a `string` value.
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.Env.GetAppDataPath()
 ~~~
@@ -593,10 +645,13 @@ It has no arguments.
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 string appDataPath = Env.GetAppDataPath();
 ~~~
+
 VB
+
 ~~~ vb
 dim appDataPath As String = Env.GetAppDataPath()
 ~~~
@@ -619,6 +674,7 @@ dim appDataPath As String = Env.GetAppDataPath()
 This method allows you to get the current position of the mouse cursor on the screen. It returns a `Point` value (`System.Drawing`).
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.Env.GetMouseCursorPosition()
 ~~~
@@ -632,11 +688,14 @@ This method is using Windows Forms features, so use this method in Windows Forms
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 Point p = Env.GetMouseCursorPosition();
 MessageBox.Show($"Mouse position: X = {p.X}; Y = {p.Y}");
 ~~~
+
 VB
+
 ~~~ cs
 Dim p As Point = Env.GetMouseCursorPosition()
 MessageBox.Show("Mouse position: X = " + p.X.ToString() + "; Y = " + p.Y.ToString())
@@ -661,6 +720,7 @@ MessageBox.Show("Mouse position: X = " + p.X.ToString() + "; Y = " + p.Y.ToStrin
 This method allows you to get the current position of the mouse cursor on the screen. It returns a `Point` value (`System.Windows`).
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.Env.GetMouseCursorPositionWPF()
 ~~~
@@ -670,11 +730,14 @@ It has no arguments.
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 Point p = Env.GetMouseCursorPosition();
 MessageBox.Show($"Mouse position: X = {p.X}; Y = {p.Y}");
 ~~~
+
 VB
+
 ~~~ cs
 Dim p As Point = Env.GetMouseCursorPosition()
 MessageBox.Show("Mouse position: X = " + p.X.ToString() + "; Y = " + p.Y.ToString())
@@ -698,6 +761,7 @@ MessageBox.Show("Mouse position: X = " + p.X.ToString() + "; Y = " + p.Y.ToStrin
 This method allows you to convert UnixTime (`int`) to a `DateTime` object. Returns a `DateTime` value.
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.Env.UnixTimeToDateTime()
 ~~~
@@ -711,11 +775,14 @@ It has one argument:
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 int unixTime = 1615538407;
 DateTime date = Env.UnixTimeToDateTime(unixTime); // 12/03/2021 @ 09:40:07
 ~~~
+
 VB
+
 ~~~ vb
 Dim unixTime As Integer = 1615538407
 Dim date As DateTime = Env.UnixTimeToDateTime(unixTime) ' 12/03/2021 @ 09:40:07
@@ -739,6 +806,7 @@ Dim date As DateTime = Env.UnixTimeToDateTime(unixTime) ' 12/03/2021 @ 09:40:07
 This method allows you to check if a specific process is currently running. Returns a `bool` value.
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.Env.IsProcessRunning()
 ~~~
@@ -752,13 +820,16 @@ It has one argument:
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 if (IsProcessRunning("cmd.exe"))
 {
     MessageBox.Show("You have a command prompt running.")
 }
 ~~~
+
 VB
+
 ~~~ vb
 If IsProcessRunning("cmd.exe") Then
     MessageBox.Show("You have a command prompt running.")
@@ -794,6 +865,7 @@ InstallLocation\AppxManifest.xml
 This method isn't available in LeoCorpLibrary.Core. 
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.Env.LaunchUWPApp()
 ~~~
@@ -808,11 +880,14 @@ It has two arguments:
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 // Launch Minecraft UWP
 Env.LaunchUWPApp("Microsoft.MinecraftUWP_8wekyb3d8bbwe", "App"); // Launch
 ~~~
+
 VB
+
 ~~~ vb
 ' Launch Minecraft UWP
 Env.LaunchUWPApp("Microsoft.MinecraftUWP_8wekyb3d8bbwe", "App") ' Launch
@@ -844,16 +919,20 @@ This property only works on Windows!
 
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.Env.SystemDrive
 ~~~
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 DriveInfo sysDrive = Env.SystemDrive; // Get system drive
 ~~~
+
 VB
+
 ~~~ vb
 Dim sysDrive As DriveInfo = Env.SystemDrive ' Get system drive
 ~~~
@@ -876,16 +955,20 @@ Dim sysDrive As DriveInfo = Env.SystemDrive ' Get system drive
 The `AppDataPath` property allows you to get the `%APPDATA%` directory path.
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.Env.AppDataPath
 ~~~
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 string appDataPath = Env.AppDataPath; // Get %APPDATA%
 ~~~
+
 VB
+
 ~~~ vb
 Dim appDataPath As String = Env.AppDataPath ' Get %APPDATA%
 ~~~
@@ -915,16 +998,20 @@ The `CurrentOperatingSystem` property allows you to get the current Operating sy
 - Unknown
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.Env.CurrentOperatingSystem
 ~~~
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 Console.WriteLine($"The current OS is {Env.CurrentOperatingSystem.ToString()}");
 ~~~
+
 VB
+
 ~~~ vb
 Console.WriteLine("The current OS is" + Env.CurrentOperatingSystem.ToString())
 ~~~
@@ -947,12 +1034,14 @@ Console.WriteLine("The current OS is" + Env.CurrentOperatingSystem.ToString())
 The `UnixTime` property allows you to get the current Unix time.
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.Env.UnixTime
 ~~~
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 while (true)
 {
@@ -960,7 +1049,9 @@ while (true)
     Thread.Sleep(1000);
 }
 ~~~
+
 VB
+
 ~~~ vb
 While True
     Console.WriteLine(Env.UnixTime.ToString())
@@ -988,6 +1079,7 @@ End While
 The `SystemTheme` property allows you to get the current `SystemThemes` of the operating system. Works only on Windows. It returns a `SystemThemes` enum.
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.Env.SystemTheme
 ~~~
@@ -995,6 +1087,7 @@ LeoCorpLibrary.Env.SystemTheme
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 // Running on Windows 11, with dark theme enabled.
 
@@ -1002,7 +1095,9 @@ Console.WriteLine(Env.SystemTheme.ToString());
 // Output:
 // Dark
 ~~~
+
 VB
+
 ~~~ vb
 ' Running on Windows 11, with dark theme enabled.
 
@@ -1031,6 +1126,7 @@ Console.WriteLine(Env.SystemTheme.ToString())
 The `IsDarkThemeAvailable` property allows you to get if dark theme is supported on the current operating system. It returns a `bool` value.
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.Env.IsDarkThemeAvailable
 ~~~
@@ -1038,6 +1134,7 @@ LeoCorpLibrary.Env.IsDarkThemeAvailable
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 // Running on Windows 7
 Console.WriteLine(Env.IsDarkThemeAvailable.ToString());
@@ -1045,7 +1142,9 @@ Console.WriteLine(Env.IsDarkThemeAvailable.ToString());
 // Output:
 // False
 ~~~
+
 VB
+
 ~~~ vb
 ' Running on Windows 7
 Console.WriteLine(Env.IsDarkThemeAvailable.ToString())

@@ -10,10 +10,13 @@ We recommend that you use either [`ListViewContentXML`](#b-listviewcontentxml) o
 To use the following methods, you need to use the version 1.7 or higher of LeoCorpLibrary, and put this at the top of your code file:
 
 C#
+
 ~~~ cs
 using LeoCorpLibrary;
 ~~~
+
 VB
+
 ~~~ vb
 Imports LeoCorpLibrary
 ~~~
@@ -58,6 +61,7 @@ We recommend that you use these following parameters for your ListView:
 There is two variations of the method:
 
 **Variation 1**
+
 ~~~ cs
 Save.ListViewContentCustom(ListView listview, string filePath) {...}
 ~~~
@@ -67,6 +71,7 @@ Save.ListViewContentCustom(ListView listview, string filePath) {...}
 | string | filePath | File location where to save the ListView's content |
 
 **Variation 2**
+
 ~~~ cs
 Save.ListViewContentCustom(ListView listView, string filePath, string itemSplit, string columnSplit) {...}
 ~~~
@@ -80,6 +85,7 @@ Save.ListViewContentCustom(ListView listView, string filePath, string itemSplit,
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 // Variation 1
 Save.ListViewContentCustom(listView1, @"C:\content.txt");
@@ -87,7 +93,9 @@ Save.ListViewContentCustom(listView1, @"C:\content.txt");
 // Variation 2
 Save.ListViewContentCustom(listView1, @"C:\content.txt", "/*E*/", "/*C*/");
 ~~~
+
 VB
+
 ~~~ vb
 ' Variation 1
 Save.ListViewContentCustom(ListView1, "C:/content.txt")
@@ -126,10 +134,13 @@ It has two arguments:
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 Save.ListViewContentXML(listView1, "C:/test.xml");
 ~~~
+
 VB
+
 ~~~ vb
 Save.ListViewContentXML(listView1, "C:/test.xml")
 ~~~
@@ -194,10 +205,13 @@ It has two arguments:
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 Save.ListViewContentJSON(listView1, "C:/test.json");
 ~~~
+
 VB
+
 ~~~ vb
 Save.ListViewContentJSON(listView1, "C:/test.json")
 ~~~

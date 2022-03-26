@@ -11,10 +11,13 @@ We recommend that you use either [`ListViewContentXML`](#b-listviewcontentxml) o
 To use the following methods, you need to use the version 1.7 or higher of LeoCorpLibrary, and put this at the top of your code file:
 
 C#
+
 ~~~ cs
 using LeoCorpLibrary;
 ~~~
+
 VB
+
 ~~~ vb
 Imports LeoCorpLibrary
 ~~~
@@ -52,6 +55,7 @@ We recommend that you se these following parameters for your ListView:
 There is two variations of the method:
 
 **Variation 1**
+
 ~~~ cs
 LeoCorpLibrary.Load.ListViewContentCustom(ListView listView1, string filePath) {...}
 ~~~
@@ -61,6 +65,7 @@ LeoCorpLibrary.Load.ListViewContentCustom(ListView listView1, string filePath) {
 | string | filePath | The file location where the content is |
 
 **Variation 2**
+
 ~~~ cs
 LeoCorpLibrary.Load.ListViewContentCustom(ListView listView1, string filePath, string itemSplit, string columnSplit) {...}
 ~~~
@@ -74,6 +79,7 @@ LeoCorpLibrary.Load.ListViewContentCustom(ListView listView1, string filePath, s
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 // Variation 1
 LeoCorpLibrary.Load.ListViewContentCustom(listView1, @"C:\content.txt");
@@ -81,7 +87,9 @@ LeoCorpLibrary.Load.ListViewContentCustom(listView1, @"C:\content.txt");
 // Variation 2
 LeoCorpLibrary.Load.ListViewContentCustom(listView1, @"C:\content.txt", "/*E*/", "/*C*/");
 ~~~
+
 VB
+
 ~~~ vb
 ' Variation 1
 LeoCorpLibrary.Load.ListViewContentCustom(ListView1, "C:/content.txt")
@@ -125,10 +133,13 @@ It has two arguments:
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 LeoCorpLibrary.Load.ListViewContentXML(listView1, "C:/test.xml");
 ~~~
+
 VB
+
 ~~~ vb
 LeoCorpLibrary.Load.ListViewContentXML(listView1, "C:/test.xml")
 ~~~
@@ -192,10 +203,13 @@ It has two arguments:
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 LeoCorpLibrary.Load.ListViewContentJSON(listView1, "C:/test.json");
 ~~~
+
 VB
+
 ~~~ vb
 LeoCorpLibrary.Load.ListViewContentJSON(listView1, "C:/test.json")
 ~~~

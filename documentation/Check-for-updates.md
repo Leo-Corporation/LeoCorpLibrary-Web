@@ -8,10 +8,13 @@ When you create a software, you usually want to update it to add new features or
 To use the methods and other features of LeoCorpLibrary, don't forget to add this line of code in your "using" region.
 
 C#
+
 ~~~ cs
 using LeoCorpLibrary;
 ~~~
+
 VB
+
 ~~~ vb
 Imports LeoCorpLibrary
 ~~~
@@ -33,6 +36,7 @@ Imports LeoCorpLibrary
 </details>
 
 The `IsAvailable()` method allows you to check if a updates are available for your software. Returns a ``bool`` value.
+
 ~~~ cs
 LeoCorpLibrary.Update.IsAvailable()
 ~~~
@@ -49,6 +53,7 @@ Here's this method's arguments
 Here's an example of usage that uses the [GetLastVersion](#c-getlastversion) method:
 
 C#
+
 ~~~ cs
 string lastVersion = LeoCorpLibrary.Update.GetLastVersion("https://dl.dropboxusercontent.com/s/j3fn78x3lcmowpr/Version.txt");
 if (LeoCorpLibrary.Update.IsAvailable("1.0.0.0", lastVersion)) // If updates are available
@@ -60,7 +65,9 @@ else
     MessageBox.Show("No update available");
 }
 ~~~
+
 VB
+
 ~~~ vb
 Dim lastVersion = LeoCorpLibrary.Update.GetLastVersion("https://dl.dropboxusercontent.com/s/j3fn78x3lcmowpr/Version.txt")
 If (LeoCorpLibrary.Update.IsAvailable("1.0.0.0", lastVersion)) Then ' If updates are available
@@ -87,6 +94,7 @@ End If
 </details>
 
 The `Check()` method allows you to check updates for your software. If updates are available, a specified form will show. Same thing if no updates are available.
+
 ~~~ cs
 LeoCorpLibrary.Update.Check()
 ~~~
@@ -105,12 +113,15 @@ Here's this method's arguments
 Here's an example that uses the [GetLastVersion](#c-getlastversion) method:
 
 C#
+
 ~~~ cs
 string lastVersion = LeoCorpLibrary.Update.GetLastVersion("https://dl.dropboxusercontent.com/s/j3fn78x3lcmowpr/Version.txt");
 LeoCorpLibrary.Update.Check("1.0.0.0", lastVersion, new MAJ_AV(), new MAJ_UN());
 // A window will open depending on the result
 ~~~
+
 VB
+
 ~~~ vb
 Dim LastVersion = LeoCorpLibrary.Update.GetLastVersion("https://dl.dropboxusercontent.com/s/j3fn78x3lcmowpr/Version.txt")
 LeoCorpLibrary.Update.Check("1.0.0.0", LastVersion, new MAJ_AV, new MAJ_UN)
@@ -135,6 +146,7 @@ LeoCorpLibrary.Update.Check("1.0.0.0", LastVersion, new MAJ_AV, new MAJ_UN)
 </details>
 
 The `CheckWPF()` method allows you to check updates for your software. If updates are available, a specified window will show. Same thing if no updates are available.
+
 ~~~ cs
 LeoCorpLibrary.Update.CheckWPF()
 ~~~
@@ -153,12 +165,15 @@ Here's this method's arguments
 Here's an example that uses the [GetLastVersion](#c-getlastversion) method:
 
 C#
+
 ~~~ cs
 string lastVersion = LeoCorpLibrary.Update.GetLastVersion("https://dl.dropboxusercontent.com/s/j3fn78x3lcmowpr/Version.txt");
 LeoCorpLibrary.Update.Check("1.0.0.0", lastVersion, new MAJ_AV(), new MAJ_UN());
 // A window will open depending on the result
 ~~~
+
 VB
+
 ~~~ vb
 Dim LastVersion = LeoCorpLibrary.Update.GetLastVersion("https://dl.dropboxusercontent.com/s/j3fn78x3lcmowpr/Version.txt")
 LeoCorpLibrary.Update.Check("1.0.0.0", LastVersion, new MAJ_AV, new MAJ_UN)
@@ -199,12 +214,15 @@ You need to place the namespace `LeoCorpLibrary` before the `Update` class becau
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 string lastVersion = LeoCorpLibrary.Update.GetLastVersion("https://dl.dropboxusercontent.com/s/j3fn78x3lcmowpr/Version.txt");
 // You can use the lastVersion variable in the IsAvailable() method. 
 // or in the Check() method.
 ~~~
+
 VB
+
 ~~~ vb
 Dim LastVersion = LeoCorpLibrary.Update.GetLastVersion("https://dl.dropboxusercontent.com/s/j3fn78x3lcmowpr/Version.txt")
 ' You can use the lastVersion variable in the IsAvailable() method. 
@@ -246,6 +264,7 @@ You need to place the namespace `LeoCorpLibrary` before the `Update` class becau
 Example:
 
 C#
+
 ~~~ cs
 string link = "https://dl.dropboxusercontent.com/s/tlekj6j834tgi3r/GestionPersoX.exe";
 
@@ -254,7 +273,9 @@ LeoCorpLibrary.Update.Install("C:/Programme/Programme.exe", link);
 
 LeoCorpLibrary.Update.Install("/Programme.exe", link, true)
 ~~~
+
 VB
+
 ~~~ vb
 Dim link = "https://dl.dropboxusercontent.com/s/tlekj6j834tgi3r/GestionPersoX.exe"
 
@@ -282,6 +303,7 @@ LeoCorpLibrary.Update.Install("/Programme.exe", link, True)
 The ``GetLastVersionAsync()`` method allows you to obtain the last version of the software asynchronously from a `*.txt` file.
 
 It's in
+
 ~~~ cs
 LeoCorpLibrary.Update.GetLastVersionAsync()
 ~~~
@@ -298,13 +320,16 @@ You need to place the namespace `LeoCorpLibrary` before the `Update` class becau
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 async void GetVersion()
 {
     string version = await LeoCorpLibrary.Update.GetLastVersionAsync("https://dl.dropboxusercontent.com/s/j3fn78x3lcmowpr/Version.txt");
 }
 ~~~
+
 VB
+
 ~~~ vb
 Private Async Sub GetVersion()
     Dim version As String = Await LeoCorpLibrary.Update.GetLastVersionAsync("https://dl.dropboxusercontent.com/s/j3fn78x3lcmowpr/Version.txt")

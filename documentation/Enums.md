@@ -8,10 +8,13 @@ This page is about enumerations included in LeoCorpLibrary.
 Starting with version 4.4, all enums of LeoCorpLibrary have been moved to their own dedicated namespace. If you are upgrading from an older version of LeoCorpLibrary, you'll need to include the `LeoCorpLibrary.Enums` or `LeoCorpLibrary.Core.Enums` namespace if you want to use any enumerations:
 
 C#
+
 ~~~ cs
 using LeoCorpLibrary.Enums;
 ~~~
+
 VB
+
 ~~~ vb
 Imports LeoCorpLibrary.Enums
 ~~~
@@ -241,6 +244,7 @@ The `StatusCodeType` enumeration is used to represent different status codes whe
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 StatusCodeType statusType = NetworkConnection.GetStatusCodeType("https://leocorporation.dev");
 
@@ -265,6 +269,7 @@ switch (statusType)
 ~~~
 
 VB
+
 ~~~ vb
 Dim statusType As StatusCodeType = NetworkConnection.GetStatusCodeType("https://leocorporation.dev")
 

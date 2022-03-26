@@ -6,10 +6,13 @@ footer: MIT Licensed | Copyright © 2022 Léo Corporation and contributors
 To use the following methods, you need to use the version 2.6 or higher of LeoCorpLibrary, and put this in your "using" region:
 
 C#
+
 ~~~ cs
 using LeoCorpLibrary;
 ~~~
+
 VB
+
 ~~~ vb
 Imports LeoCorpLibrary
 ~~~
@@ -33,6 +36,7 @@ Imports LeoCorpLibrary
 The `Encrypt()` method allows you to encrypt a `string`. It returns a `string` value.
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.Crypt.Encrypt()
 ~~~
@@ -45,13 +49,16 @@ This method has a few arguments:
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 string s = "Hello!";
 string encrypted = LeoCorpLibrary.Crypt.Encrypt(s, "ABC123");
 
 // Output: jqPW4uxt8hk=
 ~~~
+
 VB
+
 ~~~ vb
 Dim s As String = "Hello!"
 Dim encrypted As String = LeoCorpLibrary.Crypt.Encrypt(s, "ABC123")
@@ -78,6 +85,7 @@ Dim encrypted As String = LeoCorpLibrary.Crypt.Encrypt(s, "ABC123")
 The `Decrypt()` method allows you to decrypt an encrypted string. It returns a `string` value.
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.Crypt.Decrypt()
 ~~~
@@ -90,13 +98,16 @@ This method has a few arguments:
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 string encrypted = "jqPW4uxt8hk=";
 string decrypted = LeoCorpLibrary.Crypt.Decrypt(encrypted, "ABC123");
 
 // Output: Hello!
 ~~~
+
 VB
+
 ~~~ vb
 Dim encrypted As String = "jqPW4uxt8hk="
 Dim decrypted As String = LeoCorpLibrary.Crypt.Decrypt(encrypted, "ABC123")
@@ -123,6 +134,7 @@ Dim decrypted As String = LeoCorpLibrary.Crypt.Decrypt(encrypted, "ABC123")
 The `EncryptRSA()` method allows you to encrypt a string using RSA encryption. It returns a `byte[]` value.
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.Crypt.EncryptRSA()
 ~~~
@@ -135,6 +147,7 @@ This method has a few arguments:
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 using System.Security.Cryptography;
 
@@ -145,7 +158,9 @@ byte[] encrypt = Crypt.EncryptRSA(str, cryptoServiceProvider.ExportParameters(fa
 
 Console.WriteLine($"Raw: {str}\nEncrypted: {Crypt.ConvertBytesToString(encrypt)}");
 ~~~
+
 VB
+
 ~~~ vb
 Imports System.Security.Cryptography
 
@@ -175,6 +190,7 @@ Console.WriteLine($"Raw: " + str + "\nEncrypted: " + Crypt.ConvertBytesToString(
 The `DecryptRSA()` method allows you to decrypt a string using RSA encryption. It returns a `byte[]` value.
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.Crypt.DecryptRSA()
 ~~~
@@ -187,6 +203,7 @@ This method has a few arguments:
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 using System.Security.Cryptography;
 
@@ -198,7 +215,9 @@ byte[] decrypt = Crypt.DecryptRSA(encrypt, cryptoServiceProvider.ExportParameter
 
 Console.WriteLine($"Raw: {str}\nEncrypted: {Crypt.ConvertBytesToString(encrypt)}\nDecrypted: {Crypt.ConvertBytesToString(decrypt)}");
 ~~~
+
 VB
+
 ~~~ vb
 Imports System.Security.Cryptography
 
@@ -229,6 +248,7 @@ Console.WriteLine($"Raw: " + str + "\nEncrypted: " + Crypt.ConvertBytesToString(
 The `EncryptAES()` method allows you to encrypt a string using AES encryption. It returns a `string` value.
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.Crypt.EncryptAES()
 ~~~
@@ -241,6 +261,7 @@ This method has a few arguments:
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 string str = "LeoCorpLibrary";
 string encrypt = Crypt.EncryptAES(str, "key");
@@ -248,7 +269,9 @@ string decrypt = Crypt.DecryptAES(encrypt, "key");
 
 Console.WriteLine($"Raw: {str}\nEncrypted: {encrypt}");
 ~~~
+
 VB
+
 ~~~ vb
 Dim str As String = "LeoCorpLibrary"
 Dim encrypt As String = Crypt.EncryptAES(str, "key")
@@ -274,6 +297,7 @@ Console.WriteLine("Raw: " + str + "\nEncrypted: " + encrypt)
 The `DecryptAES()` method allows you to decrypt a string using AES encryption. It returns a `string` value.
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.Crypt.Decrypt()
 ~~~
@@ -286,6 +310,7 @@ This method has a few arguments:
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 string str = "LeoCorpLibrary";
 string encrypt = Crypt.EncryptAES(str, "key");
@@ -293,7 +318,9 @@ string decrypt = Crypt.DecryptAES(encrypt, "key");
 
 Console.WriteLine($"Raw: {str}\nEncrypted: {encrypt}\nDecrypted: {decrypt}");
 ~~~
+
 VB
+
 ~~~ vb
 Dim str As String = "LeoCorpLibrary"
 Dim encrypt As String = Crypt.EncryptAES(str, "key")

@@ -6,10 +6,13 @@ footer: MIT Licensed | Copyright © 2022 Léo Corporation and contributors
 To use these methods and features, do not forget to put this line of code in your "using" region:
 
 C#
+
 ~~~ cs
 using LeoCorpLibrary;
 ~~~
+
 VB
+
 ~~~ vb
 Imports LeoCorpLibrary
 ~~~
@@ -32,6 +35,7 @@ Imports LeoCorpLibrary
 The `IsUrlValid()` method allows you to check if a specified URL is valid or not. It return a `double` value.
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.Helpers.IsUrlValid()
 ~~~
@@ -43,11 +47,14 @@ This method has one argument:
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 bool isValid = Helpers.IsUrlValid("https://leocorporation.dev/");
 // isValid = true
 ~~~
+
 VB
+
 ~~~ vb
 Dim isValid As Boolean = Helpers.IsUrlValid("https://leocorporation.dev/")
 ' isValid = true
@@ -72,6 +79,7 @@ Dim isValid As Boolean = Helpers.IsUrlValid("https://leocorporation.dev/")
 The `GetUrlProtocol()` method allows you to get the protocol of an URL. It returns a `string` value.
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.Helpers.GetUrlProtocol()
 ~~~
@@ -83,11 +91,14 @@ This method has one argument:
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 string protocol = Helpers.GetUrlProtocol("https://leocorporation.dev/");
 // protocol = "https"
 ~~~
+
 VB
+
 ~~~ vb
 Dim protocol As String = Helpers.GetUrlProtocol("https://leocorporation.dev/")
 ' protocol = "https"
@@ -112,6 +123,7 @@ Dim protocol As String = Helpers.GetUrlProtocol("https://leocorporation.dev/")
 The `IsUrlHttps()` method allows you to check if the URL's protocol is equal to "https". It return a `bool` value.
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.Helpers.IsUrlHttps()
 ~~~
@@ -123,6 +135,7 @@ This method has one argument:
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 bool isHttps = Helpers.IsUrlHttps("https://leocorporation.dev/");
 // isHttps = true
@@ -130,7 +143,9 @@ bool isHttps = Helpers.IsUrlHttps("https://leocorporation.dev/");
 bool isHttps2 = Helpers.IsUrlHttps("http://leocorporation.dev/");
 // isHttp2s = false
 ~~~
+
 VB
+
 ~~~ vb
 Dim isHttps As Boolean = Helpers.IsUrlHttps("https://leocorporation.dev/")
 ' isHttps = true

@@ -6,10 +6,13 @@ footer: MIT Licensed | Copyright © 2022 Léo Corporation and contributors
 To use the following methods, you need to use the version 3.6 or higher of LeoCorpLibrary, and put this in your "using" region:
 
 C#
+
 ~~~ cs
 using LeoCorpLibrary;
 ~~~
+
 VB
+
 ~~~ vb
 Imports LeoCorpLibrary
 ~~~
@@ -32,6 +35,7 @@ Imports LeoCorpLibrary
 
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.Logger.Log()
 ~~~
@@ -53,6 +57,7 @@ This method has two variations.
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 // Variation 1
 Logger.Log("This is an example log message", "C:\\log.txt");
@@ -60,7 +65,9 @@ Logger.Log("This is an example log message", "C:\\log.txt");
 // Variation 2
 Logger.Log("This is an example log message", "C:\\log.txt", DateTime.Now);
 ~~~
+
 VB
+
 ~~~ vb
 ' Variation 1
 Logger.Log("This is an example log message", "C:\\log.txt")

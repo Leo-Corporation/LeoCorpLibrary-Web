@@ -33,10 +33,13 @@ The reference ``LeoCorpLibrary`` has been added to the project. You can verify t
 To call methods and use other features of LeoCorpLibrary, please add the following code in your `using` region (on top of the file).
 
 C#
+
 ~~~ cs
 using LeoCorpLibrary;
 ~~~
+
 VB
+
 ~~~ vb
 Imports LeoCorpLibrary
 ~~~
@@ -44,10 +47,13 @@ Imports LeoCorpLibrary
 If you are using LeoCorpLibrary.Core, you need to adapt the code:
 
 C#
+
 ~~~ cs
 using LeoCorpLibrary.Core;
 ~~~
+
 VB
+
 ~~~ vb
 Imports LeoCorpLibrary
 ~~~
@@ -60,12 +66,14 @@ Check out the [reference](/Reference) to get started.
 ## Using .NET CLI
 You can also install LeoCorpLibrary using the [.NET CLI](https://docs.microsoft.com/en-us/dotnet/core/tools/).
 Type in a command line window (cmd, bash...) the following command:
-~~~ sh
+
+~~~ csh
 dotnet add package LeoCorpLibrary --version 3.10.0.2109
 ~~~
 
 If you are working with a solution with multiple projects, you may wanna use the command below:
-~~~ sh
+
+~~~ csh
 dotnet add <PROJECT> package LeoCorpLibrary --version 3.10.0.2109
 ~~~
 
@@ -86,11 +94,13 @@ To add a NuGet package in your project, you can follow these steps:
 </ItemGroup>
 ~~~
 4. You can restore the project/solution by running the following commands:
-~~~ sh
+
+~~~ csh
 dotnet restore <PROJECT>
 ~~~
 Or
-~~~ sh
+
+~~~ csh
 nuget restore <PROJECT>
 ~~~
 

@@ -6,10 +6,13 @@ footer: MIT Licensed | Copyright © 2022 Léo Corporation and contributors
 To generate a password using LeoCorpLibrary, you must include this line of code in your "using" region:
 
 C#
+
 ~~~ cs
 using LeoCorpLibrary;
 ~~~
+
 VB
+
 ~~~ vb
 Imports LeoCorpLibrary
 ~~~
@@ -32,6 +35,7 @@ Imports LeoCorpLibrary
 The ``Generate()`` method allows you to generate a Guid. It returns a `string` value.
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.GuidGenerator.Generate()
 ~~~
@@ -57,10 +61,13 @@ This first variation doesn't take any argument, it returns a ``string`` of the g
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 string guid = GuidGenerator.Generate();
 ~~~
+
 VB
+
 ~~~ vb
 Dim guid As String = GuidGenerator.Generate()
 ~~~
@@ -83,6 +90,7 @@ Dim guid As String = GuidGenerator.Generate()
 
 Generates a Guid of a specific length. Returns a `string` value.
 
+
 ~~~ cs
 GuidGenerator(int length) {...}
 ~~~
@@ -95,10 +103,13 @@ The `length` value must be higher than 0 and lower or equal to 32. If not, a [`I
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 string guid = GuidGenerator.Generate(20);
 ~~~
+
 VB
+
 ~~~ vb
 Dim guid As String = GuidGenerator.Generate(20)
 ~~~
@@ -121,6 +132,7 @@ Dim guid As String = GuidGenerator.Generate(20)
 
 Generate a Guid from a string. Returns a `string` value.
 
+
 ~~~ cs
 GuidGenerator(string fromString) {...}
 ~~~
@@ -133,10 +145,13 @@ If `fromString` is null or empty, the [`ArgumentNullException`](https://docs.mic
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 string guid = GuidGenerator.Generate("blabla");
 ~~~
+
 VB
+
 ~~~ vb
 Dim guid As String = GuidGenerator.Generate("blabla")
 ~~~
@@ -159,6 +174,7 @@ Dim guid As String = GuidGenerator.Generate("blabla")
 
 Generates a Guid from specified [``GuidGeneratorParameters``](/GuidGeneratorParameters). Returns a `string` value.
 
+
 ~~~ cs
 GuidGenerator(GuidGeneratorParameters guidGeneratorParameters) {...}
 ~~~
@@ -171,6 +187,7 @@ The `GuidGeneratorParameters.Length` value must be higher than 0 and lower or eq
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 string guid = GuidGenerator.Generate(new GuidGeneratorParameters 
 {
@@ -178,7 +195,9 @@ string guid = GuidGenerator.Generate(new GuidGeneratorParameters
     WithBraces = true
 });
 ~~~
+
 VB
+
 ~~~ vb
 Dim guidParams As New GuidGeneratorParameters()
 
@@ -206,6 +225,7 @@ Dim guid As String = GuidGenerator.Generate(guidParams)
 
 Generates a Guid from specified [``GuidGeneratorParameters``](/GuidGeneratorParameters) and a specified `string`. Returns a `string` value.
 
+
 ~~~ cs
 GuidGenerator(string fromString, GuidGeneratorParameters guidGeneratorParameters) {...}
 ~~~
@@ -220,6 +240,7 @@ If `fromString` is null or empty, the [`ArgumentNullException`](https://docs.mic
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 string guid = GuidGenerator.Generate("blabla", new GuidGeneratorParameters 
 {
@@ -227,7 +248,9 @@ string guid = GuidGenerator.Generate("blabla", new GuidGeneratorParameters
     WithBraces = true
 });
 ~~~
+
 VB
+
 ~~~ vb
 Dim guidParams As New GuidGeneratorParameters()
 

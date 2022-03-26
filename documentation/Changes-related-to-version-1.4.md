@@ -10,20 +10,24 @@ We have modified the classes to be `static`, which means that you will no longer
 Here's an example:
 
 **Before (C#)**
+
 ~~~ cs
 new Maths().Sum(1, 2, 2.2);
 ~~~
 **After (C#)**
+
 ~~~ cs
 Maths.Sum(1, 2, 2.2);
 ~~~
 The same thing applies to Visual Basic:
 
 **Before (Visual Basic)**
+
 ~~~ vb
 New Maths().Sum(1, 2, 2.2)
 ~~~
 **After (Visual Basic)**
+
 ~~~ vb
 Maths.Sum(1, 2, 2.2)
 ~~~

@@ -6,10 +6,13 @@ footer: MIT Licensed | Copyright © 2022 Léo Corporation and contributors
 To use these methods and features, do not forget to put this line of code in your "using" region:
 
 C#
+
 ~~~ cs
 using LeoCorpLibrary.UI;
 ~~~
+
 VB
+
 ~~~ vb
 Imports LeoCorpLibrary.UI
 ~~~
@@ -32,6 +35,7 @@ Imports LeoCorpLibrary.UI
 The `CenterControlOnForm()` method allows you to center a `Control` inside a `Form`.
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.UI.WinFormsHelpers.CenterControlOnForm()
 ~~~
@@ -39,6 +43,7 @@ LeoCorpLibrary.UI.WinFormsHelpers.CenterControlOnForm()
 It has two variations:
 
 **Variation 1**
+
 ~~~ cs
 WinFormsHelpers.CenterControlOnForm(Control control, Form form) {...}
 ~~~
@@ -49,6 +54,7 @@ WinFormsHelpers.CenterControlOnForm(Control control, Form form) {...}
 | Form  | form | The form where the control is going to be center |
 
 **Variation 2**
+
 ~~~ cs
 WinFormsHelpers.CenterControlOnForm(Control control, Form form, ControlAlignment controlAlignment) {...}
 ~~~
@@ -62,6 +68,7 @@ WinFormsHelpers.CenterControlOnForm(Control control, Form form, ControlAlignment
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 // Variation 1
 Label label = new Label();
@@ -71,7 +78,9 @@ WinFormsHelpers.CenterControlOnForm(label, this); // "this" is the current objec
 // Variation 2
 WinFormsHelpers.CenterControlOnForm(label, this, VerticalAlignment.Vertical); // Center the label vertically
 ~~~
+
 VB
+
 ~~~ vb
 ' Variation 1
 Dim label As Label = New Label()
@@ -101,6 +110,7 @@ WinFormsHelpers.CenterControlOnForm(label, this, VerticalAlignment.Vertical) ' C
 The `CenterFormOnScreen()` method allows you to center a `Form` inside the primary `Screen`.
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.UI.WinFormsHelpers.CenterFormOnScreen()
 ~~~
@@ -114,10 +124,13 @@ It has one argument:
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 WinFormsHelpers.CenterFormOnScreen(this); // Center the form
 ~~~
+
 VB
+
 ~~~ vb
 WinFormsHelpers.CenterFormOnScreen(Me) ' Center the form
 ~~~
@@ -142,6 +155,7 @@ WinFormsHelpers.CenterFormOnScreen(Me) ' Center the form
 The `GetScreenDPIFromWinForm()` method allows you to get the current screen DPI from a `System.Windows.Forms.Form`. It returns a `double` value.
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.UI.ScreenHelpers.GetScreenDPIFromWinForm()
 ~~~
@@ -155,10 +169,13 @@ It has one argument:
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 ScreenHelpers.GetScreenDPIFromWinForm(this); // Get the screen DPI
 ~~~
+
 VB
+
 ~~~ vb
 ScreenHelpers.GetScreenDPIFromWinForm(Me) ' Get the screen DPI
 ~~~
@@ -182,6 +199,7 @@ ScreenHelpers.GetScreenDPIFromWinForm(Me) ' Get the screen DPI
 The `GetScreenDPIFromWPFWindow()` method allows you to get the current screen DPI from a `System.Windows.Window`. It returns a `double` value.
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.UI.ScreenHelpers.GetScreenDPIFromWPFWindow()
 ~~~
@@ -195,10 +213,13 @@ It has one argument:
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 ScreenHelpers.GetScreenDPIFromWPFWindow(this); // Get the screen DPI
 ~~~
+
 VB
+
 ~~~ vb
 ScreenHelpers.GetScreenDPIFromWPFWindow(Me) ' Get the screen DPI
 ~~~
@@ -223,6 +244,7 @@ ScreenHelpers.GetScreenDPIFromWPFWindow(Me) ' Get the screen DPI
 The `GetScreenScalingFromWinForm()` method allows you to get the current screen scale from a `System.Windows.Forms.Form`. It returns a `double` value.
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.UI.ScreenHelpers.GetScreenScalingFromWinForm()
 ~~~
@@ -236,10 +258,13 @@ It has one argument:
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 ScreenHelpers.GetScreenScalingFromWinForm(this); // Get the screen scale
 ~~~
+
 VB
+
 ~~~ vb
 ScreenHelpers.GetScreenScalingFromWinForm(Me) ' Get the screen scale
 ~~~
@@ -264,6 +289,7 @@ ScreenHelpers.GetScreenScalingFromWinForm(Me) ' Get the screen scale
 The `GetScreenScalingFromWPFWindow()` method allows you to get the current screen scale from a `System.Windows.Window`. It returns a `double` value.
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.UI.ScreenHelpers.GetScreenScalingFromWPFWindow()
 ~~~
@@ -277,10 +303,13 @@ It has one argument:
 Here's an example of usage:
 
 C#
+
 ~~~ cs
 ScreenHelpers.GetScreenScalingFromWPFWindow(this); // Get the screen scale
 ~~~
+
 VB
+
 ~~~ vb
 ScreenHelpers.GetScreenScalingFromWPFWindow(Me) ' Get the screen scale
 ~~~
