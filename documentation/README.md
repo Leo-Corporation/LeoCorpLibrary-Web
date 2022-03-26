@@ -59,7 +59,7 @@ To use any enumeration, you'll need to import the `LeoCorpLibrary.Enums` namespa
 
 
 ## Miscellaneous
-* [Changes releated to version 1.4](/Changes-related-to-version-1.4)
+* [Changes related to version 1.4](/Changes-related-to-version-1.4)
 * [Compatibility](/Compatibility)
 * [Enums](/Enums)
 * [Exceptions](/Exceptions)

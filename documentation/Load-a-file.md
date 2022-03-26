@@ -44,7 +44,7 @@ To understand how the system works, read [save system](/save-in-a-file).
 </details>
 
 The `ListViewContentCustom()` method enables you to load the content of a ListView from a file.
-We recommand that you se these following parameters for your ListView:
+We recommend that you se these following parameters for your ListView:
 
 - ``Details`` vue mode
 - ``FullRowSelect`` = true
@@ -55,7 +55,7 @@ There is two variations of the method:
 ~~~ cs
 LeoCorpLibrary.Load.ListViewContentCustom(ListView listView1, string filePath) {...}
 ~~~
-| Value | Paramètre | Description |
+| Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | ListView | listView | The ListView to load the content to |
 | string | filePath | The file location where the content is |
@@ -64,11 +64,11 @@ LeoCorpLibrary.Load.ListViewContentCustom(ListView listView1, string filePath) {
 ~~~ cs
 LeoCorpLibrary.Load.ListViewContentCustom(ListView listView1, string filePath, string itemSplit, string columnSplit) {...}
 ~~~
-| Value | Paramètre | Description |
+| Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | ListView | listView | ListView to load the content to |
 | string | filePath | The file location where the content is |
-| string | itemSplit | The element sparator |
+| string | itemSplit | The element separator |
 | string | columnSplit | The column separator |
 
 Here's an example of usage:
@@ -91,7 +91,7 @@ LeoCorpLibrary.Load.ListViewContentCustom(ListVew1, "C:/content.txt", "/*E*/", "
 ~~~
 
 ::: tip Note
-In the examples, you might noticed that instead of simply writting `Load.ListViewContentCustom`, it is written `LeoCorpLibrary.Load.ListViewContentCustom`. This because of a conflict with `Load` which is an event in Windows Forms.
+In the examples, you might noticed that instead of simply writing `Load.ListViewContentCustom`, it is written `LeoCorpLibrary.Load.ListViewContentCustom`. This because of a conflict with `Load` which is an event in Windows Forms.
 :::
 
 [Go to top](#load)
@@ -111,7 +111,7 @@ In the examples, you might noticed that instead of simply writting `Load.ListVie
 </details>
 
 The `ListViewContentXML()` method allows you to load a XML file that contains a listview's content.
-We recommand that you use these following parameters for your ListView:
+We recommend that you use these following parameters for your ListView:
 
 - ``Details`` vue mode
 - ``FullRowSelect`` = true
@@ -132,7 +132,7 @@ VB
 ~~~ vb
 LeoCorpLibrary.Load.ListViewContentXML(listView1, "C:/test.xml")
 ~~~
-Imput:
+Input:
 ~~~ xml
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
@@ -178,7 +178,7 @@ Expected Output:
 </details>
 
 The `ListViewContentJSON()` method allows you to load a listview's content from a JSON file.
-We recommand that you use these following parameters for your ListView:
+We recommend that you use these following parameters for your ListView:
 
 - ``Details`` vue mode
 - ``FullRowSelect`` = true
@@ -199,7 +199,7 @@ VB
 ~~~ vb
 LeoCorpLibrary.Load.ListViewContentJSON(listView1, "C:/test.json")
 ~~~
-Imput:
+Input:
 ~~~ json
 [
     [

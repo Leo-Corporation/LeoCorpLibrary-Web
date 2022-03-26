@@ -187,7 +187,7 @@ The `UnitTime` enumeration is used to represent different storage units (kb, mb,
 
 </details>
 
-The `ControlAlignment` enumeration is used to represent different `System.Windows.Forms.Control` alignement. It has the following values:
+The `ControlAlignment` enumeration is used to represent different `System.Windows.Forms.Control` alignment. It has the following values:
 
 - `Horizontal`
 - `Vertical`
@@ -306,8 +306,8 @@ The `PasswordPresets` enumeration is used to represent the complexity of a passw
 
 | Enumeration value | Meaning |
 | :---------------: | :-----: |
-| `PasswordPresets.Simple` | This preset will generate a password with simple caracters (abc, 123). |
-| `PasswordPresets.Complex` | This preset will generate a strong password with unusual, hard and complex caracters (abc, 123, àçé, {[@) |
+| `PasswordPresets.Simple` | This preset will generate a password with simple characters (abc, 123). |
+| `PasswordPresets.Complex` | This preset will generate a strong password with unusual, hard and complex characters (abc, 123, àçé, {[@) |
 
 [Go to top](#enums)
 

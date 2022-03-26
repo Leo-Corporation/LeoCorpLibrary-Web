@@ -57,7 +57,7 @@ ColorsConverter.RGBtoHEX(int red, int green, int blue) {...}
 | int | green | Green | 45 |
 | int | blue | Blue | 255 |
 
-You can either use the ``System.Drawing.Color`` structure or put eaach RGB values.
+You can either use the ``System.Drawing.Color`` structure or put each RGB values.
 
 ::: tip Note
 If, in the second variation of the method, you put an invalid number, the [`RGBInvalidValueException`](/Exceptions.html#rgbinvalidvalueexception) will be thrown.
@@ -114,7 +114,7 @@ Here's this method's argument:
 | [HEXColor](#hexcolor) | hexColor | HEX Color |
 
 ::: tip Note
-If you put an inccorect HEX value for `hexColor`, the [`HEXInvalidValueException`](/Exceptions.html#hexinvalidvalueexception) will be thrown.
+If you put an incorrect HEX value for `hexColor`, the [`HEXInvalidValueException`](/Exceptions.html#hexinvalidvalueexception) will be thrown.
 :::
 
 Example of usage:
@@ -213,7 +213,7 @@ HSVColor hsvColor As HSVColor = ColorsConverter.RGBtoHSV(color)
 
 </details>
 
-This method anables you to convert a HEX color to a [`HSVColor`](#hsvcolor)
+This method enables you to convert a HEX color to a [`HSVColor`](#hsvcolor)
 
 It's in:
 ~~~ cs
@@ -226,7 +226,7 @@ It has only one argument:
 | [HEXColor](#hexcolor) | hexColor | HEX Color |
 
 ::: tip Note
-If you put an inccorect HEX value for `hexColor`, the [`HEXInvalidValueException`](/Exceptions.html#hexinvalidvalueexception) will be thrown.
+If you put an incorrect HEX value for `hexColor`, the [`HEXInvalidValueException`](/Exceptions.html#hexinvalidvalueexception) will be thrown.
 :::
 
 Example of usage:
