@@ -83,7 +83,7 @@ Throw New HEXInvalidValueException("Message here")
 [Go to top](#exceptions)
 
 ## GuidGenerator
-### InvalidGuidLenghtException
+### InvalidGuidLengthException
 
 <details>
 <summary>Compatibility</summary>
@@ -101,17 +101,17 @@ This exception is thrown when the specified length for a Guid is invalid. A vali
 
 It's in:
 ~~~ cs
-LeoCorpLibrary.Exceptions.InvalidGuidLenghtException
+LeoCorpLibrary.Exceptions.InvalidGuidLengthException
 ~~~
 
 Here's an example of usage:
 
 C#
 ~~~ cs
-throw new InvalidGuidLenghtException("Message here");
+throw new InvalidGuidLengthException("Message here");
 ~~~
 VB
 ~~~ vb
-Throw New InvalidGuidLenghtException("Message here")
+Throw New InvalidGuidLengthException("Message here")
 ~~~
 [Go to top](#exceptions)

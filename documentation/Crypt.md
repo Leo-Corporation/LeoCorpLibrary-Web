@@ -120,7 +120,7 @@ Dim decrypted As String = LeoCorpLibrary.Crypt.Decrypt(encrypted, "ABC123")
 
 </details>
 
-The `EncryptRSA()` method allows you to ecnrypt a string using RSA encryption. It returns a `byte[]` value.
+The `EncryptRSA()` method allows you to encrypt a string using RSA encryption. It returns a `byte[]` value.
 
 It's in:
 ~~~ cs
@@ -235,7 +235,7 @@ LeoCorpLibrary.Crypt.EncryptAES()
 This method has a few arguments:
 | Type | Argument | Description | 
 | :--: | :-------: | :---------: |
-| string | str | The string to ecnrypt |
+| string | str | The string to encrypt |
 | string | key | The key that will be used to encrypt and decrypt the string |
 
 Here's an example of usage:
@@ -271,7 +271,7 @@ Console.WriteLine("Raw: " + str + "\nEncrypted: " + encrypt)
 
 </details>
 
-The `DecryptAES()` method allows you to decrypt a string using AES ecnryption. It returns a `string` value.
+The `DecryptAES()` method allows you to decrypt a string using AES encryption. It returns a `string` value.
 
 It's in:
 ~~~ cs

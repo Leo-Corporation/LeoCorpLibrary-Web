@@ -95,7 +95,7 @@ This method is obsolete, please use [``IsAvailable()``](#a-isavailable) instead.
 </details>
 
 
-This method is gonna try to connect to a specific page tha tyou specified. If it manages to connect to the website, it means there is an Internet connection. 
+This method is going to try to connect to a specific page that you specified. If it manages to connect to that page, it means there is an Internet connection. 
 
 You must specify a website like this:
 
@@ -211,7 +211,7 @@ C#
 ~~~ cs
 async void TestConnection()
 {
-    bool connectionAvailable = await NetworkConnection.IsavailableTestSiteAsync("https://leocorporation.dev");
+    bool connectionAvailable = await NetworkConnection.IsAvailableTestSiteAsync("https://leocorporation.dev");
 }
 ~~~
 VB
@@ -354,19 +354,19 @@ C#
 ~~~ cs
 if (NetworkConnection.GetStatusCodeType("https://leocorporation.dev") == StatusCodeType.Success)
 {
-    Console.WriteLine("The request was successfull!")
+    Console.WriteLine("The request was successful!")
 }
 else if (NetworkConnection.GetStatusCodeType("https://leocorporation.dev" == StatusCodeType.ClientError))
 {
-    Console.WriteLine("The request was not successfull!")
+    Console.WriteLine("The request was not successful!")
 }
 ~~~
 VB
 ~~~ vb
 If NetworkConnection.GetStatusCodeType("https://leocorporation.dev") = StatusCodeType.Success Then
-    Console.WriteLine("The request was successfull!")
+    Console.WriteLine("The request was successful!")
 ElseIf NetworkConnection.GetStatusCodeType("https://leocorporation.dev" = StatusCodeType.ClientError) Then
-    Console.WriteLine("The request was not successfull!")
+    Console.WriteLine("The request was not successful!")
 End If
 ~~~
 [Go to top](#networkconnection)

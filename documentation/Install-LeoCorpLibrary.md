@@ -4,7 +4,7 @@ footer: MIT Licensed | Copyright © 2022 Léo Corporation and contributors
 # Install LeoCorpLibrary
 ## Using Visual Studio
 ### 1. Add the library to a project
-[Click here](https://www.youtube.com/watch?v=Xdxqnl2g5qE) to see the suport video.
+[Click here](https://www.youtube.com/watch?v=Xdxqnl2g5qE) to see the support video.
 
 If you wanna add LeoCorpLibrary, follow this steps:
 
@@ -12,22 +12,22 @@ If you wanna add LeoCorpLibrary, follow this steps:
 
 2. Click on the "Manage NuGet Packages" menu.
 
-![Package Nuget](https://raw.githubusercontent.com/Leo-Corporation/LeoCorp-Docs/master/Documentation/Images/LeoCorpLibrary/Annotation%202020-05-08%20135109.png)
+![NuGet package](https://raw.githubusercontent.com/Leo-Corporation/LeoCorp-Docs/master/Documentation/Images/LeoCorpLibrary/Annotation%202020-05-08%20135109.png)
 
 
 3. A new tab has opened: make sure that your are in the "Browse" tab, and search "LeoCorpLibrary", and then, click on the first result.
 
-![Rechercher le package NuGet](https://raw.githubusercontent.com/Leo-Corporation/LeoCorp-Docs/master/Documentation/Images/LeoCorpLibrary/Annotation%202020-05-08%20135455.png)
+![Find the NuGet package](https://raw.githubusercontent.com/Leo-Corporation/LeoCorp-Docs/master/Documentation/Images/LeoCorpLibrary/Annotation%202020-05-08%20135455.png)
 
-4. On the right, a panel opened: it shows all the informations about the package. Click on the "Install" button.
+4. On the right, a panel opened: it shows all information about the package. Click on the "Install" button.
 
-![Installer](https://raw.githubusercontent.com/Leo-Corporation/LeoCorp-Docs/master/Documentation/Images/LeoCorpLibrary/Annotation%202020-05-08%20135606.png)
+![Install](https://raw.githubusercontent.com/Leo-Corporation/LeoCorp-Docs/master/Documentation/Images/LeoCorpLibrary/Annotation%202020-05-08%20135606.png)
 
 5. A new window has opened, click on "OK". A second window may popup asking to accept the license. If it's the case, click on "I accept".
 
 ![OK](https://raw.githubusercontent.com/Leo-Corporation/LeoCorp-Docs/master/Documentation/Images/LeoCorpLibrary/Annotation%202020-05-08%20135839.png)
 
-The reference ``LeoCorpLibrary`` has been aded to the project. You can verify this by opening the `Reference` or `Dependencies` item in Solution Explorer.
+The reference ``LeoCorpLibrary`` has been added to the project. You can verify this by opening the `Reference` or `Dependencies` item in Solution Explorer.
 
 ### 2. Start Coding
 To call methods and use other features of LeoCorpLibrary, please add the following code in your `using` region (on top of the file).
@@ -73,13 +73,13 @@ dotnet add <PROJECT> package LeoCorpLibrary --version 3.10.0.2109
 Replace `<PROJECT>` with the path to your project file.
 :::
 
-And that's it! You have sucessfully installed LeoCorpLibrary for your project!
+And that's it! You have successfully installed LeoCorpLibrary for your project!
 
 ## Using PackageReference with .NET Core
 To add a NuGet package in your project, you can follow these steps:
 1. Locate the `.csproj` file of your project.
 2. Open it in a text editor.
-3. Add an `ItemGroup` in the file (after the `PropertyGroup`) with the following synthax:
+3. Add an `ItemGroup` in the file (after the `PropertyGroup`) with the following syntax:
 ~~~ xml
 <ItemGroup>
     <PackageReference Include="LeoCorpLibrary" Version="3.9.0.2108" />

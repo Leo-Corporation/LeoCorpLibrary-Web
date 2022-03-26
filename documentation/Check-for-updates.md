@@ -5,7 +5,7 @@ footer: MIT Licensed | Copyright © 2022 Léo Corporation and contributors
 ## Introduction
 When you create a software, you usually want to update it to add new features or correct bugs. Thanks to LeoCorpLibrary, it's very simple to implement an update system.
 
-To use the methods and other features of LeoCorpLibrary, dont forget to add this line of code in your "using" region.
+To use the methods and other features of LeoCorpLibrary, don't forget to add this line of code in your "using" region.
 
 C#
 ~~~ cs
@@ -43,7 +43,7 @@ You need to place the namespace `LeoCorpLibrary` before the `Update` class becau
 Here's this method's arguments
 | Type | Argument | Description | Example |
 | :--: | :-------: | :---------: | :-----: |
-| string | version | Curent version of the software | "1.0.0.0" |
+| string | version | Current version of the software | "1.0.0.0" |
 | string | lastVersion | Last version of the software | "1.1.0.0" |
 
 Here's an example of usage that uses the [GetLastVersion](#c-getlastversion) method:
@@ -97,7 +97,7 @@ You need to place the namespace `LeoCorpLibrary` before the `Update` class becau
 Here's this method's arguments
 | Type | Argument | Description | Example |
 | :--: | :-------: | :---------: | :-----: |
-| string | version | Curent version of the software | "1.0.0.0" |
+| string | version | Current version of the software | "1.0.0.0" |
 | string | lastVersion | Last version of the software | "1.1.0.0" |
 | Form | availableUpdateForm | Form to show when updates are available | Form1 |
 | Form | noUpdateForm | From to show when no updates are available | Form2 |
@@ -145,7 +145,7 @@ You need to place the namespace `LeoCorpLibrary` before the `Update` class becau
 Here's this method's arguments
 | Type | Argument | Description | Example |
 | :--: | :-------: | :---------: | :-----: |
-| string | version | Curent version of the software | "1.0.0.0" |
+| string | version | Current version of the software | "1.0.0.0" |
 | string | lastVersion | Last version of the software | "1.1.0.0" |
 | Form | availableUpdateWindow | Window to show when updates are available | Form1 |
 | Form | noUpdateWindow | Window to show when no updates are available | Form2 |
@@ -185,7 +185,7 @@ LeoCorpLibrary.Update.Check("1.0.0.0", LastVersion, new MAJ_AV, new MAJ_UN)
 This method is obsolete, please use [GetLastVersionAsync](#e-getlastversionasync)
 :::
 
-The ``GetLastVersion()`` method download a ``string`` from a specfic webpage where a ``.txt`` file that contains the last version. Returns a ``string``.
+The ``GetLastVersion()`` method download a ``string`` from a specific webpage where a ``.txt`` file that contains the last version. Returns a ``string``.
 
 This method has only one argument:
 | Type | Argument | Description | Example |
@@ -226,7 +226,7 @@ Dim LastVersion = LeoCorpLibrary.Update.GetLastVersion("https://dl.dropboxuserco
 
 </details>
 
-The `Install()` method allow to install an update for your software. if you want to update your program using this method, we advice you to uise this method in another program (Updater). This program needs admin privileges to update the software. You can enable this feature in `app.manifest`. [You can create it in Visual Studio](https://stackoverflow.com/questions/8141795/how-to-add-an-assembly-manifest-to-a-net-executable). Edit this:
+The `Install()` method allow to install an update for your software. if you want to update your program using this method, we advise you to use this method in another program (Updater). This program needs admin privileges to update the software. You can enable this feature in `app.manifest`. [You can create it in Visual Studio](https://stackoverflow.com/questions/8141795/how-to-add-an-assembly-manifest-to-a-net-executable). Edit this:
 ~~~ diff
 - <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
 + <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
@@ -259,7 +259,7 @@ VB
 Dim link = "https://dl.dropboxusercontent.com/s/tlekj6j834tgi3r/GestionPersoX.exe"
 
 LeoCorpLibrary.Update.Install("C:/Programme/Programme.exe", link)
-' If the program is in 'C:\Progtam'
+' If the program is in 'C:\Program'
 
 LeoCorpLibrary.Update.Install("/Programme.exe", link, True)
 ~~~

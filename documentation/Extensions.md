@@ -3,7 +3,7 @@ footer: MIT Licensed | Copyright © 2022 Léo Corporation and contributors
 ---
 # Extensions
 ## Introduction
-Since the version 2.5.0.2020 of LeoCorpLibrary, a new namespcae has been added: `LeoCorpLibrary.Extensions`. In this namespace, there is extensions for common types such as `string`, ``int``, ``arrays``...
+Since the version 2.5.0.2020 of LeoCorpLibrary, a new namespace has been added: `LeoCorpLibrary.Extensions`. In this namespace, there is extensions for common types such as `string`, ``int``, ``arrays``...
 
 If you wanna use those extensions, import the namespace:
 
@@ -389,7 +389,7 @@ Dim r As Boolean = "aabb".HasRepeatedCharacters()
 
 </details>
 
-The `IsEven()` method allows you to know if a specic `int` is even. Returns a `bool` value.
+The `IsEven()` method allows you to know if a specific `int` is even. Returns a `bool` value.
 
 It's in:
 ~~~ cs

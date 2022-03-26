@@ -14,7 +14,7 @@ VB
 Imports LeoCorpLibrary
 ~~~
 ## Maths Functions
-There is multiple functions availables in this part of LeoCorpLibrary.
+There are multiple functions available in this part of LeoCorpLibrary.
 
 ### a. Sum
 **This function is available in version 1.3 and higher**
@@ -641,7 +641,7 @@ Dim isBuildable As Bool = Maths.Triangle.IsBuildable(4.5, 9.1, 12.45)
 
 </details>
 
-The `GetHypotenuse()` method allows you to get a triangle's hypotenuse from the two other sides. (Pythagorus) It returns a `double` value.
+The `GetHypotenuse()` method allows you to get a triangle's hypotenuse from the two other sides. (Pythagoras) It returns a `double` value.
 
 It's in:
 ~~~ cs
@@ -731,7 +731,7 @@ LeoCorpLibrary.Maths.Cube.GetVolume()
 
 This method has two variation:
 
-**Variante 1**
+**Variation 1**
 ~~~ cs
 GetVolume(double side, double height) {...}
 ~~~
@@ -741,7 +741,7 @@ Here's the arguments:
 | double | side | Cube's side | 7.1 |
 | double | height | Cube's height | 3.8 |
 
-**Variante 2**
+**Variation 2**
 ~~~ cs
 GetVolume(double side) {...}
 ~~~
@@ -947,7 +947,7 @@ LeoCorpLibrary.Maths.Pyramid.GetVolume()
 It has three arguments:
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
-| double | length | Lenght of the pyramid | 4.5 |
+| double | length | Length of the pyramid | 4.5 |
 | double | width | Width of the pyramid | 7 |
 | double | height | Height of the pyramid | 8.9 |
 
@@ -988,9 +988,9 @@ LeoCorpLibrary.Maths.Pyramid.GetHeight()
 It has three arguments:
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
-| double | length | Lenght of the pyramid | 4.5 |
+| double | length | Length of the pyramid | 4.5 |
 | double | width | Width of the pyramid | 7 |
-| double | volume | Volume de la pyramide | 8.9 |
+| double | volume | Volume of the pyramid  | 8.9 |
 
 Here's an example of usage:
 
@@ -1003,7 +1003,7 @@ VB
 Dim height As Double = Maths.Pyramid.GetHeight(10, 10, 100)
 ~~~
 [Go to top](#maths)
-### c. GetLenghtBase
+### c. GetLengthBase
 **This function is available in version 1.8.1 and higher**
 
 <details>
@@ -1018,11 +1018,11 @@ Dim height As Double = Maths.Pyramid.GetHeight(10, 10, 100)
 
 </details>
 
-The `GetLenghtBase()` allows you to get the length of the base of a pyramid. Returns a `double` value.
+The `GetLengthBase()` allows you to get the length of the base of a pyramid. Returns a `double` value.
 
 It's in:
 ~~~ cs
-LeoCorpLibrary.Maths.Pyramid.GetLenghtBase()
+LeoCorpLibrary.Maths.Pyramid.GetLengthBase()
 ~~~
 It has two arguments:
 | Value | Argument | Description | Example |
@@ -1034,11 +1034,11 @@ Here's an example of usage:
 
 C#
 ~~~ cs
-double lengthBase = Maths.Pyramid.GetLenghtBase(100, 10);
+double lengthBase = Maths.Pyramid.GetLengthBase(100, 10);
 ~~~
 VB
 ~~~ vb
-Dim lengthBase As Double = Maths.Pyramid.GetLenghtBase(100, 10)
+Dim lengthBase As Double = Maths.Pyramid.GetLengthBase(100, 10)
 ~~~
 [Go to top](#maths)
 ### d. GetWidthBase
@@ -1066,7 +1066,7 @@ It has two arguments:
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
 | double | areaBase | Base's area | 6.1 |
-| double | length | Lenght | 15 |
+| double | length | Length | 15 |
 
 Here's an example of usage:
 
@@ -1104,7 +1104,7 @@ LeoCorpLibrary.Maths.Hexagon.GetArea()
 It has one argument:
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
-| double | side | Lenght of the hexagon's side | 8 |
+| double | side | Length of the hexagon's side | 8 |
 
 Here's an example of usage:
 
@@ -1142,7 +1142,7 @@ LeoCorpLibrary.Maths.Hexagon.GetPerimeter()
 It has one argument:
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
-| double | side | Lenght of the hexagon's side | 7.2 |
+| double | side | Length of the hexagon's side | 7.2 |
 
 Here's an example of usage:
 
@@ -1180,8 +1180,8 @@ LeoCorpLibrary.Maths.Diamond.GetArea()
 It has one argument:
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
-| double | diag1 | Lenght of the diamond's diagonal | 4.5 |
-| double | diag2 | Lenght of the diamond's diagonal | 7.5 |
+| double | diag1 | Length of the diamond's diagonal | 4.5 |
+| double | diag2 | Length of the diamond's diagonal | 7.5 |
 
 Here's an example of usage:
 
@@ -1218,7 +1218,7 @@ LeoCorpLibrary.Maths.Diamond.GetPerimeter()
 It has one argument:
 | Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
-| double | side | Lenght of the diamond's side | 8 |
+| double | side | Length of the diamond's side | 8 |
 
 Here's an example of usage:
 

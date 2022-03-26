@@ -12,7 +12,7 @@
   <h1 align="center">LeoCorpLibrary-Web</h1>
 
   <p align="center">
-    The official website and documention of LeoCorpLibrary.
+    The official website and documentation of LeoCorpLibrary.
     <br />
     <a href="https://leocorplibrary.leocorporation.dev/"><strong>View documentation »</strong></a>
     <br />
@@ -31,7 +31,7 @@ Welcome to LeoCorpLibrary's documentation. You will fin here all the documentati
 ## What you need to know
 The `LeoCorpLibrary`  package is only available for Windows devices whereas the `LeoCorpLibrary.Core` package is available for all platforms.
 
-In this documentation, there is some symbols that migh be used to specify the compatibility of a method, function or other:
+In this documentation, there is some symbols that might be used to specify the compatibility of a method, function or other:
 
 | Symbol | Signification |
 | :----: | :-----------: |

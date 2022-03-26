@@ -35,7 +35,7 @@ It's in:
 ~~~ cs
 LeoCorpLibrary.Logger.Log()
 ~~~
-This method has two varations.
+This method has two variations.
 
 **Variation 1**
 | Type | Argument | Description | 

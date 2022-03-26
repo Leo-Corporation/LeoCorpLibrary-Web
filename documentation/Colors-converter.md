@@ -3,7 +3,7 @@ footer: MIT Licensed | Copyright © 2022 Léo Corporation and contributors
 ---
 # ColorsConverter
 ## Introduction
-To use the methos and other features of LeoCorpLibrary, don't forget to add this line on top of your file of code:
+To use all the methods and other features of LeoCorpLibrary, don't forget to add this line on top of your file of code:
 
 C#
 ~~~ cs
@@ -43,7 +43,7 @@ There is two variations of this method:
 ~~~ cs
 ColorsConverter.RGBtoHEX(Color color) {...}
 ~~~
-| Valeur | Argument | Description |
+| Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | Color | color | Color |
 
@@ -51,7 +51,7 @@ ColorsConverter.RGBtoHEX(Color color) {...}
 ~~~ cs
 ColorsConverter.RGBtoHEX(int red, int green, int blue) {...}
 ~~~
-| Valeur | Argument | Description | Example |
+| Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
 | int | red | Red | 125 |
 | int | green | Green | 45 |
@@ -109,7 +109,7 @@ LeoCorpLibrary.ColorsConverter.RGBtoHEX()
 ~~~
 Here's this method's argument:
 
-| Valeur | Argument | Description |
+| Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | [HEXColor](#hexcolor) | hexColor | HEX Color |
 
@@ -159,7 +159,7 @@ There is two variations of this method:
 ~~~ cs
 ColorsConverter.RGBtoHSV(Color color) {...}
 ~~~
-| Valeur | Argument | Description |
+| Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | Color | color | Color |
 
@@ -167,7 +167,7 @@ ColorsConverter.RGBtoHSV(Color color) {...}
 ~~~ cs
 ColorsConverter.RGBtoHSV(int red, int green, int blue) {...}
 ~~~
-| Valeur | Argument | Description | Example |
+| Value | Argument | Description | Example |
 | :----: | :-------: | :---------: | :-----: |
 | int | red | Red | 125 |
 | int | green | Green | 45 |
@@ -221,7 +221,7 @@ LeoCorpLibrary.ColorsConverter.HEXtoHSV()
 ~~~
 It has only one argument:
 
-| Valeur | Argument | Description |
+| Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | [HEXColor](#hexcolor) | hexColor | HEX Color |
 

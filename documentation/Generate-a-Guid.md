@@ -88,9 +88,9 @@ GuidGenerator(int length) {...}
 ~~~
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
-| int | length | Lenght of the Guid to generate |
+| int | length | Length of the Guid to generate |
 
-The `length` value must be higher than 0 and lower or equal to 32. If not, a [`InvalidGuidLenghtException`](/Exceptions.html.html#invalidguidlenghtexception) will be thrown.
+The `length` value must be higher than 0 and lower or equal to 32. If not, a [`InvalidGuidLengthException`](/Exceptions.html.html#invalidguidlenghtexception) will be thrown.
 
 Here's an example of usage:
 
@@ -166,7 +166,7 @@ GuidGenerator(GuidGeneratorParameters guidGeneratorParameters) {...}
 | :----: | :-------: | :---------: |
 | GuidGeneratorParameters | guidGeneratorParameters | Parameters that will impact the generated Guid |
 
-The `GuidGeneratorParameters.Lenght` value must be higher than 0 and lower or equal to 32. If not, a [`InvalidGuidLenghtException`](/Exceptions.html#invalidguidlengthexception) will be thrown.
+The `GuidGeneratorParameters.Length` value must be higher than 0 and lower or equal to 32. If not, a [`InvalidGuidLengthException`](/Exceptions.html#invalidguidlengthexception) will be thrown.
 
 Here's an example of usage:
 
@@ -214,7 +214,7 @@ GuidGenerator(string fromString, GuidGeneratorParameters guidGeneratorParameters
 | string | fromString | String that will generate the Guid from |
 | GuidGeneratorParameters | guidGeneratorParameters | Parameters that will impact the generated Guid |
 
-The `GuidGeneratorParameters.Lenght` value must be higher than 0 and lower or equal to 32. If not, a [`InvalidGuidLenghtException`](/Exceptions.html#invalidguidlengthexception) will be thrown.
+The `GuidGeneratorParameters.Length` value must be higher than 0 and lower or equal to 32. If not, a [`InvalidGuidLengthException`](/Exceptions.html#invalidguidlengthexception) will be thrown.
 If `fromString` is null or empty, the [`ArgumentNullException`](https://docs.microsoft.com/fr-fr/dotnet/api/system.argumentnullexception) will be thrown.
 
 Here's an example of usage:

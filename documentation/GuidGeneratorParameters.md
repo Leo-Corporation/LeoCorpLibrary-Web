@@ -33,7 +33,7 @@ This class doesn't have any methods.
 </details>
 
 ## Properties
-### Lenght
+### Length
 
 | Value | `int` |
 | :---: | :----: |
@@ -41,7 +41,7 @@ This class doesn't have any methods.
 The length of the generated Guid. Example:
 
 ~~~ txt
-If Lenght = 15:
+If Length = 15:
 0d7d75295da745f
 ~~~
 

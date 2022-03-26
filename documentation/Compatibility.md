@@ -10,7 +10,7 @@ LeoCorpLibrary 3.0 and +, enables you to use it on this frameworks:
 - .NET Core 3.1
 - .NET Framework 4.7.2
 
-Some features may or may not be available in .NET Core or in .NET Framework. That's why in each features' documentation, we added a little table to indicate it's compatibilty.
+Some features may or may not be available in .NET Core or in .NET Framework. That's why in each features' documentation, we added a little table to indicate it's compatibility.
 
 ::: tip Note
 The above framework list can be updated at any time.

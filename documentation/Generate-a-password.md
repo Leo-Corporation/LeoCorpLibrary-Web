@@ -37,9 +37,9 @@ It returns a `string` value. This method has two variations.
 </details>
 
 This method has a few parameters:
-| Type | Paramètre | Description | Exemple |
+| Type | Argument | Description | Example |
 | :--: | :-------: | :---------: | :-----: |
-| int | length | Lenght of the password | 10
+| int | length | Length of the password | 10
 | string | chars | Characters that are used to generate the password | "a,b,c,d"
 | string | separator | Separator | ","
 
@@ -70,9 +70,9 @@ Console.WriteLine(Password.Generate(10, "a,b,c,d", ","))
 </details>
 
 This method has a few parameters:
-| Type | Paramètre | Description | Exemple |
+| Type | Argument | Description | Example |
 | :--: | :-------: | :---------: | :-----: |
-| int | length | Lenght of the password | 10
+| int | length | Length of the password | 10
 | PasswordPresets | passwordPresets | The preset used for the password generation | PasswordPresets.Simple
 
 Here's an example of usage:
@@ -111,7 +111,7 @@ It returns a `Task<string>` value. This method has two variations.
 This method has a few parameters:
 | Type | Parameter | Description | Example |
 | :--: | :-------: | :---------: | :-----: |
-| int | length | Lenght of the password | 10
+| int | length | Length of the password | 10
 | string | chars | Characters that are used to generate the password | "a,b,c,d"
 | string | separator | Separator | ","
 
@@ -144,7 +144,7 @@ Console.WriteLine(Await Password.GenerateAsync(10, "a,b,c,d", ","))
 This method has a few parameters:
 | Type | Parameter | Description | Example |
 | :--: | :-------: | :---------: | :-----: |
-| int | length | Lenght of the password | 10
+| int | length | Length of the password | 10
 | PasswordPresets | passwordPresets | The preset used for the password generation | PasswordPresets.Simple
 
 Here's an example of usage:
@@ -182,10 +182,10 @@ It returns a `List<string>` value. This method has two variations.
 </details>
 
 This method has a few parameters:
-| Type | Paramètre | Description | Exemple |
+| Type | Argument | Description | Example |
 | :--: | :-------: | :---------: | :-----: |
 | int | amount | Number of passwords to generate | 20
-| int | length | Lenght of the password | 10
+| int | length | Length of the password | 10
 | string | chars | Characters that are used to generate the password | "a,b,c,d"
 | string | separator | Separator | ","
 
@@ -225,10 +225,10 @@ Next
 </details>
 
 This method has a few parameters:
-| Type | Paramètre | Description | Exemple |
+| Type | Argument | Description | Example |
 | :--: | :-------: | :---------: | :-----: |
 | int | amount | Number of passwords to generate | 20
-| int | length | Lenght of the password | 10
+| int | length | Length of the password | 10
 | PasswordPresets | passwordPresets | The preset used for the password generation | PasswordPresets.Simple
 
 Here's an example of usage:
@@ -278,7 +278,7 @@ This method has a few parameters:
 | Type | Parameter | Description | Example |
 | :--: | :-------: | :---------: | :-----: |
 | int | amount | Number of passwords to generate | 20
-| int | length | Lenght of the password | 10
+| int | length | Length of the password | 10
 | string | chars | Characters that are used to generate the password | "a,b,c,d"
 | string | separator | Separator | ","
 
@@ -321,7 +321,7 @@ This method has a few parameters:
 | Type | Parameter | Description | Example |
 | :--: | :-------: | :---------: | :-----: |
 | int | amount | Number of passwords to generate | 20
-| int | length | Lenght of the password | 10
+| int | length | Length of the password | 10
 | PasswordPresets | passwordPresets | The preset used for the password generation | PasswordPresets.Simple
 
 Here's an example of usage:

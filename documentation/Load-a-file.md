@@ -4,7 +4,7 @@ footer: MIT Licensed | Copyright © 2022 Léo Corporation and contributors
 # Load
 ## Introduction
 ::: warning Warning
-We recommand that you use either [`ListViewContentXML`](#b-listviewcontentxml) or [`ListViewContentJson`](#c-listviewcontentjson) instead of our custom system which is old and outdated.
+We recommend that you use either [`ListViewContentXML`](#b-listviewcontentxml) or [`ListViewContentJson`](#c-listviewcontentjson) instead of our custom system which is old and outdated.
 :::
 ### a. Required configuration
 
@@ -24,7 +24,7 @@ To understand how the system works, read [save system](/save-in-a-file).
 1. The system is going to read the file
 2. The system is going to separate the elements
 3. The system is going to separate the columns
-4. From these informations, it will generate a `ListViewItem`.
+4. From each "row", it will generate a `ListViewItem`.
 5. Then it loads the `ListViewItem` inside the specified ListView.
 ## Functions
 ### a. ListViewContentCustom
@@ -55,7 +55,7 @@ There is two variations of the method:
 ~~~ cs
 LeoCorpLibrary.Load.ListViewContentCustom(ListView listView1, string filePath) {...}
 ~~~
-| Valeur | Paramètre | Description |
+| Value | Paramètre | Description |
 | :----: | :-------: | :---------: |
 | ListView | listView | The ListView to load the content to |
 | string | filePath | The file location where the content is |
@@ -64,7 +64,7 @@ LeoCorpLibrary.Load.ListViewContentCustom(ListView listView1, string filePath) {
 ~~~ cs
 LeoCorpLibrary.Load.ListViewContentCustom(ListView listView1, string filePath, string itemSplit, string columnSplit) {...}
 ~~~
-| Valeur | Paramètre | Description |
+| Value | Paramètre | Description |
 | :----: | :-------: | :---------: |
 | ListView | listView | ListView to load the content to |
 | string | filePath | The file location where the content is |

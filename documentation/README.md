@@ -8,7 +8,7 @@ actionLink: /Install-LeoCorpLibrary
 features:
 - title: Easy-to-use
   details: Using LeoCorpLibrary in a project is very easy and intuitive.
-- title: Cross-Platforms
+- title: Cross-Platform
   details: LeoCorpLibrary.Core can be used on any operating system supported by .NET. This means you can run the same code on Windows, Linux, and macOS.
 - title: .NET Powered
   details: LeoCorpLibrary is available for .NET Framework 4.5+, .NET Core 3.1, .NET 5 and .NET 6.
@@ -17,12 +17,12 @@ sidebar: auto
 ---
 # Welcome to LeoCorpLibrary
 ## Introduction
-Welcome to LeoCorpLibrary's documentation. You will fin here all the documentation of LeoCorpLibrary and LeoCorpLibrary.Core.
+Welcome to LeoCorpLibrary's documentation. You will find here all the documentation of LeoCorpLibrary and LeoCorpLibrary.Core.
 
 ## What you need to know
-The `LeoCorpLibrary`  package is only available for Windows devices whereas the `LeoCorpLibrary.Core` package is available for all platforms.
+The `LeoCorpLibrary` package is only available for Windows devices whereas the `LeoCorpLibrary.Core` package is available for all platforms.
 
-In this documentation, there is some symbols that migh be used to specify the compatibility of a method, function or other:
+In this documentation, there are some symbols that might be used to specify the compatibility of a method, function or other:
 
 | Symbol | Signification |
 | :----: | :-----------: |

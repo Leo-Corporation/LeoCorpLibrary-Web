@@ -84,7 +84,7 @@ Dim fileNumberWithSubDirectories As Integer = Env.GetFilesCount("C:/Users", True
 
 </details>
 
-The ``GetDirectoryCount`` method allow you to get the number of directoires in a specified directory. Returns a ``int`` value. It has two variation
+The ``GetDirectoryCount`` method allow you to get the number of directories in a specified directory. Returns a ``int`` value. It has two variation
 
 **Variation 1**
 ~~~ cs
@@ -273,7 +273,7 @@ int characters = Env.CountFileCharacters(filePath);
 VB
 ~~~ vb
 Dim filePath As String = "C:\\File.txt"
-Dim characters As Integer = Env.CountFileCharacyers(filePath)
+Dim characters As Integer = Env.CountFileCharacters(filePath)
 ~~~
 [Go to top](#env)
 ### g. CountFileCharactersAsync
@@ -393,7 +393,7 @@ It's in:
 LeoCorpLibrary.Env.GetWindowsVersion()
 ~~~
 ::: danger Warning
-This method works only if you specify in the Application Manifest, in the compatibilty section, that Windows 8, 8.1 and 10/11 are compatible with the software. Else, it will return ``Windows8``.
+This method works only if you specify in the Application Manifest, in the compatibility section, that Windows 8, 8.1 and 10/11 are compatible with the software. Else, it will return ``Windows8``.
 :::
 
 ~~~ xml
@@ -483,7 +483,7 @@ Env.ExecuteAsAdmin(string filename) {...}
 ~~~
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
-| string | filename | The location of the sofware to launch in admin mode |
+| string | filename | The location of the software to launch in admin mode |
 
 Here's an example of usage:
 
@@ -524,7 +524,7 @@ Env.ExecuteAsAdmin("C:/Windows/System32/cmd.exe")
 
 </details>
 
-This method allows you to get the curent UnixTime or the UnixTime of a specific date/time. Returns a `int` value.
+This method allows you to get the current UnixTime or the UnixTime of a specific date/time. Returns a `int` value.
 
 It's in:
 ~~~ cs
@@ -550,7 +550,7 @@ Here's an example of usage:
 C#
 ~~~ cs
 // Variation 1
-int curentUnixTime = Env.GetUnixTime();
+int currentUnixTime = Env.GetUnixTime();
 
 // Variation 2
 DateTime dateTime = new DateTime(1970, 1, 1);
@@ -559,7 +559,7 @@ int unixTime = Env.GetUnixTime(dateTime);
 VB
 ~~~ vb
 ' Variation 1
-Dim curentUnixTime As Integer = Env.GetUnixTime()
+Dim currentUnixTime As Integer = Env.GetUnixTime()
 
 ' Variation 2
 Dim dateTime As DateTime = New DateTime(1970, 1, 1)
@@ -782,7 +782,7 @@ End If
 
 </details>
 
-This method allows you to launch an UWP app from its ``PackageFamilyName`` and its ``Application Id``. You can find these informations by running in **Windows** Powershell (admin) the following command:
+This method allows you to launch an UWP app from its ``PackageFamilyName`` and its ``Application Id``. You can find this information by running in **Windows** Powershell (admin) the following command:
 
 ~~~ powershell
 Get-AppxPackage | Select PackageFamilyName, InstallLocation

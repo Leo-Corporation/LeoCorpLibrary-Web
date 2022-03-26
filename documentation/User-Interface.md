@@ -50,14 +50,14 @@ WinFormsHelpers.CenterControlOnForm(Control control, Form form) {...}
 
 **Variation 2**
 ~~~ cs
-WinFormsHelpers.CenterControlOnForm(Control control, Form form, ControlAlignement controlAlignement) {...}
+WinFormsHelpers.CenterControlOnForm(Control control, Form form, ControlAlignment controlAlignment) {...}
 ~~~
 
 | Value | Argument | Description |
 | :----: | :-------: | :---------: |
 | Control | control | The control to center |
 | Form  | form | The form where the control is going to be center |
-| [ControlAlignement](#controlalignement) | controlAlignement | The alignement of the control (``Vertical``, ``Horizontal`` or ``Both``) |
+| [ControlAlignment](#controlalignment) | controlAlignment | The alignment of the control (``Vertical``, ``Horizontal`` or ``Both``) |
 
 Here's an example of usage:
 
@@ -69,7 +69,7 @@ label.Text = "Hi!";
 WinFormsHelpers.CenterControlOnForm(label, this); // "this" is the current object, here, it's a Form
 
 // Variation 2
-WinFormsHelpers.CenterControlOnForm(label, this, VerticalAlignement.Vertical); // Center the label vertically
+WinFormsHelpers.CenterControlOnForm(label, this, VerticalAlignment.Vertical); // Center the label vertically
 ~~~
 VB
 ~~~ vb
@@ -79,7 +79,7 @@ label.Text = "Hi!"
 WinFormsHelpers.CenterControlOnForm(label, Me) ' "Me" is the current object, here, it's a Form
 
 ' Variation 2
-WinFormsHelpers.CenterControlOnForm(label, this, VerticalAlignement.Vertical) ' Center the label vertically
+WinFormsHelpers.CenterControlOnForm(label, this, VerticalAlignment.Vertical) ' Center the label vertically
 ~~~
 [Go to top](#ui)
 
@@ -286,8 +286,8 @@ ScreenHelpers.GetScreenScalingFromWPFWindow(Me) ' Get the screen scale
 ~~~
 [Go to top](#ui)
 
-## ControlAlignement
-``ControlAlignement`` is an enumeration which has three elements:
+## ControlAlignment
+``ControlAlignment`` is an enumeration which has three elements:
 - Horizontal
 - Vertical
 - Both

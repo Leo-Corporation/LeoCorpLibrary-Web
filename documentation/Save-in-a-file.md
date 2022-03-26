@@ -4,7 +4,7 @@ footer: MIT Licensed | Copyright © 2022 Léo Corporation and contributors
 # Save
 ## Introduction
 ::: warning Warning
-We recommand that you use either [`ListViewContentXML`](#b-listviewcontentxml) or [`ListViewContentJson`](#c-listviewcontentjson) instead of our custom system which is old and outdated.
+We recommend that you use either [`ListViewContentXML`](#b-listviewcontentxml) or [`ListViewContentJson`](#c-listviewcontentjson) instead of our custom system which is old and outdated.
 :::
 ### a. Required configuration
 To use the following methods, you need to use the version 1.7 or higher of LeoCorpLibrary, and put this at the top of your code file:
@@ -50,7 +50,7 @@ You can save the file in any formats, even custom ones: The system doesn't care.
 </details>
 
 The `ListViewContentCustom()` method enables you to save the content of a ListView.
-We recommand that you use these following parameters for your ListView:
+We recommend that you use these following parameters for your ListView:
 
 - ``Details`` vue mode
 - ``FullRowSelect`` = true
@@ -112,7 +112,7 @@ Save.ListViewContentCustom(ListVew1, "C:/content.txt", "/*E*/", "/*C*/")
 </details>
 
 The `ListViewContentXML()` method allows you to save a listview's content into a XML file.
-We recommand that you use these following parameters for your ListView:
+We recommend that you use these following parameters for your ListView:
 
 - ``Details`` vue mode
 - ``FullRowSelect`` = true
@@ -133,7 +133,7 @@ VB
 ~~~ vb
 Save.ListViewContentXML(listView1, "C:/test.xml")
 ~~~
-Imput:
+Input:
 | Column 1 | Column 2 | Column 3 |
 | :------: | :------: | :------: |
 | Test 1 | Test 2 | Test 3 |
@@ -180,7 +180,7 @@ Expected Output:
 </details>
 
 The `ListViewContentJSON()` method allows you to save a listview's content.
-We recommand that you use these following parameters for your ListView:
+We recommend that you use these following parameters for your ListView:
 
 - ``Details`` vue mode
 - ``FullRowSelect`` = true
@@ -201,7 +201,7 @@ VB
 ~~~ vb
 Save.ListViewContentJSON(listView1, "C:/test.json")
 ~~~
-Imput:
+Input:
 | Column 1 | Column 2 | Column 3 |
 | :------: | :------: | :------: |
 | Test 1 | Test 2 | Test 3 |
