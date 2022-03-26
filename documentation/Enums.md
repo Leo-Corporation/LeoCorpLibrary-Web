@@ -23,6 +23,7 @@ Imports LeoCorpLibrary.Enums
 In this documentation, most of the enumerations are available since version 4.4, in fact, most of these enumerations are available from the first versions of LeoCorpLibrary.
 :::
 
+
 ### a. WindowsVersion
 **This enumeration is available in version 1.9 and higher.**
 
@@ -54,7 +55,9 @@ The WindowsVersion enumeration is used to represent all major versions of Window
 | `WindowsVersion.Windows10` | Microsoft Windows NT 10.0 |
 | `WindowsVersion.Windows11` | Microsoft Windows NT 10.0.22000 and higher |
 
+
 [Go to top](#enums)
+
 
 ### b. TimeUnits
 **This enumeration is available in version 4.3 and higher.**
@@ -87,7 +90,9 @@ The `TimeUnits` enumeration is used to represent different time units. It has th
 | `TimeUnits.Hours` | Represent the Hours time unit |
 | `TimeUnits.Days` | Represent the Days time unit |
 
+
 [Go to top](#enums)
+
 
 ### c. SystemThemes
 **This enumeration is available in version 4.4 and higher.**
@@ -116,7 +121,9 @@ The `SystemThemes` enumeration is used to represent different Windows themes. It
 | `SystemThemes.Light` | The Windows theme is light |
 | `SystemThemes.Unknown` | The theme of the current operating system cannot be determined |
 
+
 [Go to top](#enums)
+
 
 ### d. OperatingSystems
 **This enumeration is available in version 4.4 and higher.**
@@ -147,7 +154,9 @@ The `OperatingSystems` enumeration is used to represent different operating syst
 | `OperatingSystems.Linux` | The Linux operating system/Linux based distribution |
 | `OperatingSystems.Unknown` | The current operating system cannot be determined |
 
+
 [Go to top](#enums)
+
 
 ### e. UnitType
 **This enumeration is available in version 4.4 and higher.**
@@ -173,7 +182,9 @@ The `UnitTime` enumeration is used to represent different storage units (kb, mb,
 - `Terabyte`
 - `Petabyte`
 
+
 [Go to top](#enums)
+
 
 ### f. ControlAlignment
 **This enumeration is available in version 4.4 and higher.**
@@ -206,7 +217,9 @@ The `ControlAlignment` enumeration is used to represent different `System.Window
 This enumeration is made for Windows Forms project.
 :::
 
+
 [Go to top](#enums)
+
 
 ### g. StatusCodeType
 **This enumeration is available in version 4.4 and higher.**
@@ -287,7 +300,9 @@ Select Case statusType
 End Select
 ~~~
 
+
 [Go to top](#enums)
+
 
 ### h. PasswordPresets
 **This enumeration is available in version 4.4 and higher.**
@@ -314,7 +329,9 @@ The `PasswordPresets` enumeration is used to represent the complexity of a passw
 | `PasswordPresets.Simple` | This preset will generate a password with simple characters (abc, 123). |
 | `PasswordPresets.Complex` | This preset will generate a strong password with unusual, hard and complex characters (abc, 123, àçé, {[@) |
 
+
 [Go to top](#enums)
+
 
 ### i. PasswordStrength
 **This enumeration is available in version 4.4 and higher.**
@@ -346,5 +363,6 @@ The `PasswordStrength` enumeration is used to evaluate how strong a password is.
 | `PasswordStrength.Medium` | The password could be more complex. |
 | `PasswordStrength.Low` | The password is too easy, not strong, you shouldn't use it |
 | `PasswordStrength.Unknown` | Cannot determine the strength of the  password |
+
 
 [Go to top](#enums)

@@ -36,9 +36,11 @@ If you're upgrading from an older version of LeoCorpLibrary to version 4.4, you 
 To use any enumeration, you'll need to import the `LeoCorpLibrary.Enums` namespace if you are using LeoCorpLibrary or the `LeoCorpLibrary.Core.Enums` namespace if you are using LeoCorpLibrary.Core.
 
 ## Documentation
+
 ### Get Started
 - [1. Add the library to a project](/install-LeoCorpLibrary#1-add-the-library-to-a-project)
 - [2. Start coding](/install-LeoCorpLibrary#2-start-coding)
+
 
 ### Functions
 * [ColorsConverter](/Colors-converter)

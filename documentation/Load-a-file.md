@@ -6,6 +6,7 @@ footer: MIT Licensed | Copyright © 2022 Léo Corporation and contributors
 ::: warning Warning
 We recommend that you use either [`ListViewContentXML`](#b-listviewcontentxml) or [`ListViewContentJson`](#c-listviewcontentjson) instead of our custom system which is old and outdated.
 :::
+
 ### a. Required configuration
 
 To use the following methods, you need to use the version 1.7 or higher of LeoCorpLibrary, and put this at the top of your code file:
@@ -21,6 +22,7 @@ VB
 ~~~ vb
 Imports LeoCorpLibrary
 ~~~
+
 ### b. How it works
 To understand how the system works, read [save system](/save-in-a-file). 
 
@@ -30,6 +32,7 @@ To understand how the system works, read [save system](/save-in-a-file).
 4. From each "row", it will generate a `ListViewItem`.
 5. Then it loads the `ListViewItem` inside the specified ListView.
 ## Functions
+
 ### a. ListViewContentCustom
 **This function is available in version 1.7 and higher.**
 
@@ -104,7 +107,9 @@ LeoCorpLibrary.Load.ListViewContentCustom(ListVew1, "C:/content.txt", "/*E*/", "
 In the examples, you might noticed that instead of simply writing `Load.ListViewContentCustom`, it is written `LeoCorpLibrary.Load.ListViewContentCustom`. This because of a conflict with `Load` which is an event in Windows Forms.
 :::
 
+
 [Go to top](#load)
+
 ### b. ListViewContentXML
 **This function is available in version 2.7 and higher.**
 
@@ -174,7 +179,9 @@ Expected Output:
 | Test 4 | Test 5 | Test 6 |
 | Test 8 | Test 8 | Test 9 |
 
+
 [Go to top](#load)
+
 ### c. ListViewContentJSON
 **This function is available in version 2.7 and higher.**
 
@@ -243,5 +250,6 @@ Expected Output:
 | Test 1 | Test 2 | Test 3 |
 | Test 4 | Test 5 | Test 6 |
 | Test 8 | Test 8 | Test 9 |
+
 
 [Go to top](#load)

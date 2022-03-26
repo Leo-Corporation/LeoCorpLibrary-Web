@@ -6,6 +6,7 @@ footer: MIT Licensed | Copyright © 2022 Léo Corporation and contributors
 ::: warning Warning
 We recommend that you use either [`ListViewContentXML`](#b-listviewcontentxml) or [`ListViewContentJson`](#c-listviewcontentjson) instead of our custom system which is old and outdated.
 :::
+
 ### a. Required configuration
 To use the following methods, you need to use the version 1.7 or higher of LeoCorpLibrary, and put this at the top of your code file:
 
@@ -20,6 +21,7 @@ VB
 ~~~ vb
 Imports LeoCorpLibrary
 ~~~
+
 ### b. How it works
 Here's how the Save system works:
 
@@ -36,6 +38,7 @@ You can save the file in any formats, even custom ones: The system doesn't care.
 :::
 
 ## Functions
+
 ### a. ListViewContentCustom
 **This function is available in version 1.7 and higher.**
 
@@ -105,7 +108,9 @@ Save.ListViewContentCustom(ListView1, "C:/content.txt")
 ' Variation 2
 Save.ListViewContentCustom(ListVew1, "C:/content.txt", "/*E*/", "/*C*/")
 ~~~
+
 [Go to top](#save)
+
 ### b. ListViewContentXML
 **This function is available in version 2.7 and higher.**
 
@@ -175,7 +180,9 @@ Expected Output:
   </ArrayOfString>
 </ArrayOfArrayOfString>
 ~~~
+
 [Go to top](#save)
+
 
 ### c. ListViewContentJSON
 **This function is available in version 2.7 and higher.**
@@ -246,4 +253,5 @@ Expected Output:
     ]
 ]
 ~~~
+
 [Go to top](#save)

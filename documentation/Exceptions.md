@@ -18,9 +18,11 @@ VB
 ~~~ vb
 Imports LeoCorpLibrary
 ~~~
+
 [Go to top](#exceptions)
 ## ColorsConverter
 In this section, you will find all exceptions thrown when a problem occurs
+
 ### RGBInvalidValueException
 
 <details>
@@ -56,7 +58,9 @@ VB
 ~~~ vb
 Throw New RGBInvalidValueException("Message here")
 ~~~
+
 [Go to top](#exceptions)
+
 ### HEXInvalidValueException
 
 <details>
@@ -91,9 +95,11 @@ VB
 ~~~ vb
 Throw New HEXInvalidValueException("Message here")
 ~~~
+
 [Go to top](#exceptions)
 
 ## GuidGenerator
+
 ### InvalidGuidLengthException
 
 <details>
@@ -129,4 +135,5 @@ VB
 ~~~ vb
 Throw New InvalidGuidLengthException("Message here")
 ~~~
+
 [Go to top](#exceptions)

@@ -36,6 +36,7 @@ This class doesn't have any methods.
 </details>
 
 ## Properties
+
 ### Length
 
 | Value | `int` |
@@ -48,7 +49,9 @@ If Length = 15:
 0d7d75295da745f
 ~~~
 
+
 [Go to top](#guidgeneratorparameters)
+
 
 ### UseUpperCaseOnly
 
@@ -63,7 +66,9 @@ EF634CE7-CF29-4190-8185-F6A2BE71798A
 If false:
 6eeb2cfc-ef07-47e6-9813-2ea9ce22fb4a
 ~~~
+
 [Go to top](#guidgeneratorparameters)
+
 
 ### WithBraces
 
@@ -74,7 +79,9 @@ If set to `true`, the generated Guid will have braces, example:
 ~~~ txt
 {9be1663c-0be6-4ae5-a34e-b877dfb00272}
 ~~~
+
 [Go to top](#guidgeneratorparameters)
+
 
 ### WithHyphens
 
@@ -89,4 +96,5 @@ If true
 If false
 0d7d75295da745f1b25d98ee0c862a10
 ~~~
+
 [Go to top](#guidgeneratorparameters)

@@ -17,6 +17,7 @@ VB
 Imports LeoCorpLibrary.UI
 ~~~
 ## WinFormsHelpers
+
 ### a. CenterControlOnForm
 **This function is available in version 2.3 and higher.**
 
@@ -90,7 +91,9 @@ WinFormsHelpers.CenterControlOnForm(label, Me) ' "Me" is the current object, her
 ' Variation 2
 WinFormsHelpers.CenterControlOnForm(label, this, VerticalAlignment.Vertical) ' Center the label vertically
 ~~~
+
 [Go to top](#ui)
+
 
 ### b. CenterFormOnScreen
 **This function is available in version 2.3 and higher.**
@@ -135,9 +138,11 @@ VB
 ~~~ vb
 WinFormsHelpers.CenterFormOnScreen(Me) ' Center the form
 ~~~
+
 [Go to top](#ui)
 
 ## ScreenHelpers
+
 ### a. GetScreenDPIFromWinForm
 **This function is available in version 3.7 and higher.**
 
@@ -181,7 +186,9 @@ VB
 ~~~ vb
 ScreenHelpers.GetScreenDPIFromWinForm(Me) ' Get the screen DPI
 ~~~
+
 [Go to top](#ui)
+
 
 ### b. GetScreenDPIFromWPFWindow
 **This function is available in version 3.7 and higher.**
@@ -226,7 +233,9 @@ VB
 ~~~ vb
 ScreenHelpers.GetScreenDPIFromWPFWindow(Me) ' Get the screen DPI
 ~~~
+
 [Go to top](#ui)
+
 
 ### c. GetScreenScalingFromWinForm
 **This function is available in version 3.7 and higher.**
@@ -272,7 +281,9 @@ VB
 ~~~ vb
 ScreenHelpers.GetScreenScalingFromWinForm(Me) ' Get the screen scale
 ~~~
+
 [Go to top](#ui)
+
 
 ### d. GetScreenScalingFromWPFWindow
 **This function is available in version 3.7 and higher.**
@@ -318,6 +329,7 @@ VB
 ~~~ vb
 ScreenHelpers.GetScreenScalingFromWPFWindow(Me) ' Get the screen scale
 ~~~
+
 [Go to top](#ui)
 
 ## ControlAlignment
@@ -328,6 +340,7 @@ ScreenHelpers.GetScreenScalingFromWPFWindow(Me) ' Get the screen scale
 - Both
 
 This enumeration can be used in the [``CenterControlOnForm()``](#a-centercontrolonform) method.
+
 
 
 [Go to top](#ui)

@@ -19,6 +19,7 @@ Imports LeoCorpLibrary
 ## Maths Functions
 There are multiple functions available in this part of LeoCorpLibrary.
 
+
 ### a. Sum
 **This function is available in version 1.3 and higher**
 
@@ -60,7 +61,9 @@ VB
 ~~~ vb
 Dim numberSum As Double = Maths.Sum(0, 2, 5, 6, 4)
 ~~~
+
 [Go to top](#maths)
+
 ### b. GetBiggestNumber
 **This function is available in version 1.3 and higher**
 
@@ -101,7 +104,9 @@ VB
 ~~~ vb
 Dim biggestNumber As Double = Maths.GetBiggestNumber(0, 2, 3, 4, 5, 9, 8, 1)
 ~~~
+
 [Go to top](#maths)
+
 ### c. GetLowestNumber
 **This function is available in version 1.3.1 and higher**
 
@@ -142,7 +147,9 @@ VB
 ~~~ vb
 Dim lowestNumber As Double = Maths.GetLowestNumber(0, 2, -1, 2.32)
 ~~~
+
 [Go to top](#maths)
+
 ### d. RadiansToDegrees
 **This function is available in version 3.5 and higher**
 
@@ -187,7 +194,9 @@ VB
 Dim degrees As Double =  Maths.RadiansToDegrees(1.57079633)
 ' Expected result: 90°
 ~~~
+
 [Go to top](#maths)
+
 ### e. DegreesToRadians
 **This function is available in version 3.5 and higher**
 
@@ -232,7 +241,9 @@ VB
 Dim degrees As Double =  Maths.DegreesToRadians(90)
 ' Expected result: 1.57079633
 ~~~
+
 [Go to top](#maths)
+
 
 ### e. IsInteger
 **This function is available in version 3.11 and higher.**
@@ -283,7 +294,9 @@ Dim isInt As Boolean = Maths.IsInteger(10.5);
 Dim isInt2 As Boolean = Maths.IsInteger(4);
 ' IsInt2 = true
 ~~~
+
 [Go to top](#maths)
+
 
 ### f. GetOpposite
 **This function is available in version 4.2 and higher.**
@@ -337,7 +350,9 @@ Dim oppositeOfX As Double = Maths.GetOpposite(x)
 
 ' oppositeOfX = -54
 ~~~
+
 [Go to top](#maths)
+
 
 ### g. Factorial
 **This function is available in version 4.2 and higher.**
@@ -391,9 +406,11 @@ Dim f As Integer = Maths.Factorial(x)
 
 ' f = 520
 ~~~
+
 [Go to top](#maths)
 
 ## Circle
+
 ### a. GetArea
 **This function is available in version 1.3 and higher**
 
@@ -435,7 +452,9 @@ VB
 ~~~ vb
 Dim circleArea As Double = Maths.Circle.GetCircleArea(12.458)
 ~~~
+
 [Go to top](#maths)
+
 ### b. GetPerimeter
 **This function is available in version 1.3 and higher**
 
@@ -477,8 +496,10 @@ VB
 ~~~ vb
 Dim circlePerimeter As Double = Maths.Circle.GetPerimeter(11.2)
 ~~~
+
 [Go to top](#maths)
 ## Rectangle
+
 ### a. GetDiagonal
 **This function is available in version 3.2 and higher**
 
@@ -522,7 +543,9 @@ VB
 ~~~ vb
 Dim diagonal As Double = Maths.Rectangle.GetDiagonal(4.12, 8.5) ' Get diagonal
 ~~~
+
 [Go to top](#maths)
+
 ### b. GetArea
 **This function is available in version 3.10 and higher**
 
@@ -567,9 +590,11 @@ VB
 Dim area = Maths.Rectangle.GetArea(5, 10)
 ' area = 50
 ~~~
+
 [Go to top](#maths)
 
 ## Triangle
+
 ### a. GetArea
 **This function is available in version 1.3 and higher**
 
@@ -612,7 +637,9 @@ VB
 ~~~ vb
 Dim triangleArea As Double = Maths.Triangle.GetArea(5.48, 4.12)
 ~~~
+
 [Go to top](#maths)
+
 ### b. GetPerimeter
 **This function is available in version 1.3 and higher**
 
@@ -656,7 +683,9 @@ VB
 ~~~ vb
 Dim trianglePerimeter As Double = Maths.Triangle.GetPerimeter(5.48, 4.12, 6)
 ~~~
+
 [Go to top](#maths)
+
 ### c. IsBuildable
 **This function is available in version 1.3 and higher**
 
@@ -700,7 +729,9 @@ VB
 ~~~ vb
 Dim isBuildable As Bool = Maths.Triangle.IsBuildable(4.5, 9.1, 12.45)
 ~~~
+
 [Go to top](#maths)
+
 ### d. GetHypotenuse
 **This function is available in version 3.2 and higher**
 
@@ -743,7 +774,9 @@ VB
 ~~~ vb
 Dim hypotenuse As Double = Maths.Triangle.GetHypotenuse(4.5, 6.1) ' Get the hypotenuse
 ~~~
+
 [Go to top](#maths)
+
 ### e. IsRight
 **This function is available in version 3.10 and higher**
 
@@ -789,9 +822,11 @@ VB
 Dim isRight As Boolean = Maths.Triangle.IsRight(3, 4, 5)
 ' isRight = true
 ~~~
+
 [Go to top](#maths)
 
 ## Cube
+
 ### a. GetVolume
 **This function is available in version 1.8 and higher**
 
@@ -861,7 +896,9 @@ Dim volume As Double = Maths.Cube.GetVolume(12, 14)
 ' In the case of a cube
 Dim volumeCube As Double = Maths.Cube.GetVolume(12)
 ~~~
+
 [Go to top](#maths)
+
 ### b. GetEdge
 **This function is available in version 1.8.1 and higher**
 
@@ -903,8 +940,10 @@ VB
 ~~~ vb
 Dim areaBase As Double = Maths.Cube.GetEdge(31)
 ~~~
+
 [Go to top](#maths)
 ## Cylinder
+
 ### a. GetVolume
 **This function is available in version 1.8 and higher**
 
@@ -949,7 +988,9 @@ VB
 ' Get the volume of a cylinder
 Dim volume As Double = Maths.Cylinder.GetVolume(13, 5)
 ~~~
+
 [Go to top](#maths)
+
 ### b. GetHeight
 **This function is available in version 1.8.1 and higher**
 
@@ -992,7 +1033,9 @@ VB
 ~~~ vb
 Dim height As Double = Maths.Cylinder.GetHeight(5, 21)
 ~~~
+
 [Go to top](#maths)
+
 ### c. GetBaseArea
 **This function is available in version 1.8.1 and higher**
 
@@ -1034,8 +1077,10 @@ VB
 ~~~ vb
 Dim baseArea As Double = Maths.Cylinder.GetBaseArea(10)
 ~~~
+
 [Go to top](#maths)
 ## Pyramid
+
 ### a. GetVolume
 **This function is available in version 1.8 and higher**
 
@@ -1081,7 +1126,9 @@ VB
 ' Get the volume of a pyramid
 Dim volume As Double = Maths.Pyramid.GetVolume(13, 5, 15)
 ~~~
+
 [Go to top](#maths)
+
 ### b. GetHeight
 **This function is available in version 1.8.1 and higher**
 
@@ -1125,7 +1172,9 @@ VB
 ~~~ vb
 Dim height As Double = Maths.Pyramid.GetHeight(10, 10, 100)
 ~~~
+
 [Go to top](#maths)
+
 ### c. GetLengthBase
 **This function is available in version 1.8.1 and higher**
 
@@ -1168,7 +1217,9 @@ VB
 ~~~ vb
 Dim lengthBase As Double = Maths.Pyramid.GetLengthBase(100, 10)
 ~~~
+
 [Go to top](#maths)
+
 ### d. GetWidthBase
 **This function is available in version 1.8.1 and higher**
 
@@ -1211,8 +1262,10 @@ VB
 ~~~ vb
 Dim widthBase As Double = Maths.Pyramid.GetWidthBase(100, 10)
 ~~~
+
 [Go to top](#maths)
 ## Hexagon
+
 ### a. GetArea
 **This function is available in version 3.2 and higher**
 
@@ -1254,7 +1307,9 @@ VB
 ~~~ vb
 Dim hexagonArea As Double = Maths.Hexagon.GetArea(8) ' Get the area
 ~~~
+
 [Go to top](#maths)
+
 ### b. GetPerimeter
 **This function is available in version 3.2 and higher**
 
@@ -1297,8 +1352,10 @@ VB
 ~~~ vb
 Dim hexagonPerimeter As Double = Maths.Hexagon.GetPerimeter(7.2) ' Get perimeter
 ~~~
+
 [Go to top](#maths)
 ## Diamond
+
 ### a. GetArea
 **This function is available in version 3.2 and higher**
 
@@ -1341,7 +1398,9 @@ VB
 ~~~ vb
 Dim diamondArea As Double = Maths.Diamond.GetArea(4.5, 7.5) ' Get area
 ~~~
+
 [Go to top](#maths)
+
 ### b. GetPerimeter
 **This function is available in version 3.2 and higher**
 
@@ -1383,8 +1442,10 @@ VB
 ~~~ vb
 Dim diamondPerimeter As Double = Maths.Diamond.GetPerimeter(8) ' Get perimeter
 ~~~
+
 [Go to top](#maths)
 ## Sphere
+
 ### a. GetArea
 **This function is available in version 3.8 and higher**
 
@@ -1430,7 +1491,9 @@ Dim area As Double = Maths.Sphere.GetArea(10)
 ' Expected output:
 ' 1256.6370614359173
 ~~~
+
 [Go to top](#maths)
+
 
 ### b. GetVolume
 **This function is available in version 3.8 and higher**
@@ -1477,9 +1540,11 @@ Dim volume As Double = Maths.Sphere.GetVolume(10)
 ' Expected output:
 ' 4188.790204786391
 ~~~
+
 [Go to top](#maths)
 
 ## Cone
+
 ### a. GetVolume
 **This function is available in version 3.10 and higher**
 
@@ -1525,10 +1590,12 @@ Dim volume As Double = Maths.Cone.GetVolume(5, 20)
 ' volume = 523.5987755982989
 ~~~
 
+
 [Go to top](#maths)
 
 ## Trigonometry functions
 ![SohCahToa](https://raw.githubusercontent.com/Leo-Corporation/LeoCorp-Docs/master/Documentation/Images/LeoCorpLibrary/sohcahtoa.png)
+
 
 ### a. GetTriangleOpposedSideFromHypotenuse
 **This function is available in version 3.5 and higher**
@@ -1579,7 +1646,9 @@ Dim opposedSide As Double = Maths.Trigonometry.GetTriangleOpposedSideFromHypoten
 ' Expected result: 8.66
 ' Actual result: 8.67423225594017
 ~~~
+
 [Go to top](#maths)
+
 
 ### b. GetTriangleOpposedSideFromAdjacent
 **This function is available in version 3.5 and higher**
@@ -1630,7 +1699,9 @@ Dim opposedSide As Double = Maths.Trigonometry.GetTriangleOpposedSideFromAdjacen
 ' Expected result: 8.66
 ' Actual result: 8.716576549915851
 ~~~
+
 [Go to top](#maths)
+
 
 ### c. GetTriangleAdjacentSideFromHypotenuse
 **This function is available in version 3.5 and higher**
@@ -1681,7 +1752,9 @@ Dim opposedSide As Double = Maths.Trigonometry.GetTriangleAdjacentSideFromHypote
 ' Expected result: 5
 ' Actual result: 4.97571047891727
 ~~~
+
 [Go to top](#maths)
+
 
 ### d. GetTriangleAdjacentSideFromOpposedSide
 **This function is available in version 3.5 and higher**
@@ -1732,7 +1805,9 @@ Dim adjacentSide As Double = Maths.Trigonometry.GetTriangleAdjacentSideFromOppos
 ' Expected result: 5
 ' Actual result: 4.967546576576329
 ~~~
+
 [Go to top](#maths)
+
 
 ### e. GetTriangleHypotenuseFromOpposedSide
 **This function is available in version 3.5 and higher**
@@ -1783,7 +1858,9 @@ Dim hypotenuse As Double = Maths.Trigonometry.GetTriangleHypotenuseFromOpposedSi
 ' Expected result: 10
 ' Actual result: 9.98359248920223
 ~~~
+
 [Go to top](#maths)
+
 
 ### f. GetTriangleHypotenuseFromAdjacentSide
 **This function is available in version 3.5 and higher**
@@ -1834,4 +1911,5 @@ Dim hypotenuse As Double = Maths.Trigonometry.GetTriangleHypotenuseFromAdjacentS
 ' Expected result: 10
 ' Actual result: 10.04881618652381
 ~~~
+
 [Go to top](#maths)

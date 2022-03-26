@@ -18,6 +18,7 @@ Imports LeoCorpLibrary
 ~~~
 ## Methods
 ## Distances
+
 ### a. MilesToKm
 **This function is available in version 3.9 and higher.**
 
@@ -63,7 +64,9 @@ Dim km As Double = UnitsConversions.MilesToKm(10)
 ' Expected result:
 ' 16.09344 km
 ~~~
+
 [Go to top](#unitsconversions)
+
 ### b. KmToMiles
 **This function is available in version 3.9 and higher.**
 
@@ -109,8 +112,10 @@ Dim miles As Double = UnitsConversions.KmToMiles(10)
 ' Expected result :
 ' 6.2137119223733395 miles
 ~~~
+
 [Go to top](#unitsconversions)
 ## Temperatures
+
 ### a. CelsiusToFahrenheit
 **This function is available in version 3.9 and higher.**
 
@@ -156,7 +161,9 @@ Dim f As Double = UnitsConversions.CelsiusToFahrenheit(25)
 ' Expected result:
 ' 77°F
 ~~~
+
 [Go to top](#unitsconversions)
+
 ### b. FahrenheitToCelsius
 **This function is available in version 3.9 and higher.**
 
@@ -202,8 +209,10 @@ Dim c As Double = UnitsConversions.FahrenheitToCelsius(68)
 ' Expected result:
 ' 20°C
 ~~~
+
 [Go to top](#unitsconversions)
 ## Volumes
+
 ### a. M3ToLitre
 **This function is available in version 3.9 and higher.**
 
@@ -249,7 +258,9 @@ Dim l As Double = UnitsConversions.M3ToLitre(10)
 ' Expected result:
 ' 10000L
 ~~~
+
 [Go to top](#unitsconversions)
+
 ### b. LitreToM3
 **This function is available in version 3.9 and higher.**
 
@@ -295,9 +306,11 @@ Dim m3 As Double = UnitsConversions.LitreToM3(2500)
 ' Expected result:
 ' 2.5 m³
 ~~~
+
 [Go to top](#unitsconversions)
 
 ## Distance
+
 ### a. FeetToMeters
 **This function is available in version 3.10 and higher**
 
@@ -341,7 +354,9 @@ VB
 Dim meters As Double = UnitsConversions.FeetToMeters(5)
 ' Expected result: 1.52399999768352
 ~~~
+
 [Go to top](#unitsconversions)
+
 
 ### b. MetersToFeet
 **This function is available in version 3.10 and higher**
@@ -386,9 +401,11 @@ VB
 Dim feet As Double = UnitsConversions.MetersToFeet(10)
 ' Expected result: 32.808399
 ~~~
+
 [Go to top](#unitsconversions)
 
 ## Masses
+
 ### a. PoundsToKilograms
 **This function is available in version 3.10 and higher**
 
@@ -432,7 +449,9 @@ VB
 Dim pounds As Double = UnitsConversions.PoundsToKilograms(20)
 ' Expected result: 9.071847407607567
 ~~~
+
 [Go to top](#unitsconversions)
+
 
 ### b. KilogramsToPounds
 **This function is available in version 3.10 and higher**
@@ -477,9 +496,11 @@ VB
 Dim kg As Double = UnitsConversions.KilogramsToPounds(14.5)
 ' Expected result: 31.96702799
 ~~~
+
 [Go to top](#unitsconversions)
 
 ## Time
+
 ### a. TimeUnitToSeconds
 **This function is available in version 4.3 and higher.**
 
@@ -529,7 +550,9 @@ Dim tSeconds As Double = UnitsConversions.TimeUnitToSeconds(t, TimeUnits.Minutes
 
 ' tSeconds = 600
 ~~~
+
 [Go to top](#unitsconversions)
+
 
 ### b. TimeUnitToMinutes
 **This function is available in version 4.3 and higher.**
@@ -580,7 +603,9 @@ Dim tMinutes As Double = UnitsConversions.TimeUnitToMinutes(t, TimeUnits.Minutes
 
 ' tMinutes = 60
 ~~~
+
 [Go to top](#unitsconversions)
+
 
 ### c. TimeUnitToHours
 **This function is available in version 4.3 and higher.**
@@ -631,7 +656,9 @@ Dim tHours As Double = UnitsConversions.TimeUnitToHours(t, TimeUnits.Minutes)
 
 ' tHours = 2
 ~~~
+
 [Go to top](#unitsconversions)
+
 
 ### d. TimeUnitToDays
 **This function is available in version 4.3 and higher.**
@@ -682,9 +709,11 @@ Dim tDays As Double = UnitsConversions.TimeUnitToDays(t, TimeUnits.Hours)
 
 ' tDays = 3
 ~~~
+
 [Go to top](#unitsconversions)
 
 ## Data and Storage
+
 ### a. SizeUnitToByte
 **This function is available in version 3.6 and higher.**
 
@@ -734,7 +763,9 @@ Dim byteVar As Double = kiloByte.SizeUnitToByte(kiloByte, UnitType.Kilobyte)
 
 ' Expected value for byteVar: 5000000
 ~~~
+
 [Go to top](#unitsconversions)
+
 
 ### b. SizeUnitToKilobyte
 **This function is available in version 3.6 and higher.**
@@ -785,7 +816,9 @@ Dim kiloByte As Double = megaByte.SizeUnitToKilobyte(megaByte, UnitType.Megabyte
 
 ' Expected value for kiloByte: 50000
 ~~~
+
 [Go to top](#unitsconversions)
+
 
 ### c. SizeUnitToMegabyte
 **This function is available in version 3.6 and higher.**
@@ -836,7 +869,9 @@ Dim megaByte As Double = gigaByte.SizeUnitToMegabyte(gigaByte, UnitType.Gigabyte
 
 ' Expected value for megaByte: 50000
 ~~~
+
 [Go to top](#unitsconversions)
+
 
 ### d. SizeUnitToGigabyte
 **This function is available in version 3.6 and higher.**
@@ -887,7 +922,9 @@ Dim gigaByte As Double = megaByte.SizeUnitToGigabyte(megaByte, UnitType.Megabyte
 
 ' Expected value for gigaByte: 4
 ~~~
+
 [Go to top](#unitsconversions)
+
 
 ### e. SizeUnitToTerabyte
 **This function is available in version 3.6 and higher.**
@@ -939,7 +976,9 @@ Dim teraByte As Double = gigaByte.SizeUnitToTerabyte(gigaByte, UnitType.Gigabyte
 ' Expected value for teraByte: 2
 ~~~
 
+
 [Go to top](#unitsconversions)
+
 
 ### f. SizeUnitToPetabyte
 **This function is available in version 3.6 and higher.**
@@ -990,5 +1029,6 @@ Dim petaByte As Double = teraByte.SizeUnitToPetabyte(teraByte, UnitType.Terabyte
 
 ' Expected value for petaByte: 6
 ~~~
+
 
 [Go to top](#unitsconversions)

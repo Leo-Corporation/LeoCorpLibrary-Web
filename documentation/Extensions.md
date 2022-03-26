@@ -20,6 +20,7 @@ Import LeoCorpLibrary.Extensions
 ~~~
 
 ## String Extensions
+
 ### a. CountWords
 **This function is available in version 2.5 and higher.**
 
@@ -80,7 +81,9 @@ Dim numberOfWords As Integer = "Hello, this is a test sentence!".CountWords()
 Dim wordSeparator As String() = {" ", ",", ":", "!", "?", ";", "."}
 Dim numberOfWords As Integer = "Hello, this is a test sentence!".CountWords(wordSeparator)
 ~~~
+
 [Go to top](#extensions)
+
 ### b. Encrypt
 **This function is available in version 2.6 and higher.**
 
@@ -124,7 +127,9 @@ Dim encrypted As String = LeoCorpLibrary.Crypt.Encrypt(s, "ABC123")
 
 ' Output: jqPW4uxt8hk=
 ~~~
+
 [Go to top](#extensions)
+
 ### c. Decrypt
 **This function is available in version 2.6 and higher.**
 
@@ -168,7 +173,9 @@ Dim decrypted As String = LeoCorpLibrary.Crypt.Decrypt(encrypted, "ABC123")
 
 ' Output: Hello!
 ~~~
+
 [Go to top](#extensions)
+
 ### d. UpperFirstLetter
 **This function is available in version 3.2 and higher.**
 
@@ -207,7 +214,9 @@ Console.WriteLine(helloMsg.UpperFirstLetter())
 ' Output:
 ' Hello, this is a test
 ~~~
+
 [Go to top](#extensions)
+
 ### e. UpperLettersAt
 **This function is available in version 3.4 and higher.**
 
@@ -249,7 +258,9 @@ Dim s As String = "I want leocorplibrary in upper case".UpperLettersAt(7, 20)
 ' Value of s:
 ' "I want LEOCORPLIBRARY in upper case"
 ~~~
+
 [Go to top](#extensions)
+
 ### f. IsEndingWithSamePunctuation
 **This function is available in version 3.4 and higher.**
 
@@ -325,7 +336,9 @@ a.IsEndingWithSamePunctuation(b) ' Returns true
 
 a.IsEndingWithSamePunctuation(b, ".") ' Returns true
 ~~~
+
 [Go to top](#extensions)
+
 ### g. SplitLines
 **This function is available in version 3.6 and higher.**
 
@@ -366,7 +379,9 @@ Dim lines As String() = text.SplitLines()
 ' lines[0] = Hello,
 ' lines[1] = World!
 ~~~
+
 [Go to top](#extensions)
+
 
 ### h. HasRepeatedCharacters
 **This function is available in version 3.8 and higher.**
@@ -408,9 +423,11 @@ VB
 Dim r As Boolean = "aabb".HasRepeatedCharacters()
 ' r = true
 ~~~
+
 [Go to top](#extensions)
 
 ## Int Extensions
+
 ### a. IsEven
 **This function is available in version 2.5 and higher.**
 
@@ -451,7 +468,9 @@ VB
 Dim even As Boolean = 12.IsEven() ' Returns true
 Dim odd As Boolean = 11.IsEven() ' Returns false
 ~~~
+
 [Go to top](#extensions)
+
 ### b. ToDouble
 **This function is available in version 2.5 and higher.**
 
@@ -494,7 +513,9 @@ Dim a As Integer = 15
 Dim b As Integer = 2
 Dim result As Double = a.ToDouble() / b.ToDouble()
 ~~~
+
 [Go to top](#extensions)
+
 
 ### c. ConvertSizeUnitToByte
 **This function is available in version 3.6 and higher.**
@@ -544,7 +565,9 @@ Dim byteVar As Double = kiloByte.ConvertSizeUnitToByte(UnitType.Kilobyte)
 
 ' Expected value for byteVar: 5000000
 ~~~
+
 [Go to top](#extensions)
+
 
 ### d. ConvertSizeUnitToKilobyte
 **This function is available in version 3.6 and higher.**
@@ -594,7 +617,9 @@ Dim kiloByte As Double = megaByte.ConvertSizeUnitToKilobyte(UnitType.Megabyte)
 
 ' Expected value for kiloByte: 50000
 ~~~
+
 [Go to top](#extensions)
+
 
 ### e. ConvertSizeUnitToMegabyte
 **This function is available in version 3.6 and higher.**
@@ -644,7 +669,9 @@ Dim megaByte As Double = gigaByte.ConvertSizeUnitToMegabyte(UnitType.Gigabyte)
 
 ' Expected value for megaByte: 50000
 ~~~
+
 [Go to top](#extensions)
+
 
 ### f. ConvertSizeUnitToGigabyte
 **This function is available in version 3.6 and higher.**
@@ -694,7 +721,9 @@ Dim gigaByte As Double = megaByte.ConvertSizeUnitToGigabyte(UnitType.Megabyte)
 
 ' Expected value for gigaByte: 4
 ~~~
+
 [Go to top](#extensions)
+
 
 ### g. ConvertSizeUnitToTerabyte
 **This function is available in version 3.6 and higher.**
@@ -745,7 +774,9 @@ Dim teraByte As Double = gigaByte.ConvertSizeUnitToTerabyte(UnitType.Gigabyte)
 ' Expected value for teraByte: 2
 ~~~
 
+
 [Go to top](#extensions)
+
 
 ### h. ConvertSizeUnitToPetabyte
 **This function is available in version 3.6 and higher.**
@@ -796,7 +827,9 @@ Dim petaByte As Double = teraByte.ConvertSizeUnitToPetabyte(UnitType.Terabyte)
 ' Expected value for petaByte: 6
 ~~~
 
+
 [Go to top](#extensions)
+
 
 ### i. GetDivisors
 **This function is available in version 4.3 and higher.**
@@ -843,9 +876,11 @@ Dim ds As Integer() = n.GetDivisors()
 ' ds = [1, 2, 5, 10]
 ~~~
 
+
 [Go to top](#extensions)
 
 ## Arrays Extensions
+
 ### a. Append
 **This function is available in version 2.5 and higher.**
 
@@ -910,7 +945,9 @@ Dim numbers As Integer() = {1, 2, 3, 4}
 Dim appendNumbers As Integer() = numbers.Append(5, 6)
 ' appendNumbers: { 1, 2, 3, 4, 5, 6 }
 ~~~
+
 [Go to top](#extensions)
+
 ### b. RemoveItem
 **This function is available in version 2.5 and higher.**
 
@@ -975,7 +1012,9 @@ Dim numbers As Integer() = {1, 2, 3, 4, 5}
 Dim remove As Integer() = numbers.RemoveItem(5, 3)
 ' remove: { 1, 2, 4 }
 ~~~
+
 [Go to top](#extensions)
+
 
 ### c. UnSplit
 **This function is available in version 3.6 and higher.**
@@ -1027,8 +1066,10 @@ Dim unSplit As String = array.UnSplit(";")
 ' Output:
 ' a;b;c;d
 ~~~
+
 [Go to top](#extensions)
 ## Double Extensions
+
 ### a. ToSeconds
 **This function is available in version 4.3 and higher.**
 
@@ -1077,7 +1118,9 @@ Dim tSeconds As Double = t.ToSeconds(TimeUnits.Minutes)
 
 ' tSeconds = 600
 ~~~
+
 [Go to top](#extensions)
+
 
 ### b. ToMinutes
 **This function is available in version 4.3 and higher.**
@@ -1127,7 +1170,9 @@ Dim tMinutes As Double = t.ToMinutes(TimeUnits.Minutes)
 
 ' tMinutes = 60
 ~~~
+
 [Go to top](#extensions)
+
 
 ### c. ToHours
 **This function is available in version 4.3 and higher.**
@@ -1177,7 +1222,9 @@ Dim tHours As Double = t.ToHours(TimeUnits.Minutes)
 
 ' tHours = 2
 ~~~
+
 [Go to top](#extensions)
+
 
 ### d. ToDays
 **This function is available in version 4.3 and higher.**
@@ -1227,4 +1274,5 @@ Dim tDays As Double = t.ToDays(TimeUnits.Hours)
 
 ' tDays = 3
 ~~~
+
 [Go to top](#extensions)

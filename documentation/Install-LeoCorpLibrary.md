@@ -3,6 +3,7 @@ footer: MIT Licensed | Copyright © 2022 Léo Corporation and contributors
 ---
 # Install LeoCorpLibrary
 ## Using Visual Studio
+
 ### 1. Add the library to a project
 [Click here](https://www.youtube.com/watch?v=Xdxqnl2g5qE) to see the support video.
 
@@ -28,6 +29,7 @@ If you wanna add LeoCorpLibrary, follow this steps:
 ![OK](https://raw.githubusercontent.com/Leo-Corporation/LeoCorp-Docs/master/Documentation/Images/LeoCorpLibrary/Annotation%202020-05-08%20135839.png)
 
 The reference ``LeoCorpLibrary`` has been added to the project. You can verify this by opening the `Reference` or `Dependencies` item in Solution Explorer.
+
 
 ### 2. Start Coding
 To call methods and use other features of LeoCorpLibrary, please add the following code in your `using` region (on top of the file).

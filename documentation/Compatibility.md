@@ -3,6 +3,7 @@ footer: MIT Licensed | Copyright © 2022 Léo Corporation and contributors
 ---
 # Compatibility
 ## Introduction
+
 ### LeoCorpLibrary
 LeoCorpLibrary 3.0 and +, enables you to use it on this frameworks:
 
@@ -15,6 +16,7 @@ Some features may or may not be available in .NET Core or in .NET Framework. Tha
 ::: tip Note
 The above framework list can be updated at any time.
 :::
+
 
 ### LeoCorpLibrary.Core
 LeoCorpLibrary.Core 3.0 and +, enables you to use it on this frameworks:
@@ -29,6 +31,7 @@ The above framework list can be updated at any time.
 :::
 
 ## Compatible Operating Systems
+
 ### LeoCorpLibrary
 Here are the OSs and their compatibility levels:
 
@@ -43,6 +46,7 @@ LeoCorpLibrary uses `Microsoft.NET.Sdk.WindowsDesktop` which means that LeoCorpL
 ::: tip Note
 Even if some methods and features of LeoCorpLibrary don't need the Windows Desktop SDK, doesn't mean that they are compatible with other OSs.
 :::
+
 
 ### LeoCorpLibrary.Core
 

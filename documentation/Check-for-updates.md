@@ -20,6 +20,7 @@ Imports LeoCorpLibrary
 ~~~
 
 ## Functions
+
 ### a. IsAvailable
 **This function is available in version 1.1 and higher.**
 
@@ -76,8 +77,11 @@ Else
     MsgBox("No update available")
 End If
 ~~~
+
 [Go to top](#update)
+
 ### b. Check
+
 #### 1. Check
 **This function is available in version 1.1 and higher.**
 
@@ -128,7 +132,9 @@ LeoCorpLibrary.Update.Check("1.0.0.0", LastVersion, new MAJ_AV, new MAJ_UN)
 ' A window will open depending on the result
 ~~~
 
+
 [Go to top](#update)
+
 
 #### 2. CheckWPF
 **This function is available in version 2.2 and higher.**
@@ -180,7 +186,9 @@ LeoCorpLibrary.Update.Check("1.0.0.0", LastVersion, new MAJ_AV, new MAJ_UN)
 ' A window will open depending on the result
 ~~~
 
+
 [Go to top](#update)
+
 ### c. GetLastVersion
 **This function is available in version 1.1 and higher.**
 
@@ -229,7 +237,9 @@ Dim LastVersion = LeoCorpLibrary.Update.GetLastVersion("https://dl.dropboxuserco
 ' You can use the lastVersion variable in the IsAvailable() method. 
 ' or in the Check() method.
 ~~~
+
 [Go to top](#update)
+
 ### d. Install
 **This function is available in version 1.1 and higher.**
 
@@ -286,7 +296,9 @@ LeoCorpLibrary.Update.Install("C:/Programme/Programme.exe", link)
 
 LeoCorpLibrary.Update.Install("/Programme.exe", link, True)
 ~~~
+
 [Go to top](#update)
+
 ### e. GetLastVersionAsync
 **This function is available in version 2.1 and higher.**
 
@@ -338,4 +350,5 @@ Private Async Sub GetVersion()
     Dim version As String = Await LeoCorpLibrary.Update.GetLastVersionAsync("https://dl.dropboxusercontent.com/s/j3fn78x3lcmowpr/Version.txt")
 End Sub
 ~~~
+
 [Go to top](#update)

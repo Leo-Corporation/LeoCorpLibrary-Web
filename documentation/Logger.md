@@ -18,6 +18,7 @@ Imports LeoCorpLibrary
 ~~~
 
 ## Functions
+
 ### a. Log
 **This function is available in version 3.6 and higher.**
 
@@ -77,4 +78,5 @@ Logger.Log("This is an example log message", "C:\\log.txt")
 ' Variation 2
 Logger.Log("This is an example log message", "C:\\log.txt", DateTime.Now)
 ~~~
+
 [Go to top](#logger)

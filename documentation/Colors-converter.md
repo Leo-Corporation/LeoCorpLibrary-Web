@@ -18,8 +18,10 @@ Imports LeoCorpLibrary
 ~~~
 ## Classes and structures
 To convert colors, LeoCorpLibrary uses custom classes and structures.
+
 ### ColorsConverter
 `ColorsConverter` is a class that contains all of the methods to convert colors.
+
 #### a. RGBtoHEX
 **This function is available in version 1.5 and higher.**
 
@@ -96,7 +98,9 @@ Dim color As Color = Color.FromArgb(125, 45, 255)
 HEXColor hexColor As HEXColor = ColorsConverter.RGBtoHEX(color)
 Console.WriteLine(hexColor.Value) ' Write value
 ~~~
+
 [Go to top](#colorsconverter)
+
 #### b. HEXtoRGB
 **This function is available in version 1.5 and higher.**
 
@@ -147,7 +151,9 @@ Dim hexColor As HEXColor = New HEXColor()
 hexColor.Value = "ffffff"
 Dim color As Color = ColorsConverter.HEXtoRGB(hexColor)
 ~~~
+
 [Go to top](#colorsconverter)
+
 #### c. RGBtoHSV
 **This function is available in version 1.5 and higher.**
 
@@ -221,7 +227,9 @@ Dim hsvColor As HSVColor = ColorsConverter.RGBtoHSV(125, 45, 255)
 Dim color As Color = Color.FromArgb(125, 45, 255)
 HSVColor hsvColor As HSVColor = ColorsConverter.RGBtoHSV(color)
 ~~~
+
 [Go to top](#colorsconverter)
+
 #### d. HEXtoHSV
 **This function is available in version 1.5 and higher.**
 
@@ -272,7 +280,9 @@ Dim hexColor As HEXColor = New HEXColor()
 hexColor.Value = "ffffff"
 HSVColor hsvColor = ColorsConverter.HEXtoHSV(hexColor)
 ~~~
+
 [Go to top](#colorsconverter)
+
 ### HEXColor
 The ``HEXColor`` structure allows to some methods to work correctly. It stocks the HEX value in a `string`.
 
@@ -291,6 +301,8 @@ VB
 Dim hexColor As HEXColor = ColorsConverter.RGBtoHEX(125, 12, 255)
 Console.WriteLine(hexColor.Value)
 ~~~
+
+
 #### a. FromRGB
 **This function is available in version 1.5 and higher.**
 
@@ -321,11 +333,13 @@ There is two variation of this method:
 ~~~ cs
 HEXColor.FromRGB(Color color) {...}
 ~~~
+
 **Variation 2**
 
 ~~~ cs
 HEXColor.FromRGB(int red, int green, int blue) {...}
 ~~~
+
 You can either use the `System.Drawing.Color` structure or put each value individually.
 
 ::: tip Note
@@ -353,7 +367,9 @@ Dim hexColor As HEXColor = HEXColor.FromRGB(color)
 ' Example 2 :
 Dim hexColor As HEXColor = HEXColor.FromRGB(125, 12, 255)
 ~~~
+
 [Go to top](#colorsconverter)
+
 ### HSVColor
 **This function is available in version 1.5 and higher.**
 
@@ -389,7 +405,9 @@ VB
 Dim hsvColor As HSVColor = ColorsConverter.RGBtoHSV(125, 12, 255)
 Console.WriteLine(hsvColor.Hue.ToString() + vbNewLine + hsvColor.Saturation.ToString() + vbNewLine + hsvColor.Value.ToString())
 ~~~
+
 [Go to top](#colorsconverter)
+
 #### a. FromRGB
 **This function is available in version 1.5 and higher.**
 
@@ -453,4 +471,5 @@ Dim hsvColor As HSVColor = HSVColor.FromRGB(color)
 ' Example 2 :
 Dim hsvColor As HSVColor = HSVColor.FromRGB(125, 12, 255)
 ~~~
+
 [Go to top](#colorsconverter)

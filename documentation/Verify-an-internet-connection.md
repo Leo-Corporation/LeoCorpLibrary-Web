@@ -24,6 +24,7 @@ They are in:
 ~~~ cs
 LeoCorpLibrary.NetworkConnection.IsAvailable()
 ~~~
+
 ### a. IsAvailable
 **This method is available in version 1.1 and higher.**
 
@@ -82,6 +83,7 @@ End If
 // Or
 Dim isAvailable As Boolean = NetworkConnection.IsAvailable("https://leocorporation.dev")
 ~~~
+
 ### b. IsAvailableTestSite
 **This method is available in version 1.1 and higher.**
 
@@ -131,7 +133,9 @@ Else
     Console.WriteLine("Not connected")
 End If
 ~~~
+
 [Go to top](#networkconnection)
+
 ### c. IsAvailableAsync
 **This method is available in version 2.1 and higher.**
 
@@ -188,7 +192,9 @@ Private Async Sub TestConnection()
     Dim connectionAvailable2 As Boolean = Await NetworkConnection.IsAvailableAsync("https://leocorporation.dev")
 End Sub
 ~~~
+
 [Go to top](#networkconnection)
+
 ### d. IsAvailableTestSiteAsync
 **This method is available in version 2.1 and higher.**
 
@@ -239,7 +245,9 @@ Private Async Sub TestConnection()
     Dim connectionAvailable As Boolean = Await NetworkConnection.IsAvailableTestSiteAsync("https://leocorporation.dev")
 End Sub
 ~~~
+
 [Go to top](#networkconnection)
+
 
 ### e. GetWebPageStatusCode
 **This method is available in version 4.1 and higher.**
@@ -290,7 +298,9 @@ If NetworkConnection.GetWebPageStatusCode("https://leocorporation.dev") = 200 Th
     Console.WriteLine("The website responded: OK")
 End if
 ~~~
+
 [Go to top](#networkconnection)
+
 
 ### f. GetWebPageStatusDescription
 **This method is available in version 4.1 and higher.**
@@ -346,7 +356,9 @@ Console.WriteLine(status.ToString() & " - " & description)
 ' Expected output:
 ' 200 - OK
 ~~~
+
 [Go to top](#networkconnection)
+
 
 ### g. GetStatusCodeType
 **This method is available in version 4.1 and higher.**
@@ -403,7 +415,9 @@ ElseIf NetworkConnection.GetStatusCodeType("https://leocorporation.dev" = Status
     Console.WriteLine("The request was not successful!")
 End If
 ~~~
+
 [Go to top](#networkconnection)
+
 
 ### h. DownloadFileAsync
 **This method is available in version 4.4 and higher.**
@@ -457,4 +471,5 @@ Private Async Sub Main()
     Await NetworkConnection.DownloadFileAsync(New Uri("https://example.com/file.pdf"), "C:\myFile.pdf")
 End Sub
 ~~~
+
 [Go to top](#networkconnection)

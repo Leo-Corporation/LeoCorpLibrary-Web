@@ -17,12 +17,14 @@ VB
 Imports LeoCorpLibrary
 ~~~
 ## Functions
+
 ### a. Generate
 To generate a password, you need to call the ``Generate()`` method, in:
 ``` cs
 LeoCorpLibrary.Password.Generate()
 ```
 It returns a `string` value. This method has two variations.
+
 
 #### Generate(length, chars, separator)
 **This method is available in version 1.4 and higher.**
@@ -59,7 +61,9 @@ VB
 ~~~ vb
 Console.WriteLine(Password.Generate(10, "a,b,c,d", ","))
 ~~~
+
 [Go to top](#password)
+
 #### Generate(length, passwordPresets)
 **This method is available in version 2.4 and higher.**
 
@@ -94,13 +98,16 @@ VB
 ~~~ vb
 Console.WriteLine(Password.Generate(10, PasswordPresets.Simple))
 ~~~
+
 [Go to top](#password)
+
 ### b. GenerateAsync
 To generate a password, you need to call the ``GenerateAsync()`` method, in:
 ``` cs
 LeoCorpLibrary.Password.GenerateAsync()
 ```
 It returns a `Task<string>` value. This method has two variations.
+
 
 #### GenerateAsync(length, chars, separator)
 **This method is available in version 2.4 and higher.**
@@ -138,7 +145,9 @@ VB
 ~~~ vb
 Console.WriteLine(Await Password.GenerateAsync(10, "a,b,c,d", ","))
 ~~~
+
 [Go to top](#password)
+
 #### GenerateAsync(length, passwordPresets)
 **This method is available in version 2.4 and higher.**
 
@@ -174,7 +183,9 @@ VB
 ~~~ vb
 Console.WriteLine(Await Password.GenerateAsync(10, PasswordPresets.Simple))
 ~~~
+
 [Go to top](#password)
+
 
 ### c. GenerateAmount
 To generate multiple passwords you need to call this method, in.
@@ -182,6 +193,7 @@ To generate multiple passwords you need to call this method, in.
 LeoCorpLibrary.Password.GenerateAmount()
 ```
 It returns a `List<string>` value. This method has two variations.
+
 
 #### GenerateAmount(amount, length, chars, separator)
 **This method is available in version 3.7 and higher.**
@@ -228,7 +240,9 @@ For i As Integer = 0 To passwords.Count - 1 ' For each password
     Console.WriteLine(passwords(i)) ' Print password in console
 Next
 ~~~
+
 [Go to top](#password)
+
 #### GenerateAmount(amount, length, passwordPresets)
 **This method is available in version 3.7 and higher.**
 
@@ -273,7 +287,9 @@ For i As Integer = 0 To passwords.Count - 1 ' For each password
     Console.WriteLine(passwords(i)) ' Print password in console
 Next
 ~~~
+
 [Go to top](#password)
+
 
 ### d. GenerateAmountAsync
 To generate multiple passwords asynchronously you need to call this method, in.
@@ -281,6 +297,7 @@ To generate multiple passwords asynchronously you need to call this method, in.
 LeoCorpLibrary.Password.GenerateAmountAsync()
 ```
 It returns a `Task<List<string>>` value. This method has two variations.
+
 
 #### GenerateAmountAsync(amount, length, chars, separator)
 **This method is available in version 3.7 and higher.**
@@ -328,7 +345,9 @@ For i As Integer = 0 To passwords.Count - 1 ' For each password
      Console.WriteLine(passwords(i)) ' Print password in console
 Next
 ~~~
+
 [Go to top](#password)
+
 #### GenerateAmountAsync(amount, length, passwordPresets)
 **This method is available in version 3.7 and higher.**
 
@@ -374,7 +393,9 @@ For i As Integer = 0 To passwords.Count - 1 ' For each password
     Console.WriteLine(passwords(i)) ' Print password in console
 Next
 ~~~
+
 [Go to top](#password)
+
 
 ### e. GetPasswordStrength
 **This method is available in version 3.8 and higher.**
@@ -453,9 +474,11 @@ Next
 ' VeryGood
 ' Medium
 ~~~
+
 [Go to top](#password)
 
 ## Enumerations
+
 ### a. PasswordStrength
 **This enumeration is available in version 3.8 and higher.**
 
@@ -464,5 +487,6 @@ The `PasswordStrength` enumeration can be equal to:
 - Medium
 - Good
 - VeryGood
+
 
 [Go to top](#password)

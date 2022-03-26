@@ -17,6 +17,7 @@ VB
 Imports LeoCorpLibrary
 ~~~
 ## Functions
+
 ### a. Generate
 **This function is available in version 2.2 and higher.**
 
@@ -40,6 +41,7 @@ It's in:
 LeoCorpLibrary.GuidGenerator.Generate()
 ~~~
 It has in total 5 variation.
+
 
 #### Generate()
 **This function is available in version 2.2 and higher.**
@@ -71,7 +73,9 @@ VB
 ~~~ vb
 Dim guid As String = GuidGenerator.Generate()
 ~~~
+
 [Go to top](#guidgenerator)
+
 
 #### Generate(length)
 **This function is available in version 2.2 and higher.**
@@ -114,7 +118,9 @@ VB
 ~~~ vb
 Dim guid As String = GuidGenerator.Generate(20)
 ~~~
+
 [Go to top](#guidgenerator)
+
 
 #### Generate(fromString)
 **This function is available in version 2.2 and higher.**
@@ -157,7 +163,9 @@ VB
 ~~~ vb
 Dim guid As String = GuidGenerator.Generate("blabla")
 ~~~
+
 [Go to top](#guidgenerator)
+
 
 #### Generate(guidGeneratorParameters)
 **This function is available in version 2.2 and higher.**
@@ -209,7 +217,9 @@ guidParams.WithBraces = True
 
 Dim guid As String = GuidGenerator.Generate(guidParams)
 ~~~
+
 [Go to top](#guidgenerator)
+
 
 #### Generate(fromString, guidGeneratorParameters)
 **This function is available in version 2.2 and higher.**
@@ -263,4 +273,5 @@ guidParams.WithBraces = True
 
 Dim guid As String = GuidGenerator.Generate("blabla", guidParams)
 ~~~
+
 [Go to top](#guidgenerator)

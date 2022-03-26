@@ -17,6 +17,7 @@ VB
 Imports LeoCorpLibrary
 ~~~
 ## Methods
+
 ### a. IsUrlValid
 **This function is available in version 3.11 and higher.**
 
@@ -60,7 +61,9 @@ VB
 Dim isValid As Boolean = Helpers.IsUrlValid("https://leocorporation.dev/")
 ' isValid = true
 ~~~
+
 [Go to top](#helpers)
+
 
 ### b. GetUrlProtocol
 **This function is available in version 3.11 and higher.**
@@ -105,7 +108,9 @@ VB
 Dim protocol As String = Helpers.GetUrlProtocol("https://leocorporation.dev/")
 ' protocol = "https"
 ~~~
+
 [Go to top](#helpers)
+
 
 ### c. IsUrlHttps
 **This function is available in version 3.11 and higher.**
@@ -156,4 +161,5 @@ Dim isHttps As Boolean = Helpers.IsUrlHttps("https://leocorporation.dev/")
 Dim isHttps2 As Boolean = Helpers.IsUrlHttps("http://leocorporation.dev/")
 ' isHttp2s = false
 ~~~
+
 [Go to top](#helpers)

@@ -18,6 +18,7 @@ Imports LeoCorpLibrary
 ~~~
 
 ## Functions
+
 ### a. Encrypt
 **This function is available in version 2.6 and higher.**
 
@@ -66,7 +67,9 @@ Dim encrypted As String = LeoCorpLibrary.Crypt.Encrypt(s, "ABC123")
 
 ' Output: jqPW4uxt8hk=
 ~~~
+
 [Go to top](#crypt)
+
 
 ### b. Decrypt
 **This function is available in version 2.6 and higher.**
@@ -116,7 +119,9 @@ Dim decrypted As String = LeoCorpLibrary.Crypt.Decrypt(encrypted, "ABC123")
 
 ' Output: Hello!
 ~~~
+
 [Go to top](#crypt)
+
 
 ### c. EncryptRSA
 **This function is available in version 3.3 and higher.**
@@ -174,7 +179,9 @@ Dim encrypt As Byte() = Crypt.EncryptRSA(str, cryptoServiceProvider.ExportParame
 
 Console.WriteLine($"Raw: " + str + "\nEncrypted: " + Crypt.ConvertBytesToString(encrypt))
 ~~~
+
 [Go to top](#crypt)
+
 ### d. DecryptRSA
 **This function is available in version 3.3 and higher.**
 
@@ -233,6 +240,7 @@ Dim decrypt As Byte() = Crypt.DecryptRSA(encrypt, cryptoServiceProvider.ExportPa
 
 Console.WriteLine($"Raw: " + str + "\nEncrypted: " + Crypt.ConvertBytesToString(encrypt) + "\nDecrypted: " + Crypt.ConvertBytesToString(decrypt))
 ~~~
+
 [Go to top](#crypt)
 ## e. EncryptAES
 **This function is available in version 3.3 and higher.**
@@ -283,7 +291,9 @@ Dim encrypt As String = Crypt.EncryptAES(str, "key")
 Dim decrypt As String = Crypt.DecryptAES(encrypt, "key")
 Console.WriteLine("Raw: " + str + "\nEncrypted: " + encrypt)
 ~~~
+
 [Go to top](#crypt)
+
 ### f. DecryptAES
 **This function is available in version 3.3 and higher.**
 
@@ -334,10 +344,12 @@ Dim decrypt As String = Crypt.DecryptAES(encrypt, "key")
 
 Console.WriteLine("Raw: " + str + "\nEncrypted: " + encrypt + "\nDecrypted: " + decrypt)
 ~~~
+
 [Go to top](#crypt)
 ## Extensions
 The `Encrypt()` and `Decrypt()` methods are also available as extensions of the `string` type. They can be used when you import the `LeoCorpLibrary.Extensions` namespace.
 
 [Click here](/Extensions) to go to the Extensions page.
+
 
 [Go to top](#crypt)
