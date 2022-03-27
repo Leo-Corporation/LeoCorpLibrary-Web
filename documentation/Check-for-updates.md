@@ -46,6 +46,7 @@ You need to place the namespace `LeoCorpLibrary` before the `Update` class becau
 :::
 
 Here's this method's arguments
+
 | Type | Argument | Description | Example |
 | :--: | :-------: | :---------: | :-----: |
 | string | version | Current version of the software | "1.0.0.0" |
@@ -107,6 +108,7 @@ You need to place the namespace `LeoCorpLibrary` before the `Update` class becau
 :::
 
 Here's this method's arguments
+
 | Type | Argument | Description | Example |
 | :--: | :-------: | :---------: | :-----: |
 | string | version | Current version of the software | "1.0.0.0" |
@@ -161,7 +163,7 @@ You need to place the namespace `LeoCorpLibrary` before the `Update` class becau
 :::
 
 Here's this method's arguments
-| Type | Argument | Description | Example |
+
 | :--: | :-------: | :---------: | :-----: |
 | string | version | Current version of the software | "1.0.0.0" |
 | string | lastVersion | Last version of the software | "1.1.0.0" |

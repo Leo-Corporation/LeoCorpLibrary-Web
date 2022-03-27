@@ -42,6 +42,7 @@ It returns a `string` value. This method has two variations.
 </details>
 
 This method has a few parameters:
+
 | Type | Argument | Description | Example |
 | :--: | :-------: | :---------: | :-----: |
 | int | length | Length of the password | 10
@@ -80,6 +81,7 @@ Console.WriteLine(Password.Generate(10, "a,b,c,d", ","))
 </details>
 
 This method has a few parameters:
+
 | Type | Argument | Description | Example |
 | :--: | :-------: | :---------: | :-----: |
 | int | length | Length of the password | 10
@@ -211,6 +213,7 @@ It returns a `List<string>` value. This method has two variations.
 </details>
 
 This method has a few parameters:
+
 | Type | Argument | Description | Example |
 | :--: | :-------: | :---------: | :-----: |
 | int | amount | Number of passwords to generate | 20
@@ -259,6 +262,7 @@ Next
 </details>
 
 This method has a few parameters:
+
 | Type | Argument | Description | Example |
 | :--: | :-------: | :---------: | :-----: |
 | int | amount | Number of passwords to generate | 20
@@ -421,6 +425,7 @@ LeoCorpLibrary.Password.GetPasswordStrength() {...}
 ~~~
 
 It has one argument:
+
 
 | Type | Argument | Description | Example |
 | :--: | :-------: | :---------: | :-----: |
