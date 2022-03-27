@@ -906,10 +906,13 @@ This method allows you to launch an UWP app from its ``PackageFamilyName`` and i
 ~~~ powershell
 Get-AppxPackage | Select PackageFamilyName, InstallLocation
 ~~~
+
 You can find the Application Id in the AppxManifest.xml file in
-~~~
+
+~~~ txt
 InstallLocation\AppxManifest.xml
 ~~~
+
 This method isn't available in LeoCorpLibrary.Core. 
 
 It's in:
