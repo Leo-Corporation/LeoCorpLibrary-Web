@@ -264,6 +264,10 @@ End Sub
 
 </details>
 
+::: danger Obsolete
+This method is obsolete, please use [``GetWebPageStatusCodeAsync()``](#f-getwebpagestatuscodeasync) instead.
+:::
+
 The `GetWebPageStatusCode()` method allows you to get the status code of a specified website. It returns an `int` value.
 
 [Learn more about status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status).
@@ -301,8 +305,64 @@ End if
 
 [Go to top](#networkconnection)
 
+### f. GetWebPageStatusCodeAsync
+**This method is available in version 4.5 and higher.**
 
-### f. GetWebPageStatusDescription
+<details>
+<summary>Compatibility</summary>
+
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
+| .NET 5 | ✔ | ✔ |
+| .NET Core 3.1 | ✔ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
+
+</details>
+
+The `GetWebPageStatusCodeAsync()` method allows you to get the status code of a specified website asynchronously. It returns an `int` value.
+
+[Learn more about status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status).
+
+It's in:
+
+~~~ cs
+LeoCorpLibrary.NetworkConnection.GetWebPageStatusCodeAsync()
+~~~
+
+It has one argument:
+
+| Value | Argument | Description |
+| :----: | :-------: | :---------: |
+| string | url | The URL of the website |
+
+Here's an example of usage:
+
+C#
+
+~~~ cs
+internal async Task Main() 
+{
+    if (await NetworkConnection.GetWebPageStatusCodeAsync("https://leocorporation.dev") == 200) 
+    {
+        Console.WriteLine("The website responded: OK");
+    }
+}
+~~~
+
+VB
+
+~~~ vb
+Friend Async Function Main()
+    If Await NetworkConnection.GetWebPageStatusCodeAsync("https://leocorporation.dev") = 200 Then
+        Console.WriteLine("The website responded: OK")
+    End If
+End Function
+~~~
+
+[Go to top](#networkconnection)
+
+### g. GetWebPageStatusDescription
 **This method is available in version 4.1 and higher.**
 
 <details>
@@ -316,6 +376,10 @@ End if
 | .NET Framework 4.5 | ✔ | ✔ |
 
 </details>
+
+::: danger Obsolete
+This method is obsolete, please use [``GetWebPageStatusDescriptionAsync()``](#h-getwebpagestatusdescriptionasync) instead.
+:::
 
 The `GetWebPageStatusDescription()` method allows you to get the status description of a specified website. For instance, if the status code of the website is `418`, the status description associated with this status code will be `"I'm a teapot"`. It returns a `string` value.
 
@@ -360,7 +424,70 @@ Console.WriteLine(status.ToString() & " - " & description)
 [Go to top](#networkconnection)
 
 
-### g. GetStatusCodeType
+### h. GetWebPageStatusDescriptionAsync
+**This method is available in version 4.5 and higher.**
+
+<details>
+<summary>Compatibility</summary>
+
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
+| .NET 5 | ✔ | ✔ |
+| .NET Core 3.1 | ✔ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
+
+</details>
+
+The `GetWebPageStatusDescriptionAsync()` method allows you to get the status description of a specified website asynchronously. For instance, if the status code of the website is `418`, the status description associated with this status code will be `"I'm a teapot"`. It returns a `string` value.
+
+[Learn more about status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status).
+
+It's in:
+
+~~~ cs
+LeoCorpLibrary.NetworkConnection.GetWebPageStatusDescriptionAsync()
+~~~
+
+It has one argument:
+
+| Value | Argument | Description |
+| :----: | :-------: | :---------: |
+| string | url | The URL of the website |
+
+Here's an example of usage:
+
+C#
+
+~~~ cs
+internal async Task Main()
+{
+    int status = await NetworkConnection.GetWebPageStatusCodeAsync("https://leocorporation.dev");
+    string description = await NetworkConnection.GetWebPageStatusDescriptionAsync("https://leocorporation.dev");
+
+    Console.WriteLine(status.ToString() + " - " + description);
+    // Expected output:
+    // 200 - OK
+}
+~~~
+
+VB
+
+~~~ vb
+Friend Async Function Main()
+    Dim status As Integer = Await NetworkConnection.GetWebPageStatusCodeAsync("https://leocorporation.dev")
+    Dim description As String = Await NetworkConnection.GetWebPageStatusDescriptionAsync("https://leocorporation.dev")
+    
+    Console.WriteLine(status.ToString() & " - " & description)
+
+    ' Expected output:
+    ' 200 - OK
+End Function
+~~~
+
+[Go to top](#networkconnection)
+
+### i. GetStatusCodeType
 **This method is available in version 4.1 and higher.**
 
 <details>
@@ -419,7 +546,7 @@ End If
 [Go to top](#networkconnection)
 
 
-### h. DownloadFileAsync
+### j. DownloadFileAsync
 **This method is available in version 4.4 and higher.**
 
 <details>
@@ -458,7 +585,7 @@ Here's an example of usage:
 C#
 
 ~~~ cs
-async void Main()
+async Task Main()
 {
     await NetworkConnection.DownloadFileAsync(new Uri("https://example.com/file.pdf"), @"C:\myFile.pdf");
 }
@@ -467,9 +594,9 @@ async void Main()
 VB
 
 ~~~ vb
-Private Async Sub Main()
+Private Async Function Main()
     Await NetworkConnection.DownloadFileAsync(New Uri("https://example.com/file.pdf"), "C:\myFile.pdf")
-End Sub
+End Function
 ~~~
 
 [Go to top](#networkconnection)
