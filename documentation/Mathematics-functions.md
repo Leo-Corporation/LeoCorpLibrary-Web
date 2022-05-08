@@ -409,6 +409,155 @@ Dim f As Integer = Maths.Factorial(x)
 
 [Go to top](#maths)
 
+### h. GetPositive
+**This function is available in version 4.6 and higher.**
+
+<details>
+<summary>Compatibility</summary>
+
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
+| .NET 5 | ✔ | ✔ |
+| .NET Core 3.1 | ✔ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
+
+</details>
+
+The `GetPositive()` method allows you to get the positive of a specified number. It returns a `double` value.
+
+It's in:
+~~~ cs
+LeoCorpLibrary.Maths.GetPositive()
+~~~
+
+This method has one argument:
+
+| Type | Argument | Description | 
+| :--: | :-------: | :---------: |
+| double | n | The number to get the positive |
+
+Here's an example of usage:
+
+C#
+
+~~~ cs
+double x = -54;
+double positiveOfX = Maths.GetPositive(x);
+
+// positiveOfX = 54
+~~~
+
+VB
+
+~~~ vb
+Dim x As Double = -54
+Dim positiveOfX As Double = Maths.GetPositive(x)
+
+' positiveOfX = 54
+~~~
+
+[Go to top](#maths)
+
+### i. GetNegative
+**This function is available in version 4.6 and higher.**
+
+<details>
+<summary>Compatibility</summary>
+
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
+| .NET 5 | ✔ | ✔ |
+| .NET Core 3.1 | ✔ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
+
+</details>
+
+The `GetNegative()` method allows you to get the negative of a specified number. It returns a `double` value.
+
+It's in:
+~~~ cs
+LeoCorpLibrary.Maths.GetNegative()
+~~~
+
+This method has one argument:
+
+| Type | Argument | Description |
+| :--: | :-------: | :---------: |
+| double | n | The number to get the negative |
+
+Here's an example of usage:
+
+C#
+
+~~~ cs
+double x = 54;
+double negativeOfX = Maths.GetNegative(x);
+
+// negativeOfX = -54
+~~~
+
+VB
+
+~~~ vb
+Dim x As Double = 54
+Dim negativeOfX As Double = Maths.GetNegative(x)
+
+' negativeOfX = -54
+~~~
+
+[Go to top](#maths)
+
+### j. GetResultsOf
+**This function is available in version 4.6 and higher.**
+
+<details>
+<summary>Compatibility</summary>
+
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
+| .NET 5 | ✔ | ✔ |
+| .NET Core 3.1 | ✔ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
+
+</details>
+
+The `GetResultsOf()` method allows you to get the results of a specified function once applied to specified numbers. It returns an array `double[]` value.
+
+It's in:
+~~~ cs
+LeoCorpLibrary.Maths.GetResultsOf()
+~~~
+
+This method has two arguments:
+
+| Type | Argument | Description |
+| :--: | :-------: | :---------: |
+| `Func<double, double>` | function | The function to apply |
+| `params double[]` | numbers | The numbers you want to get the results after applying a specific function |
+
+Here's an example of usage:
+
+C#
+
+~~~ cs
+double[] results = Maths.GetResultsOf(x => x * x, 1, 2, 3, 4, 5);
+
+// results = { 1, 4, 9, 16, 25 }
+~~~
+
+VB
+
+~~~ vb
+Dim results As Double() = Maths.GetResultsOf(Function(x) x * x, 1, 2, 3, 4, 5)
+
+' results = { 1, 4, 9, 16, 25 }
+~~~
+
+[Go to top](#maths)
+
 ## Circle
 
 ### a. GetArea
