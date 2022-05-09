@@ -427,6 +427,7 @@ Dim f As Integer = Maths.Factorial(x)
 The `GetPositive()` method allows you to get the positive of a specified number. It returns a `double` value.
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.Maths.GetPositive()
 ~~~
@@ -477,6 +478,7 @@ Dim positiveOfX As Double = Maths.GetPositive(x)
 The `GetNegative()` method allows you to get the negative of a specified number. It returns a `double` value.
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.Maths.GetNegative()
 ~~~
@@ -527,6 +529,7 @@ Dim negativeOfX As Double = Maths.GetNegative(x)
 The `GetResultsOf()` method allows you to get the results of a specified function once applied to specified numbers. It returns an array `double[]` value.
 
 It's in:
+
 ~~~ cs
 LeoCorpLibrary.Maths.GetResultsOf()
 ~~~
