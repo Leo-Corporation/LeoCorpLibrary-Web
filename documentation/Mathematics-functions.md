@@ -561,6 +561,108 @@ Dim results As Double() = Maths.GetResultsOf(Function(x) x * x, 1, 2, 3, 4, 5)
 
 [Go to top](#maths)
 
+### k. IsPositive
+**This function is available in version 4.7 and higher.**
+
+<details>
+<summary>Compatibility</summary>
+
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
+| .NET 5 | ✔ | ✔ |
+| .NET Core 3.1 | ✔ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
+
+</details>
+
+The `IsPositive()` method allows you to get if a specified number is positive or not. It returns a `double` value.
+
+It's in:
+
+~~~ cs
+LeoCorpLibrary.Maths.IsPositive()
+~~~
+
+It has one argument:
+
+| Type | Argument | Description |
+| :--: | :-------: | :---------: |
+| double | n | The number to check |
+
+Here's an example of usage:
+
+C#
+
+~~~ cs
+double n = 45;
+bool isPositive = Maths.IsPositive(n);
+
+// isPositive = true
+~~~
+
+VB
+
+~~~ vb
+Dim n As Double = 45
+Dim isPositive As Boolean = Maths.IsPositive(n)
+
+' isPositive = true
+~~~
+
+[Go to top](#maths)
+
+### l. IsNegative
+**This function is available in version 4.7 and higher.**
+
+<details>
+<summary>Compatibility</summary>
+
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
+| .NET 5 | ✔ | ✔ |
+| .NET Core 3.1 | ✔ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
+
+</details>
+
+The `IsNegative()` method allows you to get if a specified number is negative or not. It returns a `double` value.
+
+It's in:
+
+~~~ cs
+LeoCorpLibrary.Maths.IsNegative()
+~~~
+
+It has one argument:
+
+| Type | Argument | Description |
+| :--: | :-------: | :---------: |
+| double | n | The number to check |
+
+Here's an example of usage:
+
+C#
+
+~~~ cs
+double n = 45;
+bool isNegative = Maths.IsNegative(n);
+
+// isNegative = false
+~~~
+
+VB
+
+~~~ vb
+Dim n As Double = 45
+Dim isNegative As Boolean = Maths.IsNegative(n)
+
+' isNegative = false
+~~~
+
+[Go to top](#maths)
+
 ## Circle
 
 ### a. GetArea
@@ -2062,6 +2164,201 @@ VB
 Dim hypotenuse As Double = Maths.Trigonometry.GetTriangleHypotenuseFromAdjacentSide(1.05, 5)
 ' Expected result: 10
 ' Actual result: 10.04881618652381
+~~~
+
+[Go to top](#maths)
+
+## Percentage
+### a. GetResultPercentageIncrease
+**This function is available in version 4.7 and higher.**
+
+<details>
+<summary>Compatibility</summary>
+
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
+| .NET 5 | ✔ | ✔ |
+| .NET Core 3.1 | ✔ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
+
+</details>
+
+The `GetResultPercentageIncrease()` method allows you to get the result after a percentage increase. Returns a `double` value.
+
+It's in:
+
+~~~ cs
+LeoCorpLibrary.Maths.Percentage.GetResultPercentageIncrease()
+~~~
+
+This method has two arguments:
+
+| Value | Argument | Description | Example |
+| :----: | :-------: | :---------: | :-----: |
+| double | value | The base value | 100 |
+| double | increaseRate | The evolution rate, in the following format: `x/100d` | 50/100d or 0.5 |
+
+Here's an example of usage:
+
+C#
+
+~~~ cs
+double result = Maths.Percentage.GetResultPercentageIncrease(100, 50/100d);
+// Expected result: 150
+// Actual result: 150.0
+~~~
+
+VB
+
+~~~ vb
+Dim result As Double = Maths.Percentage.GetResultPercentageIncrease(100, 50/100d)
+' Expected result: 150
+' Actual result: 150.0
+~~~
+
+[Go to top](#maths)
+
+### b. GetResultPercentageDecrease
+**This function is available in version 4.7 and higher.**
+
+<details>
+<summary>Compatibility</summary>
+
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
+| .NET 5 | ✔ | ✔ |
+| .NET Core 3.1 | ✔ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
+
+</details>
+
+The `GetResultPercentageDecrease()` method allows you to get the result after a percentage decrease. Returns a `double` value.
+
+It's in:
+
+~~~ cs
+LeoCorpLibrary.Maths.Percentage.GetResultPercentageDecrease()
+~~~
+
+This method has two arguments:
+
+| Value | Argument | Description | Example |
+| :----: | :-------: | :---------: | :-----: |
+| double | value | The base value | 100 |
+| double | decreaseRate | The evolution rate, in the following format: `x/100d` | 50/100d or 0.5 |
+
+Here's an example of usage:
+
+C#
+
+~~~ cs
+double result = Maths.Percentage.GetResultPercentageDecrease(100, 50/100d);
+// Expected result: 50
+// Actual result: 50.0
+~~~
+
+VB
+
+~~~ vb
+Dim result As Double = Maths.Percentage.GetResultPercentageDecrease(100, 50/100d)
+' Expected result: 50
+' Actual result: 50.0
+~~~
+
+[Go to top](#maths)
+
+### c. GetInvertedEvolutionRate
+**This function is available in version 4.7 and higher.**
+
+<details>
+<summary>Compatibility</summary>
+
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
+| .NET 5 | ✔ | ✔ |
+| .NET Core 3.1 | ✔ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
+
+</details>
+
+The `GetInvertedEvolutionRate()` method allows you to get the inverted evolution rate that cancels itself. Returns a `double` value.
+
+It's in:
+
+~~~ cs
+LeoCorpLibrary.Maths.Percentage.GetInvertedEvolutionRate()
+~~~
+
+It has one argument:
+
+| Value | Argument | Description | Example |
+| :----: | :-------: | :---------: | :-----: |
+| double | evolutionRate | The evolution rate, in the following format: `x/100d` | 20/100d or 0.2 |
+
+Here's an example of usage:
+
+C#
+
+~~~ cs
+double result = Maths.Percentage.GetInvertedEvolutionRate(20/100d);
+// Expected result: -0.16666666666666663
+~~~
+
+VB
+
+~~~ vb
+Dim result As Double = Maths.Percentage.GetInvertedEvolutionRate(20/100d)
+' Expected result: -0.16666666666666663
+~~~
+
+[Go to top](#maths)
+
+### d. ProportionToPercentageString
+**This function is available in version 4.7 and higher.**
+
+<details>
+<summary>Compatibility</summary>
+
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
+| .NET 5 | ✔ | ✔ |
+| .NET Core 3.1 | ✔ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
+
+</details>
+
+The `ProportionToPercentageString()` method allows you to get the percentage string from a proportion. Returns a `string` value.
+
+It's in:
+
+~~~ cs
+LeoCorpLibrary.Maths.Percentage.ProportionToPercentageString()
+~~~
+
+It has one argument:
+
+| Value | Argument | Description | Example |
+| :----: | :-------: | :---------: | :-----: |
+| double | proportion | The proportion to get the string of | 0.2 |
+
+Here's an example of usage:
+
+C#
+
+~~~ cs
+string result = Maths.Percentage.ProportionToPercentageString(0.2);
+// Expected result: "20%"
+~~~
+
+VB
+
+~~~ vb
+Dim result As String = Maths.Percentage.ProportionToPercentageString(0.2)
+' Expected result: "20%"
 ~~~
 
 [Go to top](#maths)
