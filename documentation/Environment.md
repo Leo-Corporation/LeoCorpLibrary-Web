@@ -35,7 +35,7 @@ Imports LeoCorpLibrary
 
 </details>
 
-The ``GetFilesCount()`` method allows you to get the number of files in a specified directory. Returns a ``int`` value.
+The ``GetFilesCount()`` method allows you to get the number of files in a specified directory. Returns an ``int`` value.
 
 **Variation 1**
 
@@ -294,7 +294,7 @@ Dim occupiedSpace As Double = GetOccupiedDriveSpace("C:/", UnitType.Gigabyte)
 
 </details>
 
-The `CountFileCharacters()` method enables you to get the number of characters in a specified file. It returns a `int` value.
+The `CountFileCharacters()` method enables you to get the number of characters in a specified file. It returns an `int` value.
 
 It's in:
 
@@ -425,6 +425,57 @@ VB
 If Env.IsDirectoryHasPermission("C:/Windows") Then
     File.Create("C:/Windows/file.txt")
 End If
+~~~
+
+[Go to top](#env)
+
+### i. GetOccupiedSpacePercentage
+**This function is available in version 4.8 and higher.**
+
+<details>
+<summary>Compatibility</summary>
+
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
+| .NET 5 | ✔ | ✔ |
+| .NET Core 3.1 | ✔ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
+
+</details>
+
+The `GetOccupiedSpacePercentage()` method allows you to get the occupied space percentage of specified volume. It returns a `double` value.
+
+It's in:
+
+~~~ cs
+LeoCorpLibrary.Env.GetOccupiedSpacePercentage()
+~~~
+
+It has one argument:
+
+| Value | Argument | Description | Example |
+| :----: | :-------: | :---------: | :-----: |
+| DriveInfo | driveInfo | The desired drive/volume to get the occupied space percentage of | `new DriveInfo(@"C:\")` |
+
+Here's an example of usage:
+
+C#
+
+~~~ cs
+DriveInfo driveInfo = new DriveInfo(@"C:\");
+double occupiedSpacePercentage = Env.GetOccupiedSpacePercentage(driveInfo);
+
+// occupiedSpacePercentage is a double value between 0 and 1
+~~~
+
+VB
+
+~~~ vb
+Dim driveInfo As DriveInfo = New DriveInfo("C:/")
+Dim occupiedSpacePercentage As Double = Env.GetOccupiedSpacePercentage(driveInfo)
+
+' occupiedSpacePercentage is a double value between 0 and 1
 ~~~
 
 [Go to top](#env)
@@ -604,7 +655,7 @@ Env.ExecuteAsAdmin("C:/Windows/System32/cmd.exe")
 
 </details>
 
-This method allows you to get the current UnixTime or the UnixTime of a specific date/time. Returns a `int` value.
+This method allows you to get the current UnixTime or the UnixTime of a specific date/time. Returns an `int` value.
 
 It's in:
 
@@ -947,6 +998,59 @@ Env.LaunchUWPApp("Microsoft.MinecraftUWP_8wekyb3d8bbwe", "App") ' Launch
 
 
 [Go to top](#env)
+
+### j. DateTimeToUnixTime
+**This function is available in version 4.8 and higher.**
+
+<details>
+<summary>Compatibility</summary>
+
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
+| .NET 5 | ✔ | ✔ |
+| .NET Core 3.1 | ✔ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
+
+
+</details>
+
+This method allows you to convert a `DateTime` object to UnixTime (`int`). Returns an `int` value.
+
+It's in:
+
+~~~ cs
+LeoCorpLibrary.Env.DateTimeToUnixTime()
+~~~
+
+It has one argument:
+
+| Value | Argument | Description |
+| :----: | :-------: | :---------: |
+| DateTime | dateTime | The DateTime to convert |
+
+Here's an example of usage:
+
+C#
+
+~~~ cs
+DateTime date = DateTime.Now;
+int unixTime = Env.DateTimeToUnixTime(date); // Current UnixTime
+
+// unixTime is now the current UnixTime
+~~~
+
+VB
+
+~~~ vb
+Dim date As DateTime = DateTime.Now
+Dim unixTime As Integer = Env.DateTimeToUnixTime(date) ' Current UnixTime
+
+' unixTime is now the current UnixTime
+~~~
+
+[Go to top](#env)
+
 ## Properties
 ## File System
 
@@ -1030,6 +1134,46 @@ Dim appDataPath As String = Env.AppDataPath ' Get %APPDATA%
 ~~~
 
 [Go to top](#env)
+
+### c. CurrentAppDirectory
+**This property is available in version 4.8 and higher.**
+
+<details>
+<summary>Compatibility</summary>
+
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
+| .NET 5 | ✔ | ✔ |
+| .NET Core 3.1 | ✔ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
+
+</details>
+
+The `CurrentAppDirectory` property allows you to get the current directory path of the app. It returns a `string` value.
+
+It's in:
+
+~~~ cs
+LeoCorpLibrary.Env.CurrentAppDirectory
+~~~
+
+Here's an example of usage:
+
+C#
+
+~~~ cs	
+string currentAppDirectory = Env.CurrentAppDirectory; // Get current app directory
+~~~
+
+VB
+
+~~~ vb
+Dim currentAppDirectory As String = Env.CurrentAppDirectory ' Get current app directory
+~~~
+
+[Go to top](#env)
+
 ## System Environment
 
 ### a. CurrentOperatingSystem

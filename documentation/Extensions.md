@@ -1276,3 +1276,51 @@ Dim tDays As Double = t.ToDays(TimeUnits.Hours)
 ~~~
 
 [Go to top](#extensions)
+
+### e. ToInt
+**This function is available in version 4.8 and higher.**
+
+<details>
+<summary>Compatibility</summary>
+
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
+| .NET 5 | ✔ | ✔ |
+| .NET Core 3.1 | ✔ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
+
+</details>
+
+The `ToInt()` methods allows you to convert any `double` number to an `int`.
+Returns an `int` number.
+
+It's in:
+
+~~~ cs
+LeoCorpLibrary.Extensions.DoubleExtensions.ToInt()
+~~~
+
+It has no argument.
+
+Here's an example of usage:
+
+C#
+
+~~~ cs
+double t = 7.4; // Double number
+int tInt = t.ToInt();
+
+// tInt = 7
+~~~
+
+VB
+
+~~~ vb
+Dim t As Double = 7.4 ' Double number
+Dim tInt As Integer = t.ToInt()
+
+' tInt = 7
+~~~
+
+[Go to top](#extensions)
