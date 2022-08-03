@@ -480,6 +480,213 @@ Dim occupiedSpacePercentage As Double = Env.GetOccupiedSpacePercentage(driveInfo
 
 [Go to top](#env)
 
+### j. GetDriveWithHighestFreeSpace
+**This function is available in version 4.9 and higher.**
+
+<details>
+<summary>Compatibility</summary>
+
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
+| .NET 5 | ✔ | ✔ |
+| .NET Core 3.1 | ✔ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
+
+</details>
+
+The `GetDriveWithHighestFreeSpace()` method allows you to get the drive with the highest free space. It returns a `DriveInfo` value.
+
+It's in:
+
+~~~ cs
+LeoCorpLibrary.Env.GetDriveWithHighestFreeSpace()
+~~~
+
+It doesn't have any arguments.
+
+Here's an example of usage:
+
+C#
+
+~~~ cs
+DriveInfo driveInfo = Env.GetDriveWithHighestFreeSpace();
+// driveInfo is the drive with the highest free space
+~~~
+
+VB
+
+~~~ vb
+Dim driveInfo As DriveInfo = Env.GetDriveWithHighestFreeSpace()
+' driveInfo is the drive with the highest free space
+~~~
+
+[Go to top](#env)
+
+### k. GetDriveWithLowestFreeSpace
+**This function is available in version 4.9 and higher.**
+
+<details>
+<summary>Compatibility</summary>
+
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
+| .NET 5 | ✔ | ✔ |
+| .NET Core 3.1 | ✔ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
+
+</details>
+
+The `GetDriveWithLowestFreeSpace()` method allows you to get the drive with the lowest free space. It returns a `DriveInfo` value.
+
+It's in:
+
+~~~ cs
+LeoCorpLibrary.Env.GetDriveWithLowestFreeSpace()
+~~~
+
+It doesn't have any arguments.
+
+Here's an example of usage:
+
+C#
+
+~~~ cs
+DriveInfo driveInfo = Env.GetDriveWithLowestFreeSpace();
+// driveInfo is the drive with the lowest free space
+~~~
+
+VB
+
+~~~ vb
+Dim driveInfo As DriveInfo = Env.GetDriveWithLowestFreeSpace()
+' driveInfo is the drive with the lowest free space
+~~~
+
+[Go to top](#env)
+
+### l. GetDriveUnitType
+**This function is available in version 4.9 and higher.**
+
+<details>
+<summary>Compatibility</summary>
+
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
+| .NET 5 | ✔ | ✔ |
+| .NET Core 3.1 | ✔ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
+
+</details>
+
+The `GetDriveUnitType()` method allows you to get the drive unit type. It returns a [`UnitType`](/enums#e-unittype) enum.
+
+It's in:
+
+~~~ cs
+LeoCorpLibrary.Env.GetDriveUnitType()
+~~~
+
+It has one argument:
+
+| Value | Argument | Description | Example |
+| :----: | :-------: | :---------: | :-----: |
+| DriveInfo | driveInfo | The desired drive/volume to get the drive unit type of | `new DriveInfo(@"C:\")` |
+
+Here's an example of usage:
+
+C#
+
+~~~ cs
+var drives = DriveInfo.GetDrives();
+for (int i = 0; i < drives.Length; i++)
+{
+	Console.WriteLine($"Name: {drives[i].Name}, Unit: {Env.GetDriveUnitType(drives[i])}, Size: {drives[i].TotalSize}");
+}
+
+/*
+Example:
+Name: C:\, Unit: GB, Size: 107374182400
+*/
+~~~
+
+VB
+
+~~~ vb
+Dim drives() As DriveInfo = DriveInfo.GetDrives()
+For i = 0 To drives.Length - 1
+    Console.WriteLine($"Name: {drives(i).Name}, Unit: {Env.GetDriveUnitType(drives(i))}, Size: {drives(i).TotalSize}")
+Next
+
+' Example:
+' Name: C:\, Unit: GB, Size: 107374182400
+
+~~~
+
+[Go to top](#env)
+
+### m. IsDriveOpticalDrive
+**This function is available in version 4.9 and higher.**
+
+<details>
+<summary>Compatibility</summary>
+
+| Frameworks | LeoCorpLibrary | LeoCorpLibrary.Core |
+| :-----: | :----------------: | :---------------------: |
+| .NET 6 | ✔ | ✔ |
+| .NET 5 | ✔ | ✔ |
+| .NET Core 3.1 | ✔ | ✔ |
+| .NET Framework 4.5 | ✔ | ✔ |
+
+</details>
+
+The `IsDriveOpticalDrive()` method allows you to check if a specific drive is an optical drive. It returns a `bool` value.
+
+It's in:
+
+~~~ cs
+LeoCorpLibrary.Env.IsDriveOpticalDrive()
+~~~
+
+It has one argument:
+
+| Value | Argument | Description | Example |
+| :----: | :-------: | :---------: | :-----: |
+| DriveInfo | driveInfo | The desired drive/volume to check if it's an optical drive | `new DriveInfo(@"C:\")` |
+
+Here's an example of usage:
+
+C#
+
+~~~ cs
+var drives = DriveInfo.GetDrives();
+for (int i = 0; i < drives.Length; i++)
+{
+    Console.WriteLine($"Name: {drives[i].Name}, IsOpticalDrive: {Env.IsDriveOpticalDrive(drives[i])}");
+}
+
+/*
+Example:
+Name: C:\, IsOpticalDrive: False
+*/
+~~~
+
+VB
+
+~~~ vb
+Dim drives() As DriveInfo = DriveInfo.GetDrives()
+For i = 0 To drives.Length - 1
+    Console.WriteLine($"Name: {drives(i).Name}, IsOpticalDrive: {Env.IsDriveOpticalDrive(drives(i))}")
+Next
+
+' Example:
+' Name: C:\, IsOpticalDrive: False
+~~~
+
+[Go to top](#env)
+
 ## System Environment
 
 ### a. GetWindowsVersion
