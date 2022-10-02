@@ -1,15 +1,17 @@
-module.exports = {
+import { defaultTheme } from '@vuepress/theme-default'
+
+export default {
     title: "LeoCorpLibrary",
     description: "A C# library with useful features for .NET Applications.",
     base: "/",
     head: [
         ['link', { rel: 'icon', href: 'favicon.ico' }]
     ],
-    themeConfig: {
+    theme: defaultTheme({
         sidebar: 'auto',
         sidebarDepth: 3,
         searchPlaceholder: 'Search...',
-        nav: [
+        navbar: [
             { text: 'Home', link: '/' },
             { text: 'Installation', link: '/Install-LeoCorpLibrary' },
             { text: 'Reference', link: '/Reference' }
@@ -22,5 +24,5 @@ module.exports = {
         docsBranch: 'main',
         editLinks: true,
         editLinkText: 'Help us improve this page!'
-    }
+    })
 }

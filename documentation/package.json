@@ -1,0 +1,14 @@
+{
+  "name": "documentation",
+  "version": "1.0.0",
+  "description": "Documentation of LeoCorpLibrary",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Leo-Corporation",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.51"
+  }
+}
