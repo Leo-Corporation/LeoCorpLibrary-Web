@@ -3,8 +3,13 @@ home: true
 heroText: LeoCorpLibrary
 heroImage: /logo.png
 tagline: A C# library with useful features for .NET Applications.
-actionText: Get Started →
-actionLink: /Install-LeoCorpLibrary
+actions:
+  - text: Get Started →
+    link: /Install-LeoCorpLibrary
+    type: primary
+  - text: Reference
+    link: /Reference
+    type: secondary
 features:
 - title: Easy-to-use
   details: Using LeoCorpLibrary in a project is very easy and intuitive.
