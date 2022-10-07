@@ -24,6 +24,29 @@ sidebar: auto
 ## Introduction
 Welcome to LeoCorpLibrary's documentation. You will find here all the documentation of LeoCorpLibrary and LeoCorpLibrary.Core.
 
+## Installation
+[Learn more](/install-LeoCorpLibrary) about installation steps.
+
+:::: code-group
+::: code-group-item .NET CLI
+~~~ powershell:no-line-numbers
+dotnet add package LeoCorpLibrary --version 4.9.0.2208
+~~~
+:::
+
+::: code-group-item Package Manager
+~~~ sh:no-line-numbers
+NuGet\Install-Package LeoCorpLibrary -Version 4.9.0.2208
+~~~
+:::
+
+::: code-group-item PackageReference
+~~~ xml:no-line-numbers
+<PackageReference Include="LeoCorpLibrary" Version="4.9.0.2208" />
+~~~
+:::
+::::
+
 ## What you need to know
 The `LeoCorpLibrary` package is only available for Windows devices whereas the `LeoCorpLibrary.Core` package is available for all platforms.
 

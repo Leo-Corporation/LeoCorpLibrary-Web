@@ -34,31 +34,39 @@ The reference ``LeoCorpLibrary`` has been added to the project. You can verify t
 ### 2. Start Coding
 To call methods and use other features of LeoCorpLibrary, please add the following code in your `using` region (on top of the file).
 
-C#
-
+:::: code-group
+::: code-group-item C#
 ~~~ cs
 using LeoCorpLibrary;
 ~~~
 
-VB
+:::
+::: code-group-item VB
 
 ~~~ vb
 Imports LeoCorpLibrary
 ~~~
+:::
+::::
 
 If you are using LeoCorpLibrary.Core, you need to adapt the code:
 
-C#
+:::: code-group
+::: code-group-item C#
 
 ~~~ cs
 using LeoCorpLibrary.Core;
 ~~~
+:::
 
-VB
+:::
+::: code-group-item VB
 
 ~~~ vb
 Imports LeoCorpLibrary
 ~~~
+:::
+::::
 
 ::: tip Note
 In the most recent versions of Visual Studio, IntelliSense automatically import the reference to your code if you type the name of a class or of a namespace.
