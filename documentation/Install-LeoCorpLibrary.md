@@ -1,6 +1,11 @@
 ---
 footer: MIT Licensed | Copyright © 2022 Léo Corporation and contributors
 ---
+## Introducing PeyrSharp
+LeoCorpLibrary is evolving; it is now called PeyrSharp, and has been rebuilt from the ground up!
+[Learn more](https://peyrsharp.leocorporation.dev/)
+
+
 # Install LeoCorpLibrary
 ## Using Visual Studio
 

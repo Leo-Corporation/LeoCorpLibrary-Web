@@ -20,6 +20,10 @@ features:
 footer: MIT Licensed | Copyright © 2022 Léo Corporation and contributors
 sidebar: auto
 ---
+## Introducing PeyrSharp
+LeoCorpLibrary is evolving; it is now called PeyrSharp, and has been rebuilt from the ground up!
+[Learn more](https://peyrsharp.leocorporation.dev/)
+
 # Welcome to LeoCorpLibrary
 ## Introduction
 Welcome to LeoCorpLibrary's documentation. You will find here all the documentation of LeoCorpLibrary and LeoCorpLibrary.Core.

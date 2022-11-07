@@ -1,3 +1,8 @@
+## Introducing PeyrSharp
+LeoCorpLibrary is evolving; it is now called PeyrSharp, and has been rebuilt from the ground up!
+[Learn more](https://peyrsharp.leocorporation.dev/)
+
+
 # Reference
 LeoCorpLibrary's reference.
 ## Documentation
